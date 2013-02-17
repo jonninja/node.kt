@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Node.kt by jonninja</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Node.kt</h1>
+        <p class="header">A web framework built in Kotlin that is inspired by Node.js</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/jonninja/node.kt/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/jonninja/node.kt/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/jonninja/node.kt">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/jonninja">jonninja</a></p>
+
+
+      </header>
+      <section>
+        <p>Node.kt is a web framework written in Kotlin inspired by many of the ideas in Node.JS and the Express framework.</p>
+
+<p>Part of the appeal of Node.js is the ability to create web applications that are easy to understand and to do so extremely quickly. For example, here's a node.js 'Hello World' application:</p>
+
+<pre><code>var express = require('express'),
+app = express.createServer();
+app.get('/', function(req, res){
+  res.send('Hello World');
+});
+app.listen(3000);
+</code></pre>
+
+<p>What makes this appealing isn't the few lines of code - a servlet based Hello World might not be that
+much more code. But the Express version is extremely easy to follow. There are not configuration files.
+There are no annotations. On larger scale applications, this might not matter much, but there is an
+enormous appeal to this kind of programming model, if the popularity of Node is any indication.</p>
+
+<p>Here's a Node.kt version of the same application:</p>
+
+<pre><code>fun main(args: Array&lt;String&gt;) {
+  val app = Express()
+  app.get("/", { req, res, next -&gt;
+    res.send("Hello World")
+  })
+  app.listen(3000)
+}
+</code></pre>
+
+<p>So why not use Node.js? Well, despite some excellent ideas in its frameworks, Node.js is built on Javascript, and that imposes some serious limitations. First, Javascript is completely dynamic, which means no type-safety at compile time. I won't go through the entire debate - some prefer this - but my taste is for solid, development-time type checking. Second, Javascript is single-threaded, and imposes a callback-style of coding that, for some, can be quite confusing and difficult to parse. When working in Node.js, one seems to always be asking the question, 'Is this really making me more productive?'</p>
+
+<p>Kotlin, on the other hand, is a more modern version of Java, built on the solid foundation of years of JVM engineering. While still in development, the combination of Kotlin and Node.kt makes web development far more pleasurable. Some of Java's verbosity is reduced, and as you can see in the above example, it's possible to express ideas with minimal code while still being very clear.</p>
+
+<h2>What's Included?</h2>
+
+<h3>The Core framework</h3>
+
+<p>Based on Express, the framework provides the core functionality of Node.java. This includes:</p>
+
+<ul>
+<li>Express - a web server framework inspired by Express.js</li>
+<li>Middleware - a collection of middleware useful on a wide range of web server projects</li>
+<li>Http - an http client</li>
+<li>Crypto - easy access to encryption and encoding</li>
+</ul><h3>Optional Modules</h3>
+
+<p>The project will also produce a number of modules that can be used in projects. These are likely to be popular, but not as universal as those included directly in the core framework. The modules include:</p>
+
+<ul>
+<li>Less - middleware for compiling and serving Less files as css</li>
+</ul><h3>Runtime</h3>
+
+<p>A special runtime engine will be provided. While not absolutely required (experienced developers can use the Node.kt framework directly), the runtime is designed to smooth the process of creating an application. The runtime will provide the following functionality:</p>
+
+<ul>
+<li>create - create a template project</li>
+<li>install - install dependencies of the project</li>
+<li>run - automatically compile and run a project, intelligently managing resources</li>
+<li>deploy - build an easy to manage archive for deployment on a cloud server</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
