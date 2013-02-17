@@ -1,8 +1,8 @@
-final kotlinVersion = '0.4.297'
+final kotlinVersion = '0.5.1'
 
 buildscript {
     repositories { maven { url 'http://evgenyg.artifactoryonline.com/evgenyg/repo/' }}
-    dependencies { classpath 'com.github.goldin.plugins.gradle:kotlin:0.2-beta-5'  }
+    dependencies { classpath 'com.github.goldin.plugins.gradle:kotlin:0.2.1-SNAPSHOT'  }
 }
 
 apply plugin: 'kotlin'
