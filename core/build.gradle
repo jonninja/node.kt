@@ -1,0 +1,46 @@
+final kotlinVersion = '0.4.297'
+
+buildscript {
+    repositories { maven { url 'http://evgenyg.artifactoryonline.com/evgenyg/repo/' }}
+    dependencies { classpath 'com.github.goldin.plugins.gradle:kotlin:0.2-beta-5'  }
+}
+
+apply plugin: 'kotlin'
+compileKotlin.dependsOn compileJava
+
+repositories {
+    mavenCentral()
+    mavenRepo url: 'http://repository.jetbrains.com/kotlin/'
+    mavenRepo url: 'http://morphia.googlecode.com/svn/mavenrepo/'
+}
+
+// 4 - Kotlin compilation and runtime dependencies.
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-runtime:$kotlinVersion",
+            "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+            "org.jetbrains.kotlin:kotlin-jdk-annotations:$kotlinVersion",
+            files( "${ System.getProperty( 'java.home' )}/lib/jce.jar" )
+
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.0.6'
+    compile 'io.netty:netty:3.5.7.Final'
+    compile 'org.apache.velocity:velocity:1.7'
+    compile 'org.freemarker:freemarker:2.3.19'
+    compile 'commons-codec:commons-codec:1.7'
+    compile 'org.apache.httpcomponents:httpclient:4.2.1'
+    compile 'commons-io:commons-io:2.4'
+    compile 'com.google.code.morphia:morphia:0.99'
+    compile 'org.mongodb:mongo-java-driver:2.10.0'
+    compile 'com.google.code.morphia:morphia-logging-slf4j:0.99'
+
+}
+
+sourceSets {
+    main {
+        kotlin {
+            srcDir 'src'
+        }
+        java {
+            srcDir 'java'
+        }
+    }
+}

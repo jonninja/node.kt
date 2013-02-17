@@ -1,0 +1,5 @@
+<root>
+    <item name='com.fasterxml.jackson.databind.ObjectMapper com.fasterxml.jackson.databind.node.ObjectNode createObjectNode()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,7 @@
+<html>
+<body>
+<h1>Rendered Velocity Template</h1>
+<h3>Title: $settings.title</h3>
+<h3>Name: $name</h3>
+</body>
+</html>
