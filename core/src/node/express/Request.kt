@@ -8,11 +8,12 @@ import org.jboss.netty.handler.codec.http.HttpHeaders
 import com.fasterxml.jackson.databind.node.ObjectNode
 import java.util.Comparator
 import node.mimeType
+import org.jboss.netty.channel.Channel
 
 /**
  * The Http server request object
  */
-class Request(app: Express, e: MessageEvent) {
+class Request(app: Express, e: MessageEvent, val channel: Channel) {
   private val message = e;
   val app = app;
 
@@ -120,7 +121,7 @@ class Request(app: Express, e: MessageEvent) {
 
   private fun parseAccept(): List<Accept> {
     var accept = header(HttpHeaders.Names.ACCEPT);
-    if (accept == null) return arrayList();
+    if (accept == null) return arrayListOf<Accept>();
 
     var acceptArray = accept!!.split(",");
     return acceptArray.map<String, Accept> { it ->
@@ -198,5 +199,13 @@ class Request(app: Express, e: MessageEvent) {
         throw ExpressException(400, "Missing parameter: $name")
       }
     }
+  }
+
+  /**
+   * Check if this is a web socket request
+   */
+  fun isWebSocketRequest(): Boolean {
+      val upgrade = request.getHeader("Upgrade")
+      return (upgrade == "websocket")
   }
 }

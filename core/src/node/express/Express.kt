@@ -36,6 +36,20 @@ import node.http.HttpMethod
 import java.lang.annotation.RetentionPolicy
 import java.lang.annotation.Retention
 import node.NotFoundException
+import org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory
+import org.jboss.netty.handler.codec.http.QueryStringDecoder
+import org.jboss.netty.handler.codec.http.websocketx.WebSocketFrame
+import org.jboss.netty.channel.group.DefaultChannelGroup
+import org.jboss.netty.channel.Channel
+import org.jboss.netty.handler.codec.http.websocketx.CloseWebSocketFrame
+import org.jboss.netty.handler.codec.http.websocketx.PingWebSocketFrame
+import org.jboss.netty.handler.codec.http.websocketx.TextWebSocketFrame
+import org.jboss.netty.handler.codec.http.websocketx.PongWebSocketFrame
+import org.jboss.netty.channel.ChannelFutureListener
+import org.jboss.netty.channel.ChannelFuture
+import org.jboss.netty.handler.codec.http.websocketx.BinaryWebSocketFrame
+import org.jboss.netty.buffer.ChannelBuffer
+import java.nio.ByteBuffer
 
 private val json = ObjectMapper();
 
@@ -67,7 +81,7 @@ class Express() {
   }
 
   {
-    bootstrap.setPipelineFactory(PipelineFactory(this))
+    bootstrap.setPipelineFactory(PipelineFactory())
     settings.put("views", "views/")
     settings.put("jsonp callback name", "callback")
 
@@ -284,52 +298,139 @@ class Express() {
     }
   }
 
-//  /**
-//   * Our Netty callback
-//   */
-//  private inner class RequestHandler(): SimpleChannelUpstreamHandler() {
-//    fun messageReceived(ctx: ChannelHandlerContext, e: MessageEvent) {
-//      val req = Request(this@Express, e);
-//      val res = Response(req, e);
-//      try {
-//        handleRequest(req, res, 0);
-//      } catch (t: Throwable) {
-//        errorHandler(t, req, res)
-//      }
-//    }
-//  }
-//
-//  private inner class PipelineFactory(): ChannelPipelineFactory {
-//    public override fun getPipeline(): ChannelPipeline? {
-//      var pipeline = Channels.pipeline()!!;
-//      pipeline.addLast("decoder", HttpRequestDecoder());
-//      pipeline.addLast("aggregator", HttpChunkAggregator(1048576));
-//      pipeline.addLast("encoder", HttpResponseEncoder());
-//      pipeline.addLast("handler", RequestHandler());
-//      pipeline.addLast("chunkedWriter", ChunkedWriteHandler());
-//      return pipeline;
-//    }
-//  }
-//
+  /**
+   * Our Netty callback
+   */
+  private inner class RequestHandler(): SimpleChannelUpstreamHandler() {
+    fun messageReceived(ctx: ChannelHandlerContext, e: MessageEvent) {
+      when (e.getMessage()) {
+        is HttpRequest -> {
+          val req = Request(this@Express, e, ctx.getChannel())
+          val res = Response(req, e)
+          try {
+            handleRequest(req, res, 0)
+          } catch (t: Throwable) {
+            errorHandler(t, req, res)
+          }
+        }
+        is WebSocketFrame -> {
+          handleWebSocketRequest(ctx.getChannel(), e.getMessage() as WebSocketFrame)
+        }
+        else -> {
+
+        }
+      }
+    }
+  }
+
+  private inner class PipelineFactory(): ChannelPipelineFactory {
+    public override fun getPipeline(): ChannelPipeline? {
+      var pipeline = Channels.pipeline()!!;
+      pipeline.addLast("decoder", HttpRequestDecoder())
+      pipeline.addLast("aggregator", HttpChunkAggregator(1048576))
+      pipeline.addLast("encoder", HttpResponseEncoder())
+      pipeline.addLast("handler", RequestHandler())
+      pipeline.addLast("chunkedWriter", ChunkedWriteHandler())
+      return pipeline
+    }
+  }
+
   /**
    * Get Logger middleware.
    */
   fun logger(): Logger {
-    return Logger();
+    return Logger()
   }
 
   /**
    * Get middleware that parses JSON and UrlEncoded bodies
    */
   fun bodyParser(): Handler {
-    return BodyParser();
+    return BodyParser()
   }
 
   /**
    * Middleware for serving static files
    */
   fun static(basePath: String): (req: Request, res: Response, next: () -> Unit) -> Unit {
-    return Static(basePath).callback();
+    return Static(basePath).callback()
+  }
+
+
+  //***************************************************************************
+  // WEBSOCKET SUPPORT
+  //***************************************************************************
+
+  // Map of channel identifiers to WebSocketHandler instances
+  private val webSocketHandlers = HashMap<Int, WebSocketHandler>()
+
+  /**
+   * Install web socket route
+   */
+  fun webSocket(path: String, handler: (WebSocketChannel) -> WebSocketHandler) {
+    val route = WebSocketRoute(path)
+    get(path, { req, res, next ->
+      route.handshake(req.channel, req.request)
+      val wsh = handler(WebSocketChannel(req.channel))
+      webSocketHandlers.put(req.channel.getId(), wsh)
+      req.channel.getCloseFuture()!!.addListener(object: ChannelFutureListener {
+        public override fun operationComplete(future: ChannelFuture?) {
+          wsh.closed()
+          webSocketHandlers.remove(future!!.getChannel()!!.getId())
+
+        }
+      })
+    })
+  }
+
+  /**
+   * Defines a WebSocket route. Mainly responsible for the initial handshake.
+   */
+  class WebSocketRoute(val path: String) {
+    val channelGroup = DefaultChannelGroup(path)
+    var wsFactory: WebSocketServerHandshakerFactory? = null
+
+    fun handshake(channel: Channel, req: HttpRequest) {
+      val location = "ws://" + req.getHeader("host") + QueryStringDecoder(req.getUri())
+      if (wsFactory == null) {
+        wsFactory = WebSocketServerHandshakerFactory(location, null, false)
+      }
+      val handshaker = wsFactory!!.newHandshaker(req);
+      if (handshaker == null) {
+        wsFactory!!.sendUnsupportedWebSocketVersionResponse(channel)
+      } else {
+        channelGroup.add(channel)
+        handshaker.handshake(channel, req)
+      }
+    }
+  }
+
+
+  /**
+   * Handle a web socket request. Mainly passes along data to a WebSocketHandler.
+   */
+  private fun handleWebSocketRequest(channel: Channel, frame: WebSocketFrame) {
+    val handler = webSocketHandlers.get(channel.getId())
+    if (handler == null) return
+    when (frame) {
+      is CloseWebSocketFrame -> {
+        handler.closed()
+        webSocketHandlers.remove(channel.getId())
+      }
+      is PingWebSocketFrame -> {
+        handler.ping()
+        channel.write(PongWebSocketFrame((frame as PingWebSocketFrame).getBinaryData()))
+      }
+      is TextWebSocketFrame -> {
+        handler.message((frame as TextWebSocketFrame).getText())
+      }
+      is BinaryWebSocketFrame -> {
+
+      }
+      else -> {
+
+      }
+    }
   }
 }
 
@@ -338,7 +439,7 @@ class Express() {
  * callback function or an object that implements the Handler trait.
  */
 trait Handler {
-  fun exec(req: Request, res: Response, next: () -> Unit);
+  fun exec(req: Request, res: Response, next: () -> Unit)
 
   class object {
     /**
@@ -355,7 +456,7 @@ trait Handler {
  */
 class NextFunHandler(val callback: (req: Request, res: Response, next: () -> Unit) -> Unit): Handler {
   override fun exec(req: Request, res: Response, next: () -> Unit) {
-    this.callback(req, res, next);
+    this.callback(req, res, next)
   }
 }
 
@@ -365,7 +466,7 @@ class NextFunHandler(val callback: (req: Request, res: Response, next: () -> Uni
 class Route(val method: String, val path: String, val handler: Handler) {
   private class Key(val name: String, val optional: Boolean)
 
-  var pattern = Pattern.compile("");
+  var pattern = Pattern.compile("")
   var keys = ArrayList<Key>();
 
   {
@@ -448,10 +549,10 @@ class Route(val method: String, val path: String, val handler: Handler) {
             if (mapper != null) {
               result.put(key, mapper(req, res, value))
             } else {
-              result.put(key, value);
+              result.put(key, value)
             }
           } else {
-            result.put("*", value);
+            result.put("*", value)
           }
         }
       }
@@ -462,30 +563,57 @@ class Route(val method: String, val path: String, val handler: Handler) {
   }
 }
 
+/**
+ * Exception thrown by Express
+ */
 class ExpressException(val code: Int, msg: String? = null, cause: Throwable? = null): Exception(msg, cause)
 
-private class PipelineFactory(val express: Express): ChannelPipelineFactory {
-  public override fun getPipeline(): ChannelPipeline? {
-    var pipeline = Channels.pipeline()!!;
-    pipeline.addLast("decoder", HttpRequestDecoder());
-    pipeline.addLast("aggregator", HttpChunkAggregator(1048576));
-    pipeline.addLast("encoder", HttpResponseEncoder());
-    pipeline.addLast("handler", RequestHandler(express));
-    pipeline.addLast("chunkedWriter", ChunkedWriteHandler());
-    return pipeline;
+/**
+ * Provide an implementation of this class to listen for messages from a client.
+ */
+open class WebSocketHandler(val sender: WebSocketChannel) {
+  /**
+   * Called when a text message is received for this WebSocket
+   */
+  open fun message(content: String) {
+  }
+
+  /**
+   * Called when a binary message is received on this WebSocket
+   */
+  open fun binaryMessage(data: ChannelBuffer) {
+  }
+
+  /**
+   * Called when this socket has been closed
+   */
+  open fun closed() {
+  }
+
+  /**
+   * Called when a ping is received
+   */
+  open fun ping() {
   }
 }
 
-private class RequestHandler(val express: Express): SimpleChannelUpstreamHandler() {
-  fun messageReceived(ctx: ChannelHandlerContext, e: MessageEvent) {
-    val req = Request(express, e);
-    val res = Response(req, e);
-    try {
-      express.handleRequest(req, res, 0);
-    } catch (t: Throwable) {
-      express.errorHandler(t, req, res)
-    }
+/**
+ * Handles sending of data to a web socket
+ */
+class WebSocketChannel(val channel: Channel) {
+  /**
+   * Send a text message to this WebSocket
+   */
+  fun send(content: String) {
+    channel.write(TextWebSocketFrame(content))
+  }
+
+  /**
+   * Send binary data to this WebSocket
+   */
+  fun send(data: ByteArray) {
+    var byteBuffer = ByteBuffer.allocate(data.size)
+    byteBuffer.put(data)
+    channel.write(BinaryWebSocketFrame(org.jboss.netty.buffer.ByteBufferBackedChannelBuffer(byteBuffer)))
   }
 }
-
-

@@ -279,7 +279,7 @@ val httpFormat = "EEE, dd MMM yyyy HH:mm:ss zzz";
 fun Date.asHttpFormatString(): String {
   var sd = SimpleDateFormat(httpFormat);
   sd.setTimeZone(TimeZone.getTimeZone("GMT"));
-  return sd.format(this);
+  return sd.format(this)!!;
 }
 
 /**
