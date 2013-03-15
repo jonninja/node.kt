@@ -5,8 +5,6 @@ import java.net.URLDecoder
 import java.util.HashMap
 import java.text.ParseException
 import java.util.Random
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.databind.JsonNode
 
 /**
  * Some string utility functions
@@ -84,21 +82,4 @@ public class RandomStringGenerator(val length: Int) {
     for (idx in 0..length-1) buf[idx] = randomSymbols[random.nextInt(randomSymbols.size)]
     return String(buf)
   }
-}
-
-private val json = ObjectMapper()
-
-/**
- * Parse a JSON string into a JsonNode. Uses default parsing options
- */
-fun String.json(): Any {
-  return json.readValue(this, javaClass<Any>())!!
-}
-
-fun <T> String.json(dataClass: Class<T>): T {
-  return json.readValue(this, dataClass)!!
-}
-
-fun Any.toJsonString(): String {
-  return json.writeValueAsString(this)!!
 }

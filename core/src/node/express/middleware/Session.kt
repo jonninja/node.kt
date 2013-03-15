@@ -13,6 +13,8 @@ import node.util.logDebug
 import node.util.log
 import java.util.logging.Level
 import node.express.Cookie
+import node.util.logSevere
+import node.util.date.inSeconds
 
 // Interface for a session
 trait Session {
@@ -67,20 +69,30 @@ class SessionSupport(): Handler {
 /**
  * Value extensions to ease access to the session object
  */
-val Request.session: Session?
-  get() = this.attributes["session"] as? Session;
+val Request.session: Session
+  get() {
+    if (this.attributes["session"] == null) {
+      logSevere("No session was found. Be sure that session middleware is installed!")
+    }
+    return this.attributes["session"] as Session
+  }
 
-val Response.session: Session?
-  get() = this.req.attributes["session"] as? Session;
+val Response.session: Session
+  get() {
+    if (this.req.attributes["session"] == null) {
+      logSevere("No session was found. Be sure that session middleware is installed!")
+    }
+    return this.req.attributes["session"] as Session
+  }
 
 /**
  * A session where the entire contents of the session is stored in a cookie. Because of this,
  * clients need to be sure not to fill the session full of too much data (most browsers support
  * up to about 4K)
  */
-class CookieStoreSession(val sessionKey: String = "_node_kt_session"): SessionSupport() {
+class CookieStoreSession(expirationTime: Long, val sessionKey: String = "_node_kt_session"): SessionSupport() {
   val json = ObjectMapper()
-  var maxAge: Long = 0
+  var maxAge: Long = expirationTime
 
   fun withMaxAge(maxAge: Long): CookieStoreSession {
     this.maxAge = maxAge;

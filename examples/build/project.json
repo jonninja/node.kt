@@ -1,0 +1,10 @@
+{
+  "name": "Example build",
+  "version": "0.1.1",
+  "author": "Jon Nichols",
+  "description": "A project to help explain the Node.kt build file",
+  "dependencies": [
+    "com.google.code:morphia:0.91",
+    "org.hibernate:hibernate-core:4.1.9.Final"
+  ]
+}

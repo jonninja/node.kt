@@ -30,6 +30,9 @@ import java.util.TimeZone
 import java.text.SimpleDateFormat
 import java.util.Date
 import node.util.json
+import org.apache.http.client.utils.URLEncodedUtils
+import java.util.HashMap
+import java.nio.charset.Charset
 
 /**
  * A simplified API for making HTTP requests of all kinds. The goal of the library is to support 98% of use
@@ -102,20 +105,42 @@ class Request(request: HttpRequestBase) {
   }
 
   /**
-   * Get the body of the request as json.
-   * @throws IllegalArgumentException if entity is not valid json
+   * Add an accept header to the request
    */
-  fun json(): Any {
+  fun accepts(contentType: String) {
+    request.setHeader("Accept", contentType)
+  }
+
+  /**
+ * Get the body of the response as a json string, setting the appropriate Accept header
+ */
+  fun jsonString(): String? {
     // if we haven't connected, and there's no 'Accept' header, set it to
     // json to get the server to send us json
     if (response == null && request.getFirstHeader("Accept") == null) {
       request.setHeader("Accept", "application/json")
     }
-
     connect();
-    val content = EntityUtils.toString(response!!.getEntity());
+    return text()
+  }
+
+  /**
+   * Parse the body of the response as json, mapped to a generic (Map or Array) object.
+   */
+  fun json(): Any {
     try {
-      return content!!.json()
+      return jsonString()!!.json()
+    } catch (e: Throwable) {
+      throw IOException(e)
+    }
+  }
+
+  /**
+   * Parse the body of the response as json, mapped to the given type
+   */
+  fun <T> json(dataClass: Class<T>): T {
+    try {
+      return jsonString()!!.json(dataClass)
     } catch (e: Throwable) {
       throw IOException(e)
     }
@@ -126,9 +151,9 @@ class Request(request: HttpRequestBase) {
    * request types that allow a body.
    */
   fun json(body: JsonNode): Request {
-    contentType("application/json");
-    val entity = StringEntity(body.toString());
-    (request as HttpEntityEnclosingRequestBase).setEntity(entity);
+    contentType("application/json")
+    val entity = StringEntity(body.toString())
+    (request as HttpEntityEnclosingRequestBase).setEntity(entity)
     return this;
   }
 
@@ -136,16 +161,31 @@ class Request(request: HttpRequestBase) {
    * Retrieve a response as text.
    */
   fun text(): String? {
-    connect();
-    return EntityUtils.toString(response!!.getEntity());
+    connect()
+    return EntityUtils.toString(response!!.getEntity())
+  }
+
+  /**
+   * Retrieve the response of type application/x-www-form-urlencoded.
+   */
+  fun form(): Map<String, String> {
+    accepts("application/x-www-form-urlencoded")
+    connect()
+    val str = EntityUtils.toString(response!!.getEntity())
+    val values = URLEncodedUtils.parse(str, Charset.forName("UTF-8"))!!
+    val result = HashMap<String, String>()
+    for (value in values) {
+      result.put(value.getName(), value.getValue())
+    }
+    return result
   }
 
   /**
    * Get the response body as an input stream.
    */
   fun body(): InputStream {
-    connect();
-    return response!!.getEntity()!!.getContent()!!;
+    connect()
+    return response!!.getEntity()!!.getContent()!!
   }
 
   /**
@@ -199,7 +239,7 @@ class Request(request: HttpRequestBase) {
 
   private fun checkForResponseError() {
     if (response!!.getStatusLine()!!.getStatusCode() >= 400) {
-      EntityUtils.consume(response!!.getEntity());
+      println(EntityUtils.toString(response!!.getEntity()))
       throw IOException(response!!.getStatusLine().toString())
     }
   }
@@ -268,6 +308,35 @@ class Request(request: HttpRequestBase) {
   }
 }
 
+object HttpClient {
+  /**
+   * Initiate a GET request
+   */
+  fun get(url: String): Request {
+    return Request(HttpGet(url))
+  }
+
+  fun post(url: String): Request {
+    return Request(HttpPost(url));
+  }
+
+  fun put(url: String): Request {
+    return Request(HttpPut(url));
+  }
+
+  fun delete(url: String): Request {
+    return Request(HttpDelete(url));
+  }
+
+  fun head(url: String): Request {
+    return Request(HttpHead(url));
+  }
+
+  fun options(url: String): Request {
+    return Request(HttpOptions(url));
+  }
+}
+
 annotation class something(val method: HttpMethod, val path: String)
 
 
@@ -279,7 +348,7 @@ val httpFormat = "EEE, dd MMM yyyy HH:mm:ss zzz";
 fun Date.asHttpFormatString(): String {
   var sd = SimpleDateFormat(httpFormat);
   sd.setTimeZone(TimeZone.getTimeZone("GMT"));
-  return sd.format(this)!!;
+  return sd.format(this);
 }
 
 /**

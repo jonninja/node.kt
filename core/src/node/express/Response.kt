@@ -22,6 +22,7 @@ import org.jboss.netty.handler.stream.ChunkedStream
 import java.io.ByteArrayInputStream
 import node.http.asHttpFormatString
 import node.http.asHttpDate
+import java.util.HashMap
 
 /**
  * A response object
@@ -30,6 +31,7 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
   val response = DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK);
   val e = e;
   val req = req;
+  val locals = HashMap<String, Any>()
 
   val end = object : ChannelFutureListener {
     public override fun operationComplete(future: ChannelFuture?) {
@@ -45,6 +47,15 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
   fun send(code: Int, msg: String? = null) {
     status(code, msg);
     write();
+  }
+
+  /**
+   * Redirect to the given url
+   */
+  fun redirect(url: String) {
+    this.header("Location", url)
+    status(302)
+    write()
   }
 
   /**
@@ -198,8 +209,13 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
     e.getChannel()?.write(ChunkedFile(file))?.addListener(end);
   }
 
-  fun render(view: String, data: Map<String, Any>? = null) {
-    send(req.app.render(view, data))
+  fun render(view: String, data: Map<String, Any?>? = null) {
+    var mergedContext = if (this.locals.empty) data else {
+      val map = HashMap<String, Any?>(locals)
+      if (data != null) map.putAll(data)
+      map
+    }
+    send(req.app.render(view, mergedContext))
   }
 
   fun internalServerError() {

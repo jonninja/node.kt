@@ -53,6 +53,20 @@ import java.nio.ByteBuffer
 
 private val json = ObjectMapper();
 
+// The default error handler. Can be overridden by setting the errorHandler property of the
+// Express instance
+var defaultErrorHandler :((Throwable, Request, Response) -> Unit) = { t, req, res ->
+  log(Level.WARNING, "Error thrown handling request: " + req.path, t)
+  when (t) {
+    is ExpressException -> res.send(t.code, t.getMessage())
+    is NotFoundException -> res.notFound()
+    is IllegalArgumentException -> res.badRequest()
+    is IllegalAccessException -> res.forbidden()
+    is UnsupportedOperationException -> res.notImplemented()
+    else -> res.internalServerError()
+  }
+}
+
 /**
  * Express.kt
  */
@@ -68,17 +82,7 @@ class Express() {
 
   val params = HashMap<String, (Request, Response, Any) -> Any>()
 
-  var errorHandler: ((Throwable, Request, Response) -> Unit) = { t, req, res ->
-    log(Level.WARNING, "Error thrown handling request: " + req.path, t)
-    when (t) {
-      is ExpressException -> res.send(t.code, t.getMessage())
-      is NotFoundException -> res.notFound()
-      is IllegalArgumentException -> res.badRequest()
-      is IllegalAccessException -> res.forbidden()
-      is UnsupportedOperationException -> res.notImplemented()
-      else -> res.internalServerError()
-    }
-  }
+  var errorHandler: ((Throwable, Request, Response) -> Unit) = defaultErrorHandler
 
   {
     bootstrap.setPipelineFactory(PipelineFactory())
@@ -170,7 +174,7 @@ class Express() {
    * view. This data will be merged with 'locals', allowing you to set global data to be used in
    * all rendering operations.
    */
-  fun render(name: String, data: Map<String, Any>? = null): String {
+  fun render(name: String, data: Map<String, Any?>? = null): String {
     var ext = name.extension();
     var viewFileName = name;
     if (ext == null) {
@@ -186,7 +190,7 @@ class Express() {
       throw IllegalArgumentException("No renderer for ext: " + ext);
     }
 
-    var mergedContext = HashMap<String, Any>();
+    var mergedContext = HashMap<String, Any?>();
     mergedContext.putAll(locals);
     if (data != null) {
       mergedContext.putAll(data);
@@ -377,7 +381,6 @@ class Express() {
         public override fun operationComplete(future: ChannelFuture?) {
           wsh.closed()
           webSocketHandlers.remove(future!!.getChannel()!!.getId())
-
         }
       })
     })
@@ -412,153 +415,10 @@ class Express() {
   private fun handleWebSocketRequest(channel: Channel, frame: WebSocketFrame) {
     val handler = webSocketHandlers.get(channel.getId())
     if (handler == null) return
-    when (frame) {
-      is CloseWebSocketFrame -> {
-        handler.closed()
-        webSocketHandlers.remove(channel.getId())
-      }
-      is PingWebSocketFrame -> {
-        handler.ping()
-        channel.write(PongWebSocketFrame((frame as PingWebSocketFrame).getBinaryData()))
-      }
-      is TextWebSocketFrame -> {
-        handler.message((frame as TextWebSocketFrame).getText())
-      }
-      is BinaryWebSocketFrame -> {
 
-      }
-      else -> {
-
-      }
-    }
-  }
-}
-
-/**
- * A trait for classes to handle requests. An application can install handlers as either a
- * callback function or an object that implements the Handler trait.
- */
-trait Handler {
-  fun exec(req: Request, res: Response, next: () -> Unit)
-
-  class object {
-    /**
-     * Create a handler with a function callback suitable for middleware
-     */
-    fun middleware(callback: (req: Request, res: Response, next: () -> Unit) -> Unit): Handler {
-      return NextFunHandler(callback)
-    }
-  }
-}
-
-/**
- * Handler that calls through to a function handler
- */
-class NextFunHandler(val callback: (req: Request, res: Response, next: () -> Unit) -> Unit): Handler {
-  override fun exec(req: Request, res: Response, next: () -> Unit) {
-    this.callback(req, res, next)
-  }
-}
-
-/**
- * Describes an installed route.
- */
-class Route(val method: String, val path: String, val handler: Handler) {
-  private class Key(val name: String, val optional: Boolean)
-
-  var pattern = Pattern.compile("")
-  var keys = ArrayList<Key>();
-
-  {
-    buildPathRegEx(path, true);
-  }
-
-  // Takes a simplified path and converts it to a RegEx that we can
-  // use to filter requests
-  fun buildPathRegEx(path: String, strict: Boolean) {
-    var keys = ArrayList<Key>();
-    var p = if (strict) {
-      path
-    } else {
-      "/?"
-    };
-
-    var sb = StringBuffer();
-    var pattern = Pattern.compile("(/)?(\\.)?:(\\w+)(?:(\\(.*?\\)))?(\\?)?(\\*)?");
-    var matcher = pattern.matcher(p);
-    while (matcher.find()) {
-      val slash = matcher.group(1) ?: "";
-      val format = matcher.group(2);
-      val key = matcher.group(3);
-      val capture = matcher.group(4);
-      val optional = matcher.group(5);
-      val star = matcher.group(6);
-
-      if (key != null)
-        keys.add(Key(key, optional != null));
-
-      var replacement = "";
-      if (optional == null) replacement += slash;
-      if (format != null) replacement += format;
-
-      if (capture != null) {
-        replacement += capture;
-      } else if (format != null) {
-        replacement += "([^/.]+?)";
-      } else {
-        replacement += "([^/]+?)";
-      }
-      //            replacement += ")";
-      if (optional != null) replacement += optional;
-
-      if (star != null) replacement += "(/*)?";
-
-      matcher.appendReplacement(sb, Matcher.quoteReplacement(replacement));
-    }
-    matcher.appendTail(sb);
-    var regex = sb.toString();
-    regex = regex.replaceAll("([/.])", "\\/");
-    regex = regex.replaceAll("\\*", "(.*)");
-    regex = "^" + regex + "$";
-    this.pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
-    this.keys = keys;
-  }
-
-  /**
-   * Match a request against the path specification, returning
-   * a map of parameters
-   */
-  fun match(req: Request, res: Response): Map<String, Any>? {
-    if (req.method != method && method != "*")
-      return null // no match based on the method
-
-    var path = req.path
-    var matcher = pattern.matcher(path);
-
-    if (matcher.matches()) {
-      var result = HashMap<String, Any>();
-      var count = matcher.groupCount();
-      for (i in 1..count) {
-        val value = matcher.group(i);
-        if (value != null) {
-          if (keys.size() >= i) {
-            val key = keys.get(i - 1).name
-
-            // now check with the app for any parameter mapping functions
-            val mapper = req.app.params[key];
-            if (mapper != null) {
-              result.put(key, mapper(req, res, value))
-            } else {
-              result.put(key, value)
-            }
-          } else {
-            result.put("*", value)
-          }
-        }
-      }
-      return result;
-    } else {
-      return null;
+    handler.handle(channel, frame)
+    if (frame is CloseWebSocketFrame) {
+      webSocketHandlers.remove(channel.getId())
     }
   }
 }
@@ -567,53 +427,3 @@ class Route(val method: String, val path: String, val handler: Handler) {
  * Exception thrown by Express
  */
 class ExpressException(val code: Int, msg: String? = null, cause: Throwable? = null): Exception(msg, cause)
-
-/**
- * Provide an implementation of this class to listen for messages from a client.
- */
-open class WebSocketHandler(val sender: WebSocketChannel) {
-  /**
-   * Called when a text message is received for this WebSocket
-   */
-  open fun message(content: String) {
-  }
-
-  /**
-   * Called when a binary message is received on this WebSocket
-   */
-  open fun binaryMessage(data: ChannelBuffer) {
-  }
-
-  /**
-   * Called when this socket has been closed
-   */
-  open fun closed() {
-  }
-
-  /**
-   * Called when a ping is received
-   */
-  open fun ping() {
-  }
-}
-
-/**
- * Handles sending of data to a web socket
- */
-class WebSocketChannel(val channel: Channel) {
-  /**
-   * Send a text message to this WebSocket
-   */
-  fun send(content: String) {
-    channel.write(TextWebSocketFrame(content))
-  }
-
-  /**
-   * Send binary data to this WebSocket
-   */
-  fun send(data: ByteArray) {
-    var byteBuffer = ByteBuffer.allocate(data.size)
-    byteBuffer.put(data)
-    channel.write(BinaryWebSocketFrame(org.jboss.netty.buffer.ByteBufferBackedChannelBuffer(byteBuffer)))
-  }
-}

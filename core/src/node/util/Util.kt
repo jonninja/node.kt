@@ -104,3 +104,9 @@ fun ObjectMapper.arrayNodeOf(elements: List<JsonNode>): ArrayNode {
   node.addAll(elements)
   return node
 }
+
+fun <T,R> with(value: T?): (caller: (T?)->R?)->R? {
+  return { cb ->
+    cb(value)
+  }
+}
