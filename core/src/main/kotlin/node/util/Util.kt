@@ -12,6 +12,8 @@ import java.util.logging.LogRecord
 import java.util.logging.LogManager
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.node.ArrayNode
+import java.util.ArrayList
+import java.util.Comparator
 
 /**
  * Attaches a log function to any object, and uses that object's class as the
@@ -109,4 +111,16 @@ fun <T,R> with(value: T?): (caller: (T?)->R?)->R? {
   return { cb ->
     cb(value)
   }
+}
+
+fun <T> List<T>.sort(comparator: (T, T)->Int) {
+  this.sort(object: Comparator<T> {
+
+    public override fun compare(o1: T, o2: T): Int {
+      return comparator(o1, o2)
+    }
+    public override fun equals(obj: Any?): Boolean {
+      return this.equals(obj)
+    }
+  })
 }

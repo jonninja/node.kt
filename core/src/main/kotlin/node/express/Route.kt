@@ -4,6 +4,7 @@ import java.util.ArrayList
 import java.util.regex.Pattern
 import java.util.regex.Matcher
 import java.util.HashMap
+import java.net.URLDecoder
 
 /**
  * Describes an installed route.
@@ -84,20 +85,21 @@ class Route(val method: String, val path: String, val handler: Handler) {
       var result = HashMap<String, Any>();
       var count = matcher.groupCount();
       for (i in 1..count) {
-        val value = matcher.group(i);
+        val value = matcher.group(i)
         if (value != null) {
+          val decodedValue = URLDecoder.decode(value, "UTF-8")
           if (keys.size() >= i) {
             val key = keys.get(i - 1).name
 
             // now check with the app for any parameter mapping functions
             val mapper = req.app.params[key];
             if (mapper != null) {
-              result.put(key, mapper(req, res, value))
+              result.put(key, mapper(req, res, decodedValue))
             } else {
-              result.put(key, value)
+              result.put(key, decodedValue)
             }
           } else {
-            result.put("*", value)
+            result.put("*", decodedValue)
           }
         }
       }
