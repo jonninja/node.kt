@@ -1,0 +1,29 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>node.kt</groupId>
+        <artifactId>node.kt.parent</artifactId>
+        <version>0.0.1</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>node.kt.less</artifactId>
+    <name>Node.kt LESS Compiler</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>node.kt</groupId>
+            <artifactId>node.kt.core</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.lesscss</groupId>
+            <artifactId>lesscss</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+    </build>
+</project>

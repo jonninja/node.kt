@@ -1,10 +1,9 @@
 package node.util
-
-import com.sun.deploy.net.URLEncoder
 import java.net.URLDecoder
 import java.util.HashMap
 import java.text.ParseException
 import java.util.Random
+import java.net.URLEncoder
 
 /**
  * Some string utility functions
@@ -19,7 +18,7 @@ fun String.extension(): String? {
 }
 
 fun String.encodeUriComponent(): String {
-  return URLEncoder.encode(this, "UTF-8")!!
+  return URLEncoder.encode(this, "UTF-8")
       .replaceAll("\\+", "%20")
       .replaceAll("\\%21", "!")
       .replaceAll("\\%27", "'")

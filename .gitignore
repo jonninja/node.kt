@@ -1,4 +1,3 @@
-.gradle
-workspace.xml
 lib
-core/build
+.idea
+*.iml
