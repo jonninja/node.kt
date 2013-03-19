@@ -3,16 +3,10 @@
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/examples/helloworld/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/core/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/render/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/static/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/optional/less/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/optional/facebook/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/optional/requirejs/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/core/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/websocket/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
@@ -218,6 +212,9 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="groovy-1.8.6" level="application" />
+    <orderEntry type="module" module-name="node.kt.core" />
+    <orderEntry type="module" module-name="node.kt.facebook" />
+    <orderEntry type="module" module-name="node.kt.less" />
   </component>
 </module>
 

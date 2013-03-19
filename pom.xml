@@ -19,6 +19,11 @@
         <module>optional/facebook</module>
     </modules>
 
+    <scm>
+        <connection>scm:https://github.com/jonninja/node.kt.git</connection>
+        <url>https://github.com/jonninja/node.kt</url>
+    </scm>
+
     <!-- Add the Jetbrains repositories -->
     <repositories>
         <repository>
@@ -40,6 +45,15 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <developers>
+        <developer>
+            <id>jnichols</id>
+            <name>Jon Nichols</name>
+            <email>jon@jonnichols.me</email>
+            <url>http://www.jonnichols.me</url>
+        </developer>
+    </developers>
 
     <build>
         <plugins>

@@ -7,6 +7,11 @@ import node.express.Express
  */
 fun main(args: Array<String>) {
   var app = Express()
+
+  app.get("/:id", { req, res, next ->
+    res.send(req.param("id") as String)
+  })
+
   app.get("/", { req, res, next ->
     res.send("Hello World")
   })
