@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode
 import java.util.Comparator
 import node.mimeType
 import org.jboss.netty.channel.Channel
+import java.util.LinkedHashMap
 
 /**
  * The Http server request object
@@ -169,6 +170,23 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
       }
     }
     return null;
+  }
+
+  /**
+   * Use a map to have the renderer selected based on content type. Each
+   * map entry is a map of a content type (or short form) to a function that
+   * will be called if the content type is matched by the accept header
+   */
+  fun accepts(vararg options: Pair<String, ()->Unit>) {
+    val accepts = parseAccept()
+    for (entry in options) {
+      for (a in accepts) {
+        if (a.match(entry.component1())) {
+          entry.component2()()
+          return
+        }
+      }
+    }
   }
 
   val body: Body?

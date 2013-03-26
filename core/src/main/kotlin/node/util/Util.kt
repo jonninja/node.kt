@@ -14,26 +14,85 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.node.ArrayNode
 import java.util.ArrayList
 import java.util.Comparator
+import java.util.logging.Formatter
+import java.io.PrintWriter
+import java.io.StringWriter
+
+private var inited = false
+fun init() {
+  if (!inited) {
+    val log = LogManager.getLogManager()!!.getLogger("")!!
+    for (handler in log.getHandlers()) {
+      handler.setFormatter(LogFormat)
+    }
+    inited = true
+  }
+}
+
+private fun getLogger(a: Any?): Logger {
+  init()
+  if (a == null) {
+    return Logger.getAnonymousLogger()
+  } else {
+    return Logger.getLogger(a.javaClass.getName())
+  }
+}
+
+private val LINE_SEPARATOR = System.getProperty("line.separator")
+
+object LogFormat: Formatter() {
+
+  public override fun format(record: LogRecord): String {
+    val sb = StringBuilder()
+
+    sb.append(Date(record.getMillis()))
+        .append(" ")
+        .append(record.getLevel()!!.getLocalizedName())
+        .append(": ")
+        .append(formatMessage(record))
+        .append(LINE_SEPARATOR);
+
+    if (record.getThrown() != null) {
+      try {
+        val sw = StringWriter()
+        val pw = PrintWriter(sw)
+        record.getThrown()!!.printStackTrace(pw)
+        pw.close()
+        sb.append(sw.toString())
+      } catch  (ex: Throwable) {
+        // ignore
+      }
+    }
+    return sb.toString();
+  }
+}
 
 /**
  * Attaches a log function to any object, and uses that object's class as the
  * logging context.
  */
 fun Any.log(message: Any, level: Level = Level.INFO, t: Throwable? = null) {
-  val l = Logger.getLogger(this.javaClass.getName())
-  l.log(level, message.toString(), t);
+  getLogger(this).log(level, message.toString(), t);
+}
+
+fun Any.logSevere(message: Any, t: Throwable? = null) {
+  this.log(message, Level.SEVERE, t)
+}
+
+fun Any.logDebug(message: Any, t: Throwable? = null) {
+  this.log(message, Level.FINE, t)
 }
 
 /**
  * A whole bunch of extension functions
  */
 public inline fun log(message: Any) {
-  Logger.getAnonymousLogger().log(Level.INFO, message.toString());
+  getLogger(null).log(Level.INFO, message.toString());
   System.out.println(message)
 }
 
 public inline fun log(l: Level, msg: String, t: Throwable? = null) {
-  Logger.getAnonymousLogger().log(l, msg, t);
+  getLogger(null).log(l, msg, t);
 }
 
 public inline fun logInfo(message: Any) {

@@ -212,9 +212,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="groovy-1.8.6" level="application" />
-    <orderEntry type="module" module-name="node.kt.core" />
-    <orderEntry type="module" module-name="node.kt.facebook" />
-    <orderEntry type="module" module-name="node.kt.less" />
   </component>
 </module>
 

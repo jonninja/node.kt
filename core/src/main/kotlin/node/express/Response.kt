@@ -218,25 +218,28 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
     send(req.app.render(view, mergedContext))
   }
 
+  fun ok() {
+    send(200)
+  }
   fun internalServerError() {
-    send(500);
+    send(500)
   }
   fun notImplemented() {
-    send(501);
+    send(501)
   }
   fun badRequest() {
-    send(400);
+    send(400)
   }
   fun forbidden() {
-    send(403);
+    send(403)
   }
   fun notFound() {
-    send(404);
+    send(404)
   }
   fun unacceptable() {
-    send(406);
+    send(406)
   }
   fun conflict() {
-    send(409);
+    send(409)
   }
 }

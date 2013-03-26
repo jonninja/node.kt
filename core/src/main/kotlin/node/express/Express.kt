@@ -50,6 +50,7 @@ import org.jboss.netty.channel.ChannelFuture
 import org.jboss.netty.handler.codec.http.websocketx.BinaryWebSocketFrame
 import org.jboss.netty.buffer.ChannelBuffer
 import java.nio.ByteBuffer
+import java.io.FileNotFoundException
 
 private val json = ObjectMapper();
 
@@ -60,8 +61,10 @@ var defaultErrorHandler :((Throwable, Request, Response) -> Unit) = { t, req, re
   when (t) {
     is ExpressException -> res.send(t.code, t.getMessage())
     is NotFoundException -> res.notFound()
+    is FileNotFoundException -> res.notFound()
     is IllegalArgumentException -> res.badRequest()
     is IllegalAccessException -> res.forbidden()
+    is IllegalAccessError -> res.forbidden()
     is UnsupportedOperationException -> res.notImplemented()
     else -> res.internalServerError()
   }
@@ -427,3 +430,5 @@ class Express() {
  * Exception thrown by Express
  */
 class ExpressException(val code: Int, msg: String? = null, cause: Throwable? = null): Exception(msg, cause)
+
+

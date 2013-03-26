@@ -33,6 +33,7 @@ import node.util.json
 import org.apache.http.client.utils.URLEncodedUtils
 import java.util.HashMap
 import java.nio.charset.Charset
+import node.NotFoundException
 
 /**
  * A simplified API for making HTTP requests of all kinds. The goal of the library is to support 98% of use
@@ -238,8 +239,12 @@ class Request(request: HttpRequestBase) {
   }
 
   private fun checkForResponseError() {
-    if (response!!.getStatusLine()!!.getStatusCode() >= 400) {
-      println(EntityUtils.toString(response!!.getEntity()))
+    val statusCode = response!!.getStatusLine()!!.getStatusCode()
+    if (statusCode >= 400) {
+      EntityUtils.consume(response!!.getEntity())
+      if (statusCode == 404) {
+        throw NotFoundException(request.getURI().toString())
+      }
       throw IOException(response!!.getStatusLine().toString())
     }
   }
