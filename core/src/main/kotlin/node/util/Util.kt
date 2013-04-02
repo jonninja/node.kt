@@ -17,13 +17,45 @@ import java.util.Comparator
 import java.util.logging.Formatter
 import java.io.PrintWriter
 import java.io.StringWriter
+import node.Configuration
+import java.util.logging.Filter
 
 private var inited = false
 fun init() {
   if (!inited) {
-    val log = LogManager.getLogManager()!!.getLogger("")!!
+    val logManager = LogManager.getLogManager()!!
+    val log = logManager.getLogger("")!!
+
+    val packageLevels = Configuration.get("logging.packages") as? Map<String, String>
+
+    val globalLevel = Level.parse(Configuration.get("logging.global.level") as? String ?: "INFO")
+    log.setLevel(globalLevel)
     for (handler in log.getHandlers()) {
       handler.setFormatter(LogFormat)
+      handler.setLevel(globalLevel)
+
+      handler.setFilter(object: Filter {
+        public override fun isLoggable(record: LogRecord?): Boolean {
+          try {
+          if (packageLevels != null) {
+            for (l in packageLevels) {
+              val loggerName = record!!.getLoggerName() ?: ""
+              if (loggerName.startsWith(l.key)) {
+                val level = Level.parse(l.value)
+                if (record.getLevel()!!.intValue() > level.intValue()) {
+                  return true
+                }
+                return false
+              }
+            }
+          }
+          return true
+          } catch (t: Throwable) {
+            t.printStackTrace()
+            return false
+          }
+        }
+      })
     }
     inited = true
   }
