@@ -79,7 +79,7 @@ class Express() {
       Executors.newCachedThreadPool()))
 
   private val settings = HashMap<String, Any>()
-  private val locals = HashMap<String, Any>()
+  public val locals:MutableMap<String, Any> = HashMap<String, Any>()
   private val handlerStack: ArrayList<Route> = ArrayList<Route>()
   private val engines = HashMap<String, Engine>()
 
