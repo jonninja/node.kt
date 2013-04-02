@@ -34,6 +34,8 @@ import org.apache.http.client.utils.URLEncodedUtils
 import java.util.HashMap
 import java.nio.charset.Charset
 import node.NotFoundException
+import node.util.log
+import java.util.logging.Level
 
 /**
  * A simplified API for making HTTP requests of all kinds. The goal of the library is to support 98% of use
@@ -63,6 +65,15 @@ class Request(request: HttpRequestBase) {
   private var formParameters: MutableList<NameValuePair>? = null; // stores form parameters
 
   /**
+   * Called when the response has a status code >= 400. Default implementation throws an exception
+   * and consumed the entity
+   */
+  var errorHandler: (Request)->Unit = HttpClient.defaultErrorHandler
+
+  // The URL associated with this request
+  val url: String = request.getURI().toString()
+
+  /**
    * Get the value of a header. Returns null if the key doesn't exist in the response.
    */
   fun header(key: String): String? {
@@ -73,6 +84,11 @@ class Request(request: HttpRequestBase) {
     } else {
       null;
     }
+  }
+
+  fun withErrorHandler(handler: (Request)->Unit): Request {
+    this.errorHandler = handler
+    return this
   }
 
   /**
@@ -92,6 +108,14 @@ class Request(request: HttpRequestBase) {
   }
 
   /**
+   * Get the entire status line of the response
+   */
+  fun statusLine(): String {
+    connect();
+    return response!!.getStatusLine()!!.toString()!!
+  }
+
+  /**
    * Set the content type for a request
    */
   fun contentType(contentType: String): Request {
@@ -99,10 +123,14 @@ class Request(request: HttpRequestBase) {
   }
 
   /**
-   * Set the content type for a request
+   * Get the content type for a request
    */
   fun contentType(): String? {
-    return header("Content-Type");
+    val headerValue = header("Content-Type")
+    if (headerValue == null) return null
+
+    val components = headerValue.split(";")
+    return if (components.size > 0) components[0] else null
   }
 
   /**
@@ -224,6 +252,7 @@ class Request(request: HttpRequestBase) {
   }
 
   fun connect(): Request {
+    this.log("Connecting to ${this.url}", Level.FINE)
     if (response == null) {
       if (formParameters != null) {
         var entity = (request as HttpEntityEnclosingRequestBase).getEntity();
@@ -240,12 +269,10 @@ class Request(request: HttpRequestBase) {
 
   private fun checkForResponseError() {
     val statusCode = response!!.getStatusLine()!!.getStatusCode()
+
+    this.log("Connection to ${this.url} resulted in ${response!!.getStatusLine()!!.toString()}", Level.FINE)
     if (statusCode >= 400) {
-      EntityUtils.consume(response!!.getEntity())
-      if (statusCode == 404) {
-        throw NotFoundException(request.getURI().toString())
-      }
-      throw IOException(response!!.getStatusLine().toString())
+      this.errorHandler(this)
     }
   }
 
@@ -281,39 +308,18 @@ class Request(request: HttpRequestBase) {
   //            } catch (e: Throwable) { /* ignored */ }
   //        }
   //    }
-
-  class object {
-    /**
-     * Initiate a GET request
-     */
-    fun get(url: String): Request {
-      return Request(HttpGet(url))
-    }
-
-    fun post(url: String): Request {
-      return Request(HttpPost(url));
-    }
-
-    fun put(url: String): Request {
-      return Request(HttpPut(url));
-    }
-
-    fun delete(url: String): Request {
-      return Request(HttpDelete(url));
-    }
-
-    fun head(url: String): Request {
-      return Request(HttpHead(url));
-    }
-
-    fun options(url: String): Request {
-      return Request(HttpOptions(url));
-    }
-
-  }
 }
 
 object HttpClient {
+  val defaultErrorHandler: (Request)->Unit = { request->
+  request.consume()
+  if (request.status() == 404) {
+    throw NotFoundException(request.url)
+  } else {
+    throw IOException(request.statusLine())
+  }
+}
+
   /**
    * Initiate a GET request
    */
@@ -341,9 +347,6 @@ object HttpClient {
     return Request(HttpOptions(url));
   }
 }
-
-annotation class something(val method: HttpMethod, val path: String)
-
 
 val httpFormat = "EEE, dd MMM yyyy HH:mm:ss zzz";
 
