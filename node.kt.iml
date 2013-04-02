@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/examples/render/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/static/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/examples/websocket/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/misc/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
@@ -213,6 +214,8 @@
     </orderEntry>
     <orderEntry type="library" name="groovy-1.8.6" level="application" />
     <orderEntry type="module" module-name="node.kt.core" />
+    <orderEntry type="module" module-name="node.kt.facebook" />
+    <orderEntry type="module" module-name="node.kt.less" />
   </component>
 </module>
 

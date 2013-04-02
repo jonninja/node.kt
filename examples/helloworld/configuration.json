@@ -1,0 +1,10 @@
+{
+  "logging": {
+    "global": {
+      "level": "INFO"
+    },
+    "packages": {
+      "node": "FINEST"
+    }
+  }
+}
