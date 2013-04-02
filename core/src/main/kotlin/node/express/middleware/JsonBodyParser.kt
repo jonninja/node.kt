@@ -9,6 +9,8 @@ import com.fasterxml.jackson.databind.JsonNode
 import node.express.Body
 import com.fasterxml.jackson.databind.node.ObjectNode
 import com.fasterxml.jackson.databind.node.ArrayNode
+import java.util.ArrayList
+import java.util.HashSet
 
 private val json = ObjectMapper();
 
@@ -32,6 +34,9 @@ val JsonBodyParser = {(req: Request, res: Response, next: () -> Unit) ->
 
 private class JsonBody(n: JsonNode): Body {
   var node = n;
+
+  val objectNode: ObjectNode
+    get() { return node as ObjectNode }
 
   override fun get(key: String): Any? {
     var value = (node as? ObjectNode)?.get(key);
@@ -57,5 +62,46 @@ private class JsonBody(n: JsonNode): Body {
   }
   override fun asNative(): Any {
     return node;
+  }
+
+
+  public override fun size(): Int {
+    return objectNode.size()
+  }
+  public override fun isEmpty(): Boolean {
+    return objectNode.size() == 0
+  }
+  public override fun containsKey(key: Any?): Boolean {
+    return objectNode.findValue(key as String?) != null
+  }
+  public override fun containsValue(value: Any?): Boolean {
+    throw UnsupportedOperationException()
+  }
+  public override fun get(key: Any?): Any? {
+    return objectNode.get(key as String?)?.textValue()
+  }
+  public override fun keySet(): Set<String> {
+    return objectNode.fieldNames()!!.mapTo(HashSet<String>(), {it})
+  }
+  public override fun values(): Collection<Any?> {
+    return objectNode.fields()!!.mapTo(ArrayList<Any?>(), {it})
+  }
+  public override fun entrySet(): Set<Map.Entry<String, Any?>> {
+    return objectNode.fields()!!.mapTo(HashSet<Map.Entry<String, Any?>>(), {
+      object : Map.Entry<String, Any?> {
+        public override fun getKey(): String {
+          return it.getKey()
+        }
+        public override fun getValue(): Any {
+          return it.getValue()
+        }
+        public override fun hashCode(): Int {
+          return it.hashCode()
+        }
+        public override fun equals(other: Any?): Boolean {
+          return it.equals(other)
+        }
+      }
+    })
   }
 }

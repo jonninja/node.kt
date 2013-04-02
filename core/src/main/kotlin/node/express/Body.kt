@@ -3,7 +3,7 @@ package node.express
 /**
  * A trait for different types of bodies
  */
-trait Body {
+trait Body: Map<String, Any?> {
   /**
    * Get the value of an attribute as its native type
    */

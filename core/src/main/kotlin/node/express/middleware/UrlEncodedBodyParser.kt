@@ -7,6 +7,7 @@ import org.jboss.netty.handler.codec.http.multipart.HttpPostRequestDecoder
 import node.express.Body
 import org.jboss.netty.handler.codec.http.multipart.Attribute
 import org.jboss.netty.handler.codec.http.multipart.InterfaceHttpData
+import java.util.HashSet
 
 /**
  * Body parser for URL encoded data
@@ -32,7 +33,6 @@ private class UrlEncodedBody(decoder: HttpPostRequestDecoder): Body {
   private fun getAttribute(key: String): Attribute? {
     return decoder.getBodyHttpData(key) as? Attribute;
   }
-
   override fun get(key: String): Any? {
     return getAttribute(key)?.getString()
   }
@@ -50,5 +50,43 @@ private class UrlEncodedBody(decoder: HttpPostRequestDecoder): Body {
   }
   override fun asNative(): Any {
     return decoder;
+  }
+  public override fun size(): Int {
+    return decoder.getBodyHttpDatas()!!.size
+  }
+  public override fun isEmpty(): Boolean {
+    return size() == 0
+  }
+  public override fun containsKey(key: Any?): Boolean {
+    return decoder.getBodyHttpDatas()!!.find { it.getName() == key } != null
+  }
+  public override fun containsValue(value: Any?): Boolean {
+    throw UnsupportedOperationException()
+  }
+  public override fun get(key: Any?): Any? {
+    return this.get(key as String)
+  }
+  public override fun keySet(): Set<String> {
+    return HashSet(decoder.getBodyHttpDatas()!!.map { it.getName()!! })
+  }
+  public override fun values(): Collection<Any?> {
+    return decoder.getBodyHttpDatas()!!.map { (it as Attribute).getValue() }
+  }
+  public override fun entrySet(): Set<Map.Entry<String, Any?>> {
+    return HashSet(decoder.getBodyHttpDatas()!!.map { BodyEntry(it as Attribute) })
+  }
+  private data class BodyEntry(val att: Attribute): Map.Entry<String, Any?> {
+    public override fun hashCode(): Int {
+      return att.hashCode()
+    }
+    public override fun equals(other: Any?): Boolean {
+      return att.equals(other)
+    }
+    public override fun getKey(): String {
+      return att.getName()!!
+    }
+    public override fun getValue(): Any? {
+      return att.getValue()
+    }
   }
 }
