@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import java.io.File
 import java.util.HashMap
 import node.util.json
+import node.util.log
+import node.util.toJsonString
 
 /**
  * Easy to use API for loading and working with settings from files.
@@ -14,7 +16,7 @@ public object Configuration {
     get() {
       if (_root == null) {
         try {
-          load("configuration.json")
+          load(System.getProperty("configuration.file") ?: "configuration.json")
         } catch (e: Throwable) {
 
         }
@@ -68,24 +70,37 @@ public object Configuration {
     if (_root == null) {
       _root = hashMapOf()
     }
-    for (p in path) {
-      var data = File(p).json(javaClass<Map<String, Any?>>())
-      merge(_root!!, data);
-    }
+    path.forEach { mergeFile(_root!!, it) }
+
+    this.log(_root!!.toJsonString())
+  }
+
+  private fun mergeFile(target: MutableMap<String, Any?>, filePath: String) {
+    this.log("Loading configuration file $filePath")
+    var data = File(filePath).json(javaClass<Map<String, Any?>>())
+    merge(target, data);
   }
 
   private fun merge(m1: MutableMap<String, Any?>, m2: Map<String, Any?>) {
     var entries = m2.entrySet();
     for (entry in entries) {
-      var srcValue = m1.get(entry.key)
-      var value = entry.value
-      if (srcValue == null) {
-        m1.put(entry.key, value)
+      if (entry.key == "include") {
+        when (entry.value) {
+          is String -> mergeFile(m1, entry.value)
+          is List<*> -> (entry.value!! as List<String>).forEach { mergeFile(m1, it) }
+          else -> throw FormatException("Contents of include must be either String or list of Strings")
+        }
       } else {
-        if (srcValue is Map<*, *> && value is Map<*, *>) {
-          merge(srcValue as MutableMap<String, Any?>, value as Map<String, Any?>);
+        var srcValue = m1.get(entry.key)
+        var value = entry.value
+        if (srcValue == null) {
+          m1.put(entry.key, value)
         } else {
-          m1.put(entry.key, value);
+          if (srcValue is Map<*, *> && value is Map<*, *>) {
+            merge(srcValue as MutableMap<String, Any?>, value as Map<String, Any?>);
+          } else {
+            m1.put(entry.key, value);
+          }
         }
       }
     }
