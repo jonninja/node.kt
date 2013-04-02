@@ -10,6 +10,9 @@ import java.util.Comparator
 import node.mimeType
 import org.jboss.netty.channel.Channel
 import java.util.LinkedHashMap
+import jet.runtime.typeinfo.JetValueParameter
+import java.lang.reflect.Constructor
+import java.util.ArrayList
 
 /**
  * The Http server request object
@@ -211,6 +214,57 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
     return p
   }
 
+  /**
+   * Creates a data object from the parameters in the request.
+   */
+  fun <T> data(ty: Class<T>): T {
+    val constructors = Constructors.get(ty)
+
+    var bitmask = 0
+    var annotations = constructors.jet.getParameterAnnotations()
+    val types = constructors.jet.getParameterTypes()!!
+    val missing = ArrayList<String>()
+    val parameters = (0..annotations.size - 1).mapTo(java.util.ArrayList<Any?>()) { index ->
+      val jetParam = annotations[index]!!.find { it is JetValueParameter }!! as JetValueParameter
+      val paramType = types[index]
+      val value = this.param(jetParam.name())
+      if (value == null) {
+        if (jetParam.hasDefaultValue()) {
+          bitmask += Math.pow(2.0, index.toDouble())
+          value
+        } else if (jetParam.`type`()!!.startsWith('?')) {
+          value
+        } else {
+          missing.add(jetParam.name()!!)
+          ""
+        }
+      } else {
+        if (value is String) {
+          when (paramType) {
+            javaClass<Int>() -> value.toInt()
+            javaClass<List<String>>() -> value.split(",")
+            else -> value
+          }
+        } else {
+          value
+        }
+      }
+    }
+    if (missing.size > 0) {
+      throw MissingParameterException(*missing.toArray())
+    }
+    if (constructors.def != null) {
+      parameters.add(bitmask)
+      return constructors.def.newInstance(*(parameters.toArray()))!!
+    } else {
+      return constructors.jet.newInstance(*(parameters.toArray()))!!
+    }
+  }
+
+  /**
+   * Simple validation technique that simply checks that all of the parameters passed
+   * are indeed provided
+   */
   fun requireParams(vararg names: String) {
     for (name in names) {
       if (params.get(name) == null) {
@@ -223,7 +277,44 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
    * Check if this is a web socket request
    */
   fun isWebSocketRequest(): Boolean {
-      val upgrade = request.getHeader("Upgrade")
-      return (upgrade == "websocket")
+    val upgrade = request.getHeader("Upgrade")
+    return (upgrade == "websocket")
   }
 }
+
+data class Constructors<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
+  class object {
+    private var dataConstructors: MutableMap<Class<*>,Constructors<*>>? = null
+
+    fun <T> get(ty: Class<T>): Constructors<T> {
+      if (dataConstructors == null) {
+        dataConstructors = HashMap<Class<*>,Constructors<*>>()
+      }
+
+      // find the constructor with the JetValueParameter annotations
+      val constructor = (ty.getConstructors().find {
+        if (it.getParameterTypes()!!.size > 0) {
+          it.getParameterAnnotations()[0]!!.find { it is JetValueParameter } != null
+        } else {
+          false
+        }
+      } ?: ty.getConstructor()) as Constructor<T>
+
+      // next, find the constructor that matches in case there are default types
+      val types = constructor.getParameterTypes()!!
+      val extended = Array<Class<out Any?>>(types.size + 1, { index->
+        if (index < (types.size)) types[index] else javaClass<Int>()
+      })
+      val defCon = {
+        try {
+          ty.getConstructor(*extended)
+        } catch (t: Throwable) {
+          null
+        }
+      }()
+      return Constructors(constructor, defCon)
+    }
+  }
+}
+
+class MissingParameterException(vararg parameters: String) : IllegalArgumentException(parameters.makeString())
