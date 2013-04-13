@@ -1,4 +1,5 @@
 package node.util
+
 import java.net.URLDecoder
 import java.util.HashMap
 import java.text.ParseException
@@ -17,6 +18,9 @@ fun String.extension(): String? {
   }
 }
 
+/**
+ * Get a version of this string encoded for use as a component of a URI
+ */
 fun String.encodeUriComponent(): String {
   return URLEncoder.encode(this, "UTF-8")
       .replaceAll("\\+", "%20")
@@ -27,8 +31,18 @@ fun String.encodeUriComponent(): String {
       .replaceAll("\\%7E", "~");
 }
 
+/**
+ * Get a version of the string suitable for use in an HTML attribute
+ */
+fun String.toHTMLAttribute(): String {
+  return this.replaceAll("\"", "&quot;").replaceAll("'", "&#39;")
+}
+
 fun String.decodeUriComponent() = URLDecoder.decode(this, "UTF-8")
 
+/**
+ * Join a collection of strings into a string with a given separator
+ */
 fun Collection<String>.join(delim: String): String {
   var result = StringBuilder();
   for (i in this) {
@@ -81,4 +95,28 @@ public class RandomStringGenerator(val length: Int) {
     for (idx in 0..length-1) buf[idx] = randomSymbols[random.nextInt(randomSymbols.size)]
     return String(buf)
   }
+}
+
+/**
+ * Get a substring of the string that occurs after the given sequence. If the sequence isn't found,
+ * returns an empty string
+ */
+fun String.after(seq: String): String {
+  val index = this.indexOf(seq)
+  if (index < 0) {
+    return ""
+  }
+  return this.substring(index + seq.size)
+}
+
+/**
+ * Get a substring of the string up until the given sequence. If the sequence isn't found,
+ * returns teh full string
+ */
+fun String.until(seq: String): String {
+  val index = this.indexOf(seq)
+  if (index < 0) {
+    return seq
+  }
+  return this.substring(0, index)
 }

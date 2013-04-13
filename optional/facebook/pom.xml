@@ -11,6 +11,10 @@
     <name>Node.kt Facebook</name>
     <description>Middleware and utilities for working with the Facebook API</description>
 
+    <properties>
+        <main.basedir>${project.basedir}/../..</main.basedir>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>node.kt</groupId>

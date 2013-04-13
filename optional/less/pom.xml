@@ -6,6 +6,9 @@
         <version>0.0.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
+    <properties>
+        <main.basedir>${project.basedir}/../..</main.basedir>
+    </properties>
 
     <artifactId>node.kt.less</artifactId>
     <name>Node.kt LESS Compiler</name>

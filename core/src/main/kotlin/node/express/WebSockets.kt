@@ -48,7 +48,7 @@ open class WebSocketHandler(val sender: WebSocketChannel) {
         channel.write(PongWebSocketFrame((frame as PingWebSocketFrame).getBinaryData()))
       }
       is TextWebSocketFrame -> {
-        this.message((frame as TextWebSocketFrame).getText())
+        this.message((frame as TextWebSocketFrame).getText()!!)
       }
       is BinaryWebSocketFrame -> {
 

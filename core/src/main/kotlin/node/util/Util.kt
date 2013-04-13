@@ -198,9 +198,39 @@ fun ObjectMapper.arrayNodeOf(elements: List<JsonNode>): ArrayNode {
   return node
 }
 
-fun <T,R> with(value: T?): (caller: (T?)->R?)->R? {
-  return { cb ->
-    cb(value)
+/**
+ * Call a function with a given value. This is mostly a control flow construct that reduces the need
+ * for temporary variables when you're testing the result of a function
+ */
+fun <T:Any,R> with(value: T?, caller: (T?)->R): R {
+  return caller(value)
+}
+
+fun <R:Any> R?._else(cb: ()->R): R {
+  if (this == null) {
+    return cb()
+  } else {
+    return this
+  }
+}
+
+/**
+ * Does a falsey test, and calls the block only if it passes. The block is passed
+ * the value of the test.
+ */
+fun _if<T:Any,R:Any>(test: T?, cb: (T)->R?): R? {
+  if (test == null || test == false || test == 0) {
+    return null
+  } else {
+    return cb(test)
+  }
+}
+
+fun _ifn<T:Any,R:Any>(test: T?, cb: ()->R?): R? {
+  if (test == null || test == false || test == 0) {
+    return cb()
+  } else {
+    return null
   }
 }
 

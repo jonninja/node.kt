@@ -1,10 +1,11 @@
 package node
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import java.io.File
 import java.util.HashMap
 import node.util.json
+import java.io.FileNotFoundException
 import node.util.log
+import java.util.logging.Level
 import node.util.toJsonString
 
 /**
@@ -15,10 +16,11 @@ public object Configuration {
   val root: HashMap<String, Any?>  // should be private, but blocked by KT-3281
     get() {
       if (_root == null) {
+        val configFile = System.getProperty("configuration.file") ?: "configuration.json"
         try {
-          load(System.getProperty("configuration.file") ?: "configuration.json")
-        } catch (e: Throwable) {
-
+          load(configFile)
+        } catch (fnf: FileNotFoundException) {
+          this.log("Configuration file could not be loaded", Level.FINE)
         }
       }
       return _root!!
@@ -86,7 +88,7 @@ public object Configuration {
     for (entry in entries) {
       if (entry.key == "include") {
         when (entry.value) {
-          is String -> mergeFile(m1, entry.value)
+          is String -> mergeFile(m1, (entry.value as String))
           is List<*> -> (entry.value!! as List<String>).forEach { mergeFile(m1, it) }
           else -> throw FormatException("Contents of include must be either String or list of Strings")
         }

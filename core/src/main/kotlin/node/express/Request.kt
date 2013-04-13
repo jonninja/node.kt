@@ -5,11 +5,9 @@ import org.jboss.netty.handler.codec.http.QueryStringDecoder
 import org.jboss.netty.channel.MessageEvent
 import org.jboss.netty.handler.codec.http.HttpRequest
 import org.jboss.netty.handler.codec.http.HttpHeaders
-import com.fasterxml.jackson.databind.node.ObjectNode
 import java.util.Comparator
 import node.mimeType
 import org.jboss.netty.channel.Channel
-import java.util.LinkedHashMap
 import jet.runtime.typeinfo.JetValueParameter
 import java.lang.reflect.Constructor
 import java.util.ArrayList
@@ -25,10 +23,10 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
   var route: Route? = null;
   var request = e.getMessage() as HttpRequest;
   var startTime = System.currentTimeMillis();
-  var qsd = QueryStringDecoder(request.getUri());
+  var qsd = QueryStringDecoder(request.getUri()!!);
   val attributes: MutableMap<String, Any> = HashMap<String, Any>();
 
-  var method: String = request.getMethod()!!.getName()!!.toLowerCase()
+  var method: String = request.getMethod()!!.getName().toLowerCase()
 
   val path: String
     get() = qsd.getPath()!!
@@ -83,8 +81,8 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
    */
   fun header(key: String): String? {
     val headers = request.getHeaders(key);
-    if (headers?.size() == 0) return null;
-    val head = headers?.head;
+    if (headers.size() == 0) return null;
+    val head = headers.head;
     return head;
   }
 
@@ -227,7 +225,7 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
     val parameters = (0..annotations.size - 1).mapTo(java.util.ArrayList<Any?>()) { index ->
       val jetParam = annotations[index]!!.find { it is JetValueParameter }!! as JetValueParameter
       val paramType = types[index]
-      val value = this.param(jetParam.name())
+      val value = this.param(jetParam.name()!!)
       if (value == null) {
         if (jetParam.hasDefaultValue()) {
           bitmask += Math.pow(2.0, index.toDouble())
@@ -251,7 +249,7 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
       }
     }
     if (missing.size > 0) {
-      throw MissingParameterException(*missing.toArray())
+      throw MissingParameterException(missing)
     }
     if (constructors.def != null) {
       parameters.add(bitmask)
@@ -318,3 +316,6 @@ data class Constructors<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
 }
 
 class MissingParameterException(vararg parameters: String) : IllegalArgumentException(parameters.makeString())
+fun MissingParameterException(parameters: List<String>): MissingParameterException {
+  return MissingParameterException(*(parameters.toArray(Array<String>(0, {""}))))
+}

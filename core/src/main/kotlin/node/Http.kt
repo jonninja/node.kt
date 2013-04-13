@@ -17,11 +17,7 @@ import org.apache.http.entity.StringEntity
 import java.io.InputStream
 import java.util.ArrayList
 import org.apache.http.message.BasicNameValuePair
-import java.io.OutputStream
-import org.apache.commons.io.IOUtils
 import java.io.IOException
-import java.io.File
-import org.apache.commons.io.FileUtils
 import org.apache.http.client.methods.HttpPut
 import org.apache.http.client.methods.HttpDelete
 import org.apache.http.client.methods.HttpHead
@@ -34,8 +30,11 @@ import org.apache.http.client.utils.URLEncodedUtils
 import java.util.HashMap
 import java.nio.charset.Charset
 import node.NotFoundException
-import node.util.log
 import java.util.logging.Level
+import node.util._if
+import org.apache.http.HttpResponseInterceptor
+import org.apache.http.protocol.HttpContext
+import node.util.log
 
 /**
  * A simplified API for making HTTP requests of all kinds. The goal of the library is to support 98% of use
@@ -71,7 +70,27 @@ class Request(request: HttpRequestBase) {
   var errorHandler: (Request)->Unit = HttpClient.defaultErrorHandler
 
   // The URL associated with this request
-  val url: String = request.getURI().toString()
+  val url: String = request.getURI().toString();
+
+  {
+    client.addResponseInterceptor(object: HttpResponseInterceptor {
+      public override fun process(response: HttpResponse, context: HttpContext) {
+        val entity = response.getEntity()
+        if (entity != null) {
+          val ceheader = entity.getContentEncoding()
+          if (ceheader != null) {
+            val codecs = ceheader.getElements()!!
+            for (codec in codecs) {
+              if (codec.getName().equalsIgnoreCase("gzip")) {
+                response.setEntity(org.apache.http.client.entity.GzipDecompressingEntity(response.getEntity()))
+                return
+              }
+            }
+          }
+        }
+      }
+    })
+  }
 
   /**
    * Get the value of a header. Returns null if the key doesn't exist in the response.
@@ -126,11 +145,10 @@ class Request(request: HttpRequestBase) {
    * Get the content type for a request
    */
   fun contentType(): String? {
-    val headerValue = header("Content-Type")
-    if (headerValue == null) return null
-
-    val components = headerValue.split(";")
-    return if (components.size > 0) components[0] else null
+    return _if(header("Content-Type")) {
+      val components = it.split(";")
+      if (components.size > 0) components[0] else null
+    }
   }
 
   /**
@@ -181,7 +199,7 @@ class Request(request: HttpRequestBase) {
    */
   fun json(body: JsonNode): Request {
     contentType("application/json")
-    val entity = StringEntity(body.toString())
+    val entity = StringEntity(body.toString()!!)
     (request as HttpEntityEnclosingRequestBase).setEntity(entity)
     return this;
   }
@@ -191,20 +209,22 @@ class Request(request: HttpRequestBase) {
    */
   fun text(): String? {
     connect()
-    return EntityUtils.toString(response!!.getEntity())
+    return EntityUtils.toString(response!!.getEntity()!!)
   }
 
   /**
    * Retrieve the response of type application/x-www-form-urlencoded.
    */
   fun form(): Map<String, String> {
-    accepts("application/x-www-form-urlencoded")
+    if (request.getFirstHeader("Accept") == null) {
+      accepts("application/x-www-form-urlencoded")
+    }
     connect()
-    val str = EntityUtils.toString(response!!.getEntity())
+    val str = EntityUtils.toString(response!!.getEntity()!!)
     val values = URLEncodedUtils.parse(str, Charset.forName("UTF-8"))!!
     val result = HashMap<String, String>()
     for (value in values) {
-      result.put(value.getName(), value.getValue())
+      result.put(value.getName(), value.getValue()!!)
     }
     return result
   }
@@ -214,7 +234,7 @@ class Request(request: HttpRequestBase) {
    */
   fun body(): InputStream {
     connect()
-    return response!!.getEntity()!!.getContent()!!
+    return response!!.getEntity()!!.getContent()
   }
 
   /**
@@ -225,10 +245,8 @@ class Request(request: HttpRequestBase) {
    * @param value the value of the form parameter
    */
   fun form(key: String, value: Any): Request {
-    if (formParameters == null) {
-      formParameters = ArrayList<NameValuePair>();
-    }
-    formParameters!!.add(BasicNameValuePair(key, value.toString()));
+    formParameters = formParameters ?: ArrayList<NameValuePair>()
+    formParameters!!.add(BasicNameValuePair(key, value.toString()))
     return this;
   }
 
@@ -236,8 +254,8 @@ class Request(request: HttpRequestBase) {
    * Add a query parameter to the request. Returns the request object to support chaining.
    */
   fun query(key: String, value: String): Request {
-    val builder = URIBuilder(request.getURI());
-    builder.setParameter(key, value.toString());
+    val builder = URIBuilder(request.getURI()!!)
+    builder.setParameter(key, value.toString())
     request.setURI(builder.build());
     return this;
   }
@@ -259,7 +277,7 @@ class Request(request: HttpRequestBase) {
         if (entity != null) {
           throw HttpException("Multiple entities are not allowed. Perhaps you have set a body and form parameters?");
         }
-        (request as HttpEntityEnclosingRequestBase).setEntity(UrlEncodedFormEntity(formParameters));
+        (request as HttpEntityEnclosingRequestBase).setEntity(UrlEncodedFormEntity(formParameters!!));
       }
       response = client.execute(request);
       checkForResponseError()

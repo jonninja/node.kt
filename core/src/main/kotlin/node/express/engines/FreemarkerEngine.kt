@@ -18,7 +18,7 @@ class FreemarkerEngine(): Engine {
   }
 
   override fun render(path: String, data: Map<String, Any?>): String {
-    val template = fm.getTemplate(path)!!;
+    val template = fm.getTemplate(path);
 
     val writer = StringWriter();
     template.process(data, writer);
