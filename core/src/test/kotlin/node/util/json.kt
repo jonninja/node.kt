@@ -3,7 +3,6 @@ package node.util
 import org.junit.Test
 import kotlin.test.assertEquals
 import java.util.ArrayList
-import node.http.HttpClient
 
 class Kids : ArrayList<String>()
 
