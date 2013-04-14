@@ -1,16 +1,16 @@
-package node.util
+package node.util.json
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import java.io.File
 import com.fasterxml.jackson.databind.JsonNode
-import java.lang.reflect.Constructor
-import java.util.HashMap
-import jet.runtime.typeinfo.JetValueParameter
 import java.util.ArrayList
-import node.express.MissingParameterException
 import java.lang.reflect.ParameterizedType
 import com.fasterxml.jackson.databind.node.TextNode
 import com.fasterxml.jackson.databind.node.IntNode
+import java.util.LinkedHashMap
+import node.util.konstructor
+import node.util.after
+import node.util.until
 
 /**
  * Utilities for working with JSON
@@ -91,7 +91,7 @@ fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T {
     this.isObject() -> {
       if (ty == javaClass<Any>() || ty == javaClass<Map<*,*>>()) {
         val valueType = if (sub != null) sub else javaClass<Any>()
-        val result = HashMap<String, Any?>()
+        val result = LinkedHashMap<String, Any?>()
         for (field in this.fields()) {
           result.put(field.key, field.value.convert<Any,Nothing>(valueType as Class<Any>))
         }

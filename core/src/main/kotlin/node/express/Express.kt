@@ -201,7 +201,11 @@ class Express() {
 
     val viewsPath = settings.get("views") as String;
 
-    val viewPath = File(viewsPath + viewFileName).getAbsolutePath();
+    val viewFile = File(viewsPath + viewFileName)
+    if (!viewFile.exists()) {
+      throw FileNotFoundException()
+    }
+    val viewPath = viewFile.getAbsolutePath();
 
     return renderer.render(viewPath, mergedContext);
   }

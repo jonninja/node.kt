@@ -2,11 +2,10 @@ package node
 
 import java.io.File
 import java.util.HashMap
-import node.util.json
 import java.io.FileNotFoundException
 import node.util.log
-import java.util.logging.Level
-import node.util.toJsonString
+import java.util.logging.Level.FINE
+import node.util.json.*
 
 /**
  * Easy to use API for loading and working with settings from files.
@@ -20,7 +19,7 @@ public object Configuration {
         try {
           load(configFile)
         } catch (fnf: FileNotFoundException) {
-          this.log("Configuration file could not be loaded", Level.FINE)
+          this.log("Configuration file could not be loaded", FINE)
         }
       }
       return _root!!
@@ -63,6 +62,14 @@ public object Configuration {
 
   fun integer(path: String, def: (() -> String)? = null): Int {
     return get(path, def) as Int
+  }
+
+  fun map(path: String): Map<String, Any> {
+    var m = get(path) as? Map<*,*>
+    if (m == null) {
+      m = HashMap<String, Any>()
+    }
+    return m as Map<String, Any>
   }
 
   /**

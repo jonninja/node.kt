@@ -1,147 +1,17 @@
 package node.util
 
-import jet.modules.Module
-import java.util.logging.Logger
 import java.util.logging.Level
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.node.ObjectNode
 import java.util.Date
-import java.text.SimpleDateFormat
-import java.util.logging.Handler
 import java.util.logging.LogRecord
-import java.util.logging.LogManager
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.node.ArrayNode
-import java.util.ArrayList
 import java.util.Comparator
 import java.util.logging.Formatter
 import java.io.PrintWriter
 import java.io.StringWriter
-import node.Configuration
-import java.util.logging.Filter
-
-private var inited = false
-fun init() {
-  if (!inited) {
-    val logManager = LogManager.getLogManager()!!
-    val log = logManager.getLogger("")!!
-
-    val packageLevels = Configuration.get("logging.packages") as? Map<String, String>
-
-    val globalLevel = Level.parse(Configuration.get("logging.global.level") as? String ?: "INFO")
-    log.setLevel(globalLevel)
-    for (handler in log.getHandlers()) {
-      handler.setFormatter(LogFormat)
-      handler.setLevel(globalLevel)
-
-      handler.setFilter(object: Filter {
-        public override fun isLoggable(record: LogRecord?): Boolean {
-          try {
-          if (packageLevels != null) {
-            for (l in packageLevels) {
-              val loggerName = record!!.getLoggerName() ?: ""
-              if (loggerName.startsWith(l.key)) {
-                val level = Level.parse(l.value)
-                if (record.getLevel()!!.intValue() > level.intValue()) {
-                  return true
-                }
-                return false
-              }
-            }
-          }
-          return true
-          } catch (t: Throwable) {
-            t.printStackTrace()
-            return false
-          }
-        }
-      })
-    }
-    inited = true
-  }
-}
-
-private fun getLogger(a: Any?): Logger {
-  init()
-  if (a == null) {
-    return Logger.getAnonymousLogger()
-  } else {
-    return Logger.getLogger(a.javaClass.getName())
-  }
-}
-
-private val LINE_SEPARATOR = System.getProperty("line.separator")
-
-object LogFormat: Formatter() {
-
-  public override fun format(record: LogRecord): String {
-    val sb = StringBuilder()
-
-    sb.append(Date(record.getMillis()))
-        .append(" ")
-        .append(record.getLevel()!!.getLocalizedName())
-        .append(": ")
-        .append(formatMessage(record))
-        .append(LINE_SEPARATOR);
-
-    if (record.getThrown() != null) {
-      try {
-        val sw = StringWriter()
-        val pw = PrintWriter(sw)
-        record.getThrown()!!.printStackTrace(pw)
-        pw.close()
-        sb.append(sw.toString())
-      } catch  (ex: Throwable) {
-        // ignore
-      }
-    }
-    return sb.toString();
-  }
-}
-
-/**
- * Attaches a log function to any object, and uses that object's class as the
- * logging context.
- */
-fun Any.log(message: Any, level: Level = Level.INFO, t: Throwable? = null) {
-  getLogger(this).log(level, message.toString(), t);
-}
-
-fun Any.logSevere(message: Any, t: Throwable? = null) {
-  this.log(message, Level.SEVERE, t)
-}
-
-fun Any.logDebug(message: Any, t: Throwable? = null) {
-  this.log(message, Level.FINE, t)
-}
-
-/**
- * A whole bunch of extension functions
- */
-public inline fun log(message: Any) {
-  getLogger(null).log(Level.INFO, message.toString());
-  System.out.println(message)
-}
-
-public inline fun log(l: Level, msg: String, t: Throwable? = null) {
-  getLogger(null).log(l, msg, t);
-}
-
-public inline fun logInfo(message: Any) {
-  log(Level.INFO, message.toString())
-}
-
-public inline fun logDebug(message: Any) {
-  log(Level.FINE, message.toString())
-}
-
-public inline fun logWarning(message: Any) {
-  log(Level.WARNING, message.toString())
-}
-
-public inline fun logSevere(message: Any) {
-  log(Level.SEVERE, message.toString())
-}
+import java.util.HashMap
 
 /**
  * Returns the native object of this node when it is a native type (String, int, etc.)
@@ -216,7 +86,7 @@ fun <R:Any> R?._else(cb: ()->R): R {
 
 /**
  * Does a falsey test, and calls the block only if it passes. The block is passed
- * the value of the test.
+ * the value of the test
  */
 fun _if<T:Any,R:Any>(test: T?, cb: (T)->R?): R? {
   if (test == null || test == false || test == 0) {

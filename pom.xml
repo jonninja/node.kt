@@ -17,7 +17,7 @@
     <modules>
         <module>core</module>
         <module>optional/less</module>
-        <module>optional/facebook</module>
+        <module>optional/oauth</module>
     </modules>
 
     <scm>

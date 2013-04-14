@@ -25,7 +25,6 @@ import org.apache.http.client.methods.HttpOptions
 import java.util.TimeZone
 import java.text.SimpleDateFormat
 import java.util.Date
-import node.util.json
 import org.apache.http.client.utils.URLEncodedUtils
 import java.util.HashMap
 import java.nio.charset.Charset
@@ -35,6 +34,8 @@ import node.util._if
 import org.apache.http.HttpResponseInterceptor
 import org.apache.http.protocol.HttpContext
 import node.util.log
+import node.util.json.json
+import node.util.logDebug
 
 /**
  * A simplified API for making HTTP requests of all kinds. The goal of the library is to support 98% of use
@@ -270,7 +271,6 @@ class Request(request: HttpRequestBase) {
   }
 
   fun connect(): Request {
-    this.log("Connecting to ${this.url}", Level.FINE)
     if (response == null) {
       if (formParameters != null) {
         var entity = (request as HttpEntityEnclosingRequestBase).getEntity();
@@ -279,6 +279,7 @@ class Request(request: HttpRequestBase) {
         }
         (request as HttpEntityEnclosingRequestBase).setEntity(UrlEncodedFormEntity(formParameters!!));
       }
+      this.logDebug("Connecting to ${this.url}")
       response = client.execute(request);
       checkForResponseError()
     }

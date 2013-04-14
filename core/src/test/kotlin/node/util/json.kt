@@ -1,4 +1,4 @@
-package node.util
+package node.util.json
 
 import org.junit.Test
 import kotlin.test.assertEquals

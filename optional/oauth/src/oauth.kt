@@ -17,11 +17,12 @@ val stateGenerator = RandomStringGenerator(15)
  * An OAuth client. Create an instance, then call register for each provider. To authorize, direct the user to
  * /oauth/login/:provider and the rest is taken care of
  */
-class OAuth(val express: Express) {
+class OAuth(val express: Express,
+            val localPath: String = "/oauth/login/:provider") {
   val providers = HashMap<String, OAuthProvider>();
 
   {
-    express.get("/oauth/login/:provider", { req, res, next ->
+    express.get(localPath, { req, res, next ->
       val providerId = req.param("provider") as String
       val provider = providers.get(providerId)
       if (provider == null) {

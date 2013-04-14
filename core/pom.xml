@@ -66,11 +66,21 @@
             <version>2.4</version>
         </dependency>
         <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.11</version>
+        </dependency>
+        <dependency>
             <groupId>java</groupId>
             <artifactId>jce</artifactId>
             <scope>system</scope>
             <version>1.7</version>
             <systemPath>${java.home}/lib/jce.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
         </dependency>
     </dependencies>
 
