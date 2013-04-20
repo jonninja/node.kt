@@ -11,6 +11,8 @@ class Obj2(val name: String, val kids: Kids)
 
 class Obj3(val name: String, val data: Any)
 
+class NullObj(val name: String, val title: String?)
+
 class JsonTest {
   Test fun testBasic() {
     assertEquals("test", "\"test\"".json(javaClass<String>()))
@@ -33,5 +35,12 @@ class JsonTest {
     val o4Str = "{\"name\":\"Jon\", \"data\":[\"amy\",\"steve\",{\"pete\":\"male\"}]}"
     val o4 = o4Str.json(javaClass<Any>()) as Map<*,*>
     assertEquals("Jon", o4.get("name"))
+  }
+
+  Test fun testNull() {
+    """{
+      "name": "Jon",
+      "title": null
+    }""".json(javaClass<NullObj>())
   }
 }

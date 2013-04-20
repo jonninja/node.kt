@@ -11,6 +11,7 @@ import java.util.LinkedHashMap
 import node.util.konstructor
 import node.util.after
 import node.util.until
+import com.fasterxml.jackson.databind.node.NullNode
 
 /**
  * Utilities for working with JSON
@@ -61,10 +62,13 @@ private fun <T:Any> convertIntNode(node: IntNode, target: Class<T>): T? {
   return result as T?
 }
 
-fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T {
+fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T? {
   val result: Any? = when {
     this is TextNode -> convertTextNode(this, ty)
     this is IntNode -> convertIntNode(this, ty)
+    this is NullNode -> {
+      null
+    }
     this.isArray() -> {
       when {
         ty == javaClass<Any>() || javaClass<List<*>>().isAssignableFrom(ty) -> {
@@ -120,7 +124,7 @@ fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T {
               val componentType = Class.forName(components[1])
               nodeValue.convert(it.jType as Class<Any>, componentType as Class<Any>)
             } else {
-              nodeValue.convert<Any, Nothing>(it.jType as Class<Any>, null)
+              nodeValue.convert<Any?, Nothing>(it.jType as Class<Any?>, null)
             }
           }
         }
@@ -131,7 +135,7 @@ fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T {
     }
 
   }
-  return result as T
+  return result as T?
 }
 
 /**

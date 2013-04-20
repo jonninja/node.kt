@@ -11,6 +11,9 @@ import org.jboss.netty.channel.Channel
 import jet.runtime.typeinfo.JetValueParameter
 import java.lang.reflect.Constructor
 import java.util.ArrayList
+import node.inject.Scope
+import node.inject.Registry
+import node.inject.CachedScope
 
 /**
  * The Http server request object
@@ -32,6 +35,16 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
     get() = qsd.getPath()!!
 
   val query = QueryString()
+
+  /**
+   * Provides an injector scope for each request.
+   */
+  val injector: CachedScope = {
+    val registry = (app.get("injection registry") as? Registry) ?: Registry()
+    val scope = CachedScope(registry)
+    scope.registerInstance(javaClass<Request>(), this)
+    scope
+  }()
 
   /**
    * All of the cookies in a map

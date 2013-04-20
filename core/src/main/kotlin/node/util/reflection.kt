@@ -5,6 +5,7 @@ import java.util.ArrayList
 import java.lang.reflect.Constructor
 import java.util.HashMap
 import jet.runtime.typeinfo.JetValueParameter
+import java.lang.reflect.Method
 
 /**
  * Some reflection APIs
@@ -22,6 +23,18 @@ fun Any.method(name: String): ((vararg v: Any?) -> Any?)? {
 }
 
 /**
+ * Get a collection of methods of a class as a collection.
+ */
+val <T> Class<T>.methods: Collection<Method>
+  get() {
+    return this.getMethods().toList()
+  }
+
+fun <T> Any.dynamic(name: String, vararg v: Any?):Any? {
+  return this.javaClass.methods.find { it.getName() == name }!!.invoke(this, *v)
+}
+
+/**
  * Get the value of a  field
  */
 fun Any.field(name: String): Any? {
@@ -33,7 +46,7 @@ fun Any.field(name: String): Any? {
   }
 }
 
-private data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
+data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
   class object {
     private var dataConstructors: MutableMap<Class<*>, KotlinConstructor<*>>? = null
 
@@ -73,7 +86,13 @@ private data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constr
   }
 
   // Describes a constructor parameter
-  data class Parameter(val name: String, val kType: String, val jType: Class<out Any?>)
+  data class Parameter(val name: String, val kType: String, val jType: Class<out Any?>, val annotations: List<Annotation>) {
+    fun <T:Any> getAnnotation(annotationType: Class<T>): T? {
+      return annotations.find {
+        it.annotationType() == annotationType
+      } as? T?
+    }
+  }
 
   // Construct a new instance from a set of named parameters
   fun newInstance(parameters: Map<String, Any?>): T {
@@ -88,7 +107,7 @@ private data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constr
     val missing = ArrayList<String>()
     val parameters = (0..annotations.size - 1).mapTo(java.util.ArrayList<Any?>()) { index ->
       val jetParam = annotations[index]!!.find { it is JetValueParameter }!! as JetValueParameter
-      val value = p(Parameter(jetParam.name()!!, jetParam.`type`()!!, types[index]))
+      val value = p(Parameter(jetParam.name()!!, jetParam.`type`()!!, types[index], annotations[index]!!.toList()))
       if (value == null) {
         if (jetParam.hasDefaultValue()) {
           bitmask += Math.pow(2.0, index.toDouble())

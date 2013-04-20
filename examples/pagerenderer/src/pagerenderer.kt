@@ -15,6 +15,7 @@ fun main(args: Array<String>) {
 
   app["view engine"] = "ftl" // the rendering engine
   app["views"] = "views"
+  app.use(node.express.middleware.AutoRoute("pages"))
   app.use(node.express.middleware.Renderer())
   app.use(app.static(app["views"] as String))
 

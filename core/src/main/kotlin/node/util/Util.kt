@@ -72,8 +72,9 @@ fun ObjectMapper.arrayNodeOf(elements: List<JsonNode>): ArrayNode {
  * Call a function with a given value. This is mostly a control flow construct that reduces the need
  * for temporary variables when you're testing the result of a function
  */
-fun <T:Any,R> with(value: T?, caller: (T?)->R): R {
-  return caller(value)
+fun <T> with(value: T, caller: (T)->Unit): T {
+  caller(value)
+  return value
 }
 
 fun <R:Any> R?._else(cb: ()->R): R {

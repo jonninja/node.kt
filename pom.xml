@@ -18,6 +18,7 @@
         <module>core</module>
         <module>optional/less</module>
         <module>optional/oauth</module>
+        <module>optional/workers</module>
     </modules>
 
     <scm>
