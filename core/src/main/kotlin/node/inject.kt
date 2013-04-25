@@ -3,33 +3,83 @@ package node.inject
 import node.util.konstructor
 import node.NotFoundException
 import node.util.with
-import node.util._if
-import node.Configuration
+import node.*
 import java.lang.annotation.Retention
 import java.lang.annotation.RetentionPolicy
+import node.inject.Registry.BindingReceiver
+import java.util.HashMap
+
+enum class CacheScope {
+  GLOBAL
+  OPERATION
+  SESSION
+}
 
 /**
- * An injection registry.
+ * Creates and manages instances of bound classes. Instances are cached based on the CacheScope that
+ * is bound to the instance. For example, if a class is bound with an OPERATION scope, a Factory with that
+ * scope will cache the instance.
  */
-class Registry {
-  val bindings = hashMapOf<Any, BindingReceiver<*>>()
+class Factory(val registry: Registry, val scope: CacheScope, val parent: Factory? = null) {
+  val cache = HashMap<String, Any?>()
+
+  /**
+   * Get an instance of the given class, optionally bound to the given name.
+   */
+  fun instanceOf<T>(clazz: Class<T>, name: String? = null): T {
+    if (clazz == javaClass<Factory>()) {
+      return this as T;
+    }
+    val binding = registry.getBinding(clazz, name)
+
+    if (binding != null) {
+      if (binding.scope == this.scope) {
+        if (cache.containsKey(bindingKey(clazz, name))) {
+          return cache.get(bindingKey(clazz, name)) as T
+        } else {
+          val instance = binding.binding.instance(this, name)
+          cache.put(bindingKey(clazz, name), instance)
+          return instance
+        }
+      } else if (parent != null) {
+        return parent.instanceOf(clazz, name)
+      } else if (binding.scope != null) {
+        // if the type is bound to a scope, but it is not this one, we have a problem
+        throw IllegalStateException("Unable to create ${clazz.getCanonicalName()} in the scope that it was bound to. Make sure you are using a factory with the correct cache scope.")
+      } else {
+        return binding.binding.instance(this, name)
+      }
+    }
+    throw NotFoundException("No binding found for ${bindingKey(clazz, name)}")
+  }
+
+  /**
+   * Install an instance into the Factory. Useful if you have objects that can't be instantiated
+   * with the standard bindings that you need to make available to bound instances.
+   */
+  fun install<T>(instance: T, clazz: Class<T>, name: String? = null) {
+    cache.put(bindingKey(clazz, name), instance)
+  }
+}
+
+fun bindingKey<T>(src: Class<T>, name: String? = null): String {
+  return "${src.getCanonicalName()}${if (name != null) name else ""}"
+}
+
+/**
+ * A registry of class bindings to be used by the factory.
+ */
+open class Registry(val parentRegistry: Registry? = null) {
+  val bindings = hashMapOf<String, BindingReceiver<*>>()
+  val globalFactory = Factory(this, CacheScope.GLOBAL, null)
 
   /**
    * Bind a class to the registry. The binding is not complete until one of the methods
    * of the BindingReciever is called: ie. bind(String.class).to("foo")
    */
-  fun <T> bind(src: Class<T>): BindingReceiver<T> {
-    return with(BindingReceiver<T>(src)) {
-      bindings.put(src, it)
-    }
-  }
-
-  /**
-   * Bind a key to the registry. Used in conjunction with the 'named' annotation
-   */
-  fun bind(key: String): BindingReceiver<Any?> {
-    return with(BindingReceiver<Any?>(key)) {
-      bindings.put(key, it)
+  fun <T> bind(src: Class<T>, name: String? = null): BindingReceiver<T> {
+    return with(BindingReceiver<T>(src, name)) {
+      bindings.put("${src.getCanonicalName()}${if (name != null) name else ""}", it)
     }
   }
 
@@ -37,28 +87,26 @@ class Registry {
     return bindings[key]?.binding
   }
 
-  inner open class BindingReceiver<T>(val src: Any) {
-    var binding: Binding<T>? = {
-      if (src is Class<*>) {
-        ConstructorBinding(src as Class<T>)
-      } else {
-        InstanceBinding(src) as Binding<T>
-      }
-    }()
+  public class BindingReceiver<T>(val src: Class<T>, val name: String? = null) {
+    var binding: Binding<T> = ConstructorBinding(src)
+    var scope: CacheScope? = null
+    var cached: T? = null
 
     /**
      * Bind a class to a key. The class's constructor will be called to create the instance when the key
      * is requested.
      */
-    open fun <I:T> toImplementation(target: Class<I>) {
+    fun <I:T> toImplementation(target: Class<I>): BindingReceiver<T> {
       binding = ConstructorBinding(target)
+      return this;
     }
 
     /**
      * Bind an instance to a key.
      */
-    open fun <I:T> toInstance(target: I) {
+    fun <I:T> toInstance(target: I): BindingReceiver<T> {
       binding = InstanceBinding(target)
+      return this
     }
 
     fun to(any: Any?) {
@@ -68,144 +116,80 @@ class Registry {
     /**
      * Bind a callback to a key.
      */
-    open fun toFactory(target: (Scope)->T) {
+    fun toFactory(target: (factory: Factory, name: String?)->T): BindingReceiver<T> {
       binding = LiteralBinding(target)
+      return this
     }
 
-    /**
-     * Bind a singleton class to a key.
-     */
-    open fun <I:T> toSingleton(implementation: Class<I>) {
-      binding = SingletonBinding(ConstructorBinding(implementation))
-    }
-
-    open fun toSingletonFactory(factory: (Scope)->T) {
-      binding = SingletonBinding(LiteralBinding(factory))
+    fun withScope(scope: CacheScope): BindingReceiver<T> {
+      this.scope = scope
+      return this
     }
   }
-}
 
-/**
- * An injection scope does the work of actualling providing object instances for injection keys.
- * Bindings are read from the registry and used to determine instances to return.
- * Each scope will have its own rules for determining when to create new objects vs reusing
- * previously created objects.
- */
-trait Scope {
-  val registry: Registry
-
-  /**
-   * Get an instance related to the registered key.
-   */
-  fun instance<T>(key: Any): T
-
-  /**
-   * Specialized version of instance when the key is a class, allowing for generics to
-   * cast the result.
-   */
-  fun instanceOf<T>(key: Class<T>, name: String? = null): T
-}
-
-/**
- * The default scope creates instances on demand. There is no caching of objects, so each
- * time a request is made, a new instance is created.
- */
-open class DefaultScope(override val registry: Registry): Scope {
-  override fun instance<T>(key: Any): T {
-      return with(registry[key]?.instance(this)) {
-        if (it == null) throw NotFoundException()
-      }!! as T
+  open fun getBinding<T>(clazz: Class<T>, name: String? = null): BindingReceiver<T>? {
+    val key = bindingKey(clazz, name)
+    var result = bindings[key] as? BindingReceiver<T> ?: parentRegistry?.getBinding(clazz, name)
+    if (result == null && name != null) {
+      result = getBinding(clazz) // get a binding without a name
+    }
+    return result
   }
 
   /**
-   * Get an instance of a class. If no implementation is registered,
-   * attempts to inject the class itself.
+   * Get a factory for this registry, bound to the given cache scope.
    */
-  override fun <T> instanceOf(key: Class<T>, name: String?): T {
-    val binding = registry[key]
-    return if (binding != null) {
-      binding.instance(this) as T
+  public fun factory(scope: CacheScope? = null): Factory {
+    if (scope == null || scope == CacheScope.GLOBAL) {
+      return globalFactory
     } else {
-      ConstructorBinding(key).instance(this)
+      return Factory(this, scope, globalFactory)
     }
   }
 }
 
 /**
- * A cached scope reuses all objects. Typically, this scope will be used for short lived operations,
- * such as a server request.
+ * A registry that reads instances from Configuration
  */
-class CachedScope(registry: Registry): DefaultScope(registry) {
-  val instances = hashMapOf<Any, Any?>()
-
-  override fun instance<T>(key: Any): T {
-    return instances.getOrElse(key, {
-      with (registry[key]?.instance(this)) {
-        if (it == null) throw NotFoundException("Unable to find instance for $key")
+class ConfigurationRegistry: Registry() {
+  override fun <T> getBinding(clazz: Class<T>, name: String?): Registry.BindingReceiver<T>? {
+    if (name != null) {
+      if (Configuration.get(name) != null) {
+        return BindingReceiver(clazz, name).toInstance(Configuration.get(name) as T)
       }
-    }) as T
-  }
-
-  override fun <T> instanceOf(key: Class<T>, name: String?): T {
-    return instance<T>(key:Any)
-  }
-
-  fun registerInstance<T>(key: Class<T>, instance: T) {
-    instances.put(key, instance)
+    }
+    return super<Registry>.getBinding(clazz, name)
   }
 }
 
 private trait Binding<T> {
-  fun instance(scope: Scope): T
+  fun instance(factory: Factory, name: String?): T
 }
 
 private class ConstructorBinding<T,I:T>(val clazz: Class<I>): Binding<T> {
-  override fun instance(scope: Scope): T {
+  override fun instance(factory: Factory, name: String?): T {
     return clazz.konstructor().newInstance({ p ->
-      val name = p.getAnnotation(javaClass<key>())?.key ?: p.name
-      _if (p.getAnnotation(javaClass<key>())) {
-        scope.instance<Any>(it.key)
-      } ?: _if (p.getAnnotation(javaClass<configuration>())) {
-        Configuration.get(it.name)
-      } ?: scope.instanceOf(p.jType as Class<T>);
+      val name = p.getAnnotation(javaClass<named>())?.key ?: p.name
+      factory.instanceOf(p.jType as Class<T>, name)
     })
   }
 }
 
-private class SingletonBinding<T>(val binding: Binding<T>): Binding<T> {
-  private var singleton: T? = null
-
-  override fun instance(scope: Scope): T {
-    if (singleton == null) {
-      singleton = binding.instance(scope)
-    }
-    return singleton!!
-  }
-}
-
 private class InstanceBinding<T>(val instance: T): Binding<T> {
-  override fun instance(scope: Scope): T {
+  override fun instance(factory: Factory, name: String?): T {
     return instance
   }
 }
 
-private class LiteralBinding<T>(val factory: (Scope)->T): Binding<T> {
-  override fun instance(scope: Scope): T {
-    return factory(scope)
+private class LiteralBinding<T>(val factory: (factory: Factory, name: String?)->T): Binding<T> {
+  override fun instance(factory: Factory, name: String?): T {
+    return factory(factory, name)
   }
 }
-
 /**
  * Key annotation. Allows for annotating a parameter such that the injected instance will
  * relate to that key. Useful for when you want to have available different versions of the
  * same type.
  */
 Retention(RetentionPolicy.RUNTIME)
-annotation class key(val key: Any)
-
-/**
- * Configuration annotation. The value is set to the configuration value found at the provided
- * path.
- */
-Retention(RetentionPolicy.RUNTIME)
-annotation class configuration(val name: String)
+annotation class named(val key: String)

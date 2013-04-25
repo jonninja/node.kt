@@ -9,7 +9,7 @@ import node.util._logger
 import kotlin.concurrent.submit
 import node.util.methods
 import java.lang.reflect.Method
-import java.util.concurrent.ExecutorService
+import node.inject.Factory
 
 /**
  * A trait for instances that are capable of processing jobs
@@ -53,8 +53,7 @@ private class WorkerSpec(val worker: Worker<*>) {
  * Manages jobs and workers. Clients can post job events and data as well as
  * register event handlers.
  */
-class JobManager(val queue: Queue) {
-  val workers = HashMap<Event, WorkerSpec>()
+class JobManager(val queue: Queue, val factory: Factory) {
   val executor = Executors.newFixedThreadPool(10);
 
   {
@@ -68,16 +67,6 @@ class JobManager(val queue: Queue) {
         }
       }
     }
-  }
-
-  /**
-   * Register a new worker
-   */
-  fun <T> registerWorker(evt: Event, worker: Worker<T>) {
-    if (workers.containsKey(evt)) {
-      this._logger.warn("Attempting to re-register event.")
-    }
-    workers.put(evt, WorkerSpec(worker))
   }
 
   /**
@@ -95,8 +84,9 @@ class JobManager(val queue: Queue) {
   }
 
   fun <T> processEvent(event: Event, data: T): Boolean {
-    val worker = workers.get(event)!!
-    worker.method.invoke(worker.worker, data)
+    val worker = factory.instanceOf(javaClass<Worker<*>>(), event.id)
+    val spec = WorkerSpec(worker)
+    spec.method.invoke(worker, data)
     return true
   }
 
@@ -104,9 +94,11 @@ class JobManager(val queue: Queue) {
     val eventData = data.json(javaClass<Map<String,*>>())
     val event = Event(eventData.get("evt") as String)
 
-    val worker = workers.get(event)
-    val dataObj = (eventData.get("data") as? String?)?.json(worker!!.dataType as Class<Any>)
-    worker.method.invoke(worker.worker, dataObj)
+    val worker = factory.instanceOf(javaClass<Worker<*>>(), event.id)
+    val spec = WorkerSpec(worker)
+
+    val dataObj = (eventData.get("data") as? String?)?.json(spec.dataType as Class<Any>)
+    spec.method.invoke(worker, dataObj)
     return true
   }
 }

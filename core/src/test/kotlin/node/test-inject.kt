@@ -3,6 +3,7 @@ package node.inject
 import org.junit.Test
 import kotlin.test.assertEquals
 import java.util.Date
+import node.inject.CacheScope.*
 
 trait TestTrait {
   val name: String
@@ -26,7 +27,7 @@ class Second(val test: TestTrait) {
   }
 }
 
-class NamedTest(key("123") val foo: String) {
+class NamedTest(named("123") val foo: String) {
 
   class object {
 
@@ -45,52 +46,80 @@ class SingletonTest {
 
 class InjectTest {
   Test fun basics() {
-    val bindings = Registry()
-    bindings bind TestTrait.clazz toImplementation TestImpl.clazz
+    val registry = Registry()
+    registry bind TestTrait.clazz toImplementation TestImpl.clazz
 
-    val scope = DefaultScope(bindings)
-
-    val impl = scope.instanceOf(TestTrait.clazz)
+    val factory = registry.factory()
+    val impl = factory.instanceOf(TestTrait.clazz)
     assertEquals("impl", impl.name)
   }
 
   Test fun constructor() {
-    val bindings = Registry()
-    bindings bind Second.clazz
-    bindings bind TestTrait.clazz toImplementation TestImpl.clazz
+    val registry = Registry()
+    registry bind Second.clazz
+    registry bind TestTrait.clazz toImplementation TestImpl.clazz
 
-    val scope = DefaultScope(bindings)
-    val second = scope.instanceOf(Second.clazz)
+    val factory = registry.factory()
+    val second = factory.instanceOf(Second.clazz)
     assertEquals("impl", second.test.name)
   }
 
   Test fun named() {
-    val bindings = Registry()
-    bindings bind javaClass<NamedTest>()
-    bindings bind "123" toInstance "bar"
+    val registry = Registry()
+    registry bind javaClass<NamedTest>()
+    registry.bind(javaClass<String>(), "123") toInstance "bar"
 
-    val scope = DefaultScope(bindings)
-    val n = scope.instanceOf(javaClass<NamedTest>())
+    val factory = registry.factory()
+    val n = factory.instanceOf(javaClass<NamedTest>())
     assertEquals("bar", n.foo)
   }
 
   Test fun testSingleton() {
     val registry = Registry()
-    registry bind javaClass<SingletonTest>() toSingleton(javaClass<SingletonTest>())
+    registry bind javaClass<SingletonTest>() withScope GLOBAL
 
-    val scope = DefaultScope(registry)
-    scope.instanceOf(javaClass<SingletonTest>())
+    val factory = registry.factory()
+    factory.instanceOf(javaClass<SingletonTest>())
     assertEquals(1, SingletonTest.count)
-    scope.instanceOf(javaClass<SingletonTest>())
+    factory.instanceOf(javaClass<SingletonTest>())
     assertEquals(1, SingletonTest.count)
 
     var literalCount = 0
-    registry bind javaClass<Date>() toSingletonFactory {scope->
+    registry bind javaClass<Date>() toFactory {scope, name ->
       literalCount++
       Date()
-    }
+    } withScope GLOBAL
 
-    val date = scope.instanceOf(javaClass<Date>())
+    val date = factory.instanceOf(javaClass<Date>())
+  }
 
+  Test fun testScopes() {
+    var count = 0
+    val registry = Registry()
+
+    registry bind javaClass<String>() toFactory { factory,name -> count++; "123" } withScope GLOBAL
+
+    val factory = registry.factory()
+    factory.instanceOf(javaClass<String>())
+    assertEquals(1, count)
+    factory.instanceOf(javaClass<String>())
+    assertEquals(1, count)
+
+    val factory2 = registry.factory()
+    factory2.instanceOf(javaClass<String>())
+    assertEquals(1, count)
+
+    var opCount = 0
+    registry bind javaClass<Int>() toFactory { factory,name -> opCount++; 1 } withScope OPERATION
+
+    val opFactory = registry.factory(OPERATION)
+    opFactory.instanceOf(javaClass<Int>())
+    assertEquals(1, opCount)
+    opFactory.instanceOf(javaClass<Int>())
+    assertEquals(1, opCount)
+
+    val opFactory2 = registry.factory(OPERATION)
+    opFactory2.instanceOf(javaClass<Int>())
+    assertEquals(2, opCount) // should have created a second instance
   }
 }

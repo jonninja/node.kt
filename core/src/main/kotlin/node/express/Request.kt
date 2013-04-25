@@ -11,9 +11,8 @@ import org.jboss.netty.channel.Channel
 import jet.runtime.typeinfo.JetValueParameter
 import java.lang.reflect.Constructor
 import java.util.ArrayList
-import node.inject.Scope
-import node.inject.Registry
-import node.inject.CachedScope
+import node.inject.*
+import node.util.with
 
 /**
  * The Http server request object
@@ -39,11 +38,11 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
   /**
    * Provides an injector scope for each request.
    */
-  val injector: CachedScope = {
+  val factory: Factory = {
     val registry = (app.get("injection registry") as? Registry) ?: Registry()
-    val scope = CachedScope(registry)
-    scope.registerInstance(javaClass<Request>(), this)
-    scope
+    with (registry.factory(CacheScope.OPERATION)) {
+      it.install(this, javaClass<Request>())
+    }
   }()
 
   /**

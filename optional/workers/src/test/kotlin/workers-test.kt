@@ -2,6 +2,7 @@ package node.workers
 
 import org.junit.Test
 import kotlin.test.assertEquals
+import node.inject.Registry
 
 class SimpleWorker: Worker<String> {
   override fun process(data: String) {
@@ -10,22 +11,18 @@ class SimpleWorker: Worker<String> {
 }
 
 class WorkersTest {
-  fun <T> something() {
-    println(javaClass<T>().getCanonicalName())
-  }
-
   Test fun testPassThrough() {
-    something<String>()
-
-    val jobManager = JobManager(PassThroughQueue())
+    val registry = Registry()
+    val jobManager = JobManager(PassThroughQueue(), registry.factory())
     val event = Event("test-event")
 
     var latest: String? = null
-    jobManager.registerWorker(event, object: Worker<String> {
+    val worker = object: Worker<String> {
       override fun process(data: String) {
         latest = data
       }
-    })
+    }
+    registry.bind(javaClass<Worker<*>>(), "test-event") toInstance worker
     jobManager.postEvent(event, "123").get()
     assertEquals("123", latest)
   }
