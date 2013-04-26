@@ -1,0 +1,1640 @@
+<root>
+    <item name='org.jboss.netty.channel.ChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireMessageReceived(org.jboss.netty.channel.Channel, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void childChannelOpen(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChildChannelStateEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandler remove(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline T remove(java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline java.util.Map&lt;java.lang.String,org.jboss.netty.channel.ChannelHandler&gt; toMap()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture connect(org.jboss.netty.channel.Channel, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void writeRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void unbind(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChildChannelStateEvent DefaultChildChannelStateEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void closeRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture write(java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractServerChannel AbstractServerChannel(org.jboss.netty.channel.ChannelFactory, org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelSink) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.CompleteChannelFuture void removeListener(org.jboss.netty.channel.ChannelFutureListener) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addFirst(java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture connect(org.jboss.netty.channel.Channel, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void unbind(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.CompleteChannelFuture boolean await(long, java.util.concurrent.TimeUnit) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireMessageReceived(org.jboss.netty.channel.Channel, java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChildChannelStateEvent DefaultChildChannelStateEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.Channel) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelClosed(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelSink getSink()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelOpen(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addFirst(java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture unbind(org.jboss.netty.channel.Channel)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireMessageReceived(org.jboss.netty.channel.Channel, java.lang.Object, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture disconnect(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture getCloseFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void exceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ExceptionEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelLocal T remove(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void writeRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void childChannelOpen(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChildChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture close()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelInterestChanged(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline T get(java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture setInterestOps(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelSink org.jboss.netty.channel.ChannelFuture execute(org.jboss.netty.channel.ChannelPipeline, java.lang.Runnable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void channelClosed(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChildChannelStateEvent org.jboss.netty.channel.ChannelFuture getFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelConnected(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void messageReceived(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void writeRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void disconnectRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void connect(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture bind(java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture write(org.jboss.netty.channel.Channel, java.lang.Object, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandler remove(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline java.util.Map&lt;java.lang.String,org.jboss.netty.channel.ChannelHandler&gt; toMap()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture void removeListener(org.jboss.netty.channel.ChannelFutureListener) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture connect(org.jboss.netty.channel.Channel, java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamChannelStateEvent org.jboss.netty.channel.ChannelFuture getFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultWriteCompletionEvent org.jboss.netty.channel.ChannelFuture getFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractServerChannel org.jboss.netty.channel.ChannelFuture connect(java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelDisconnected(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ReceiveBufferSizePredictorFactory org.jboss.netty.channel.ReceiveBufferSizePredictor getPredictor()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void connect(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.net.SocketAddress) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void disconnectRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void setInterestOps(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void exceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ExceptionEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture write(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelLocal T get(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireMessageReceived(org.jboss.netty.channel.ChannelHandlerContext, java.lang.Object, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture setInterestOps(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.LifeCycleAwareChannelHandler void beforeRemove(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelHandlerContext java.lang.String getName()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.CompleteChannelFuture org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void exceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ExceptionEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void setInterestOps(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture org.jboss.netty.channel.ChannelFuture awaitUninterruptibly()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultServerChannelConfig void setBufferFactory(org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelConfig void setBufferFactory(org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireMessageReceived(org.jboss.netty.channel.ChannelHandlerContext, java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void messageReceived(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline T get(java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireMessageReceived(org.jboss.netty.channel.Channel, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractServerChannel org.jboss.netty.channel.ChannelFuture write(java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultWriteCompletionEvent DefaultWriteCompletionEvent(org.jboss.netty.channel.Channel, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture write(org.jboss.netty.channel.Channel, java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture bind(java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void connect(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultServerChannelConfig boolean setOption(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void write(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.lang.Object, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandler remove(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void remove(org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture getCloseFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannelSink boolean isFireExceptionCaughtLater(org.jboss.netty.channel.ChannelEvent, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SucceededChannelFuture SucceededChannelFuture(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture connect(java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelSink getSink()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture fireChannelDisconnectedLater(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelStateEvent org.jboss.netty.channel.ChannelState getState()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void writeComplete(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.WriteCompletionEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamMessageEvent DownstreamMessageEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFuture, java.lang.Object, java.net.SocketAddress) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture setReadable(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SucceededChannelFuture org.jboss.netty.channel.ChannelFuture rethrowIfFailed()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelOpen(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChildChannelStateEvent org.jboss.netty.channel.Channel getChildChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void write(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.lang.Object, java.net.SocketAddress) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(java.lang.Class&lt;? extends org.jboss.netty.channel.ChannelHandler&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SucceededChannelFuture org.jboss.netty.channel.ChannelFuture sync()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addLast(java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelFuture execute(java.lang.Runnable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void writeComplete(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.WriteCompletionEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelUpstreamHandler void handleUpstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture org.jboss.netty.channel.ChannelFuture await()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture getUnsupportedOperationFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamMessageEvent DownstreamMessageEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFuture, java.lang.Object, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultExceptionEvent java.lang.Throwable getCause()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline T remove(java.lang.Class&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture bind(org.jboss.netty.channel.Channel, java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture fireExceptionCaughtLater(org.jboss.netty.channel.Channel, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipelineFactory org.jboss.netty.channel.ChannelPipeline getPipeline()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addFirst(java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelOpen(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void channelOpen(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture unbind()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.AdaptiveReceiveBufferSizePredictorFactory org.jboss.netty.channel.ReceiveBufferSizePredictor getPredictor()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture org.jboss.netty.channel.ChannelFuture sync()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamMessageEvent UpstreamMessageEvent(org.jboss.netty.channel.Channel, java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture fireChannelUnboundLater(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelLocal T setIfAbsent(org.jboss.netty.channel.Channel, T) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamMessageEvent DownstreamMessageEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFuture, java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelConfig void setOptions(java.util.Map&lt;java.lang.String,java.lang.Object&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture disconnect()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addFirst(java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture unbind()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture succeededFuture(org.jboss.netty.channel.Channel)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelUnbound(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture boolean await(long, java.util.concurrent.TimeUnit) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamChannelStateEvent org.jboss.netty.channel.ChannelState getState()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.FailedChannelFuture org.jboss.netty.channel.ChannelFuture sync()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture org.jboss.netty.channel.ChannelFuture rethrowIfFailed()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamChannelStateEvent UpstreamChannelStateEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelState, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel AbstractChannel(java.lang.Integer, org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFactory, org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelSink) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline T replace(java.lang.Class&lt;T&gt;, java.lang.String, org.jboss.netty.channel.ChannelHandler)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelSink getSink()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline java.util.Map&lt;java.lang.String,org.jboss.netty.channel.ChannelHandler&gt; toMap()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline T remove(java.lang.Class&lt;T&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelConfig void setBufferFactory(org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture boolean awaitUninterruptibly(long, java.util.concurrent.TimeUnit) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelPipeline pipeline(org.jboss.netty.channel.ChannelHandler...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelInterestChanged(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireWriteComplete(org.jboss.netty.channel.ChannelHandlerContext, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.CompleteChannelFuture org.jboss.netty.channel.ChannelFuture await()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(java.lang.Class&lt;? extends org.jboss.netty.channel.ChannelHandler&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamChannelStateEvent UpstreamChannelStateEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelState, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.FixedReceiveBufferSizePredictorFactory org.jboss.netty.channel.ReceiveBufferSizePredictor getPredictor()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandler getFirst()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void channelUnbound(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture org.jboss.netty.channel.ChannelFuture syncUninterruptibly()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelConfig boolean setOption(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelFuture execute(java.lang.Runnable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelFuture execute(java.lang.Runnable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelConnected(org.jboss.netty.channel.ChannelHandlerContext, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandler remove(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultExceptionEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireExceptionCaught(org.jboss.netty.channel.Channel, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addLast(java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelConfig void setPipelineFactory(org.jboss.netty.channel.ChannelPipelineFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture future(org.jboss.netty.channel.Channel)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandler getLast()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void childChannelOpen(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChildChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamChannelStateEvent org.jboss.netty.channel.ChannelState getState()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void writeComplete(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.WriteCompletionEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel int compareTo(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addAfter(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireExceptionCaught(org.jboss.netty.channel.Channel, java.lang.Throwable) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelLocal T set(org.jboss.netty.channel.Channel, T) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void writeRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelClosed(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelEvent org.jboss.netty.channel.ChannelFuture getFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture org.jboss.netty.channel.ChannelFuture sync()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.FailedChannelFuture java.lang.Throwable getCause()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture connect(java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandler removeLast()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelUnbound(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void attach(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelSink) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void bindRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultWriteCompletionEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamMessageEvent java.lang.Object getMessage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture write(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ServerChannelFactory org.jboss.netty.channel.ServerChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChildChannelStateEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture bind(java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture succeededFuture(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void close(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamMessageEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void setInterestOpsRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void disconnect(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultServerChannelConfig void setPipelineFactory(org.jboss.netty.channel.ChannelPipelineFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelDisconnected(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture fireChannelClosedLater(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline java.util.List&lt;java.lang.String&gt; getNames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.CompleteChannelFuture CompleteChannelFuture(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void connectRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannelSink void exceptionCaught(org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelEvent, org.jboss.netty.channel.ChannelPipelineException) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultExceptionEvent org.jboss.netty.channel.ChannelFuture getFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SucceededChannelFuture org.jboss.netty.channel.ChannelFuture syncUninterruptibly()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void disconnect(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamMessageEvent java.lang.Object getMessage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamMessageEvent org.jboss.netty.channel.ChannelFuture getFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultServerChannelConfig void setOptions(java.util.Map&lt;java.lang.String,java.lang.Object&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelSink void eventSunk(org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannelSink void exceptionCaught(org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelEvent, org.jboss.netty.channel.ChannelPipelineException) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void connectRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void bindRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addLast(java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamMessageEvent UpstreamMessageEvent(org.jboss.netty.channel.Channel, java.lang.Object, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelDownstreamHandler void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelConfig boolean setOption(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultExceptionEvent DefaultExceptionEvent(org.jboss.netty.channel.Channel, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture write(java.lang.Object, java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamChannelStateEvent DownstreamChannelStateEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFuture, org.jboss.netty.channel.ChannelState, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ExceptionEvent java.lang.Throwable getCause()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void channelInterestChanged(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture boolean awaitUninterruptibly(long, java.util.concurrent.TimeUnit) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture bind(org.jboss.netty.channel.Channel, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addLast(java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture org.jboss.netty.channel.ChannelFuture rethrowIfFailed()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandler removeFirst()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture void addListener(org.jboss.netty.channel.ChannelFutureListener) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void channelBound(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture write(org.jboss.netty.channel.Channel, java.lang.Object, java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultExceptionEvent DefaultExceptionEvent(org.jboss.netty.channel.Channel, java.lang.Throwable) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline T remove(java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void remove(org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture disconnect()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture void addListener(org.jboss.netty.channel.ChannelFutureListener) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelConfig void setPipelineFactory(org.jboss.netty.channel.ChannelPipelineFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture write(org.jboss.netty.channel.Channel, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline StaticChannelPipeline(org.jboss.netty.channel.ChannelHandler...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void bind(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture write(java.lang.Object, java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline org.jboss.netty.channel.ChannelHandlerContext getContext(java.lang.Class&lt;? extends org.jboss.netty.channel.ChannelHandler&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannelSink org.jboss.netty.channel.ChannelFuture execute(org.jboss.netty.channel.ChannelPipeline, java.lang.Runnable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamChannelStateEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture setInterestOps(org.jboss.netty.channel.Channel, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture write(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandler removeLast()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void attach(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelSink) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamChannelStateEvent DownstreamChannelStateEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFuture, org.jboss.netty.channel.ChannelState, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture write(org.jboss.netty.channel.Channel, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamChannelStateEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void write(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture fireWriteCompleteLater(org.jboss.netty.channel.Channel, long) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelPipelineFactory pipelineFactory(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void close(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelPipeline getPipeline()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline T remove(java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelInterestChanged(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.CompleteChannelFuture void addListener(org.jboss.netty.channel.ChannelFutureListener) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void attach(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelSink) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture unbind(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addLast(java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamChannelStateEvent DownstreamChannelStateEvent(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFuture, org.jboss.netty.channel.ChannelState, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture fireChannelInterestChangedLater(org.jboss.netty.channel.Channel) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture bind(org.jboss.netty.channel.Channel, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture void removeListener(org.jboss.netty.channel.ChannelFutureListener) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.MessageEvent java.lang.Object getMessage()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void attach(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelSink) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelHandlerContext org.jboss.netty.channel.ChannelHandler getHandler()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture bind(java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline java.util.List&lt;java.lang.String&gt; getNames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelUnbound(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelBound(org.jboss.netty.channel.ChannelHandlerContext, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChildChannelStateEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void addLast(java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelSink org.jboss.netty.channel.ChannelFuture execute(org.jboss.netty.channel.ChannelPipeline, java.lang.Runnable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture failedFuture(org.jboss.netty.channel.Channel, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture write(org.jboss.netty.channel.Channel, java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void channelConnected(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandler removeFirst()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ServerChannelFactory org.jboss.netty.channel.ServerChannel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture connect(java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DownstreamMessageEvent org.jboss.netty.channel.ChannelFuture getFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void setInterestOpsRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireExceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture fireExceptionCaughtLater(org.jboss.netty.channel.ChannelHandlerContext, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelPipeline pipeline(org.jboss.netty.channel.ChannelHandler...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void bind(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.net.SocketAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture failedFuture(org.jboss.netty.channel.Channel, java.lang.Throwable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelBound(org.jboss.netty.channel.Channel, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelBound(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void closeRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture setReadable(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelDisconnected(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture org.jboss.netty.channel.ChannelFuture await()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChildChannelStateEvent org.jboss.netty.channel.Channel getChildChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireMessageReceived(org.jboss.netty.channel.ChannelHandlerContext, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void write(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireExceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, java.lang.Throwable) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannelSink org.jboss.netty.channel.ChannelFuture execute(org.jboss.netty.channel.ChannelPipeline, java.lang.Runnable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamChannelStateEvent org.jboss.netty.channel.ChannelFuture getFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelSink void exceptionCaught(org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelEvent, org.jboss.netty.channel.ChannelPipelineException) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelConfig void setOptions(java.util.Map&lt;java.lang.String,java.lang.Object&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void bind(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.net.SocketAddress) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void handleUpstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelSink void exceptionCaught(org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelEvent, org.jboss.netty.channel.ChannelPipelineException) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.LifeCycleAwareChannelHandler void beforeAdd(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireMessageReceived(org.jboss.netty.channel.ChannelHandlerContext, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelPipeline pipeline()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelFuture org.jboss.netty.channel.ChannelFuture syncUninterruptibly()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelDisconnected(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture failedFuture(org.jboss.netty.channel.Channel, java.lang.Throwable) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelConnected(org.jboss.netty.channel.Channel, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void write(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture write(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addFirst(java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelPipeline pipeline(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void handleUpstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.FailedChannelFuture org.jboss.netty.channel.ChannelFuture syncUninterruptibly()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void attach(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelSink) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture disconnect(org.jboss.netty.channel.Channel)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void write(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelFuture, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void messageReceived(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.UpstreamMessageEvent org.jboss.netty.channel.Channel getChannel()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelFuture getSucceededFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelClosed(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelPipeline pipeline(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture connect(java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void attach(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelSink) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.FailedChannelFuture FailedChannelFuture(org.jboss.netty.channel.Channel, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel AbstractChannel(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFactory, org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelSink) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void channelBound(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void replace(org.jboss.netty.channel.ChannelHandler, java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture write(java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline void addBefore(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void unbindRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void messageReceived(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture setInterestOps(org.jboss.netty.channel.Channel, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline T get(java.lang.Class&lt;T&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void childChannelClosed(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChildChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractChannel org.jboss.netty.channel.ChannelPipeline getPipeline()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelPipeline void remove(org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelDownstreamHandler void unbindRequested(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels org.jboss.netty.channel.ChannelFuture future(org.jboss.netty.channel.Channel, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channels void fireChannelOpen(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.FailedChannelFuture FailedChannelFuture(org.jboss.netty.channel.Channel, java.lang.Throwable) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.Channel org.jboss.netty.channel.ChannelFuture close()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture org.jboss.netty.channel.ChannelFuture awaitUninterruptibly()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline java.util.List&lt;java.lang.String&gt; getNames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.StaticChannelPipeline void addFirst(java.lang.String, org.jboss.netty.channel.ChannelHandler) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFutureListener void operationComplete(org.jboss.netty.channel.ChannelFuture) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandler replace(java.lang.String, java.lang.String, org.jboss.netty.channel.ChannelHandler) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelHandler void channelDisconnected(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.AbstractServerChannel org.jboss.netty.channel.ChannelFuture write(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.CompleteChannelFuture boolean awaitUninterruptibly(long, java.util.concurrent.TimeUnit) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.DefaultChannelPipeline org.jboss.netty.channel.ChannelHandler remove(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.CompleteChannelFuture org.jboss.netty.channel.ChannelFuture awaitUninterruptibly()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.SimpleChannelUpstreamHandler void childChannelClosed(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChildChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.ChannelFuture boolean await(long, java.util.concurrent.TimeUnit) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

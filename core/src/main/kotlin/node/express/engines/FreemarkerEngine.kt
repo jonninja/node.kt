@@ -21,7 +21,7 @@ class FreemarkerEngine(): Engine {
     val template = fm.getTemplate(path);
 
     val writer = StringWriter();
-    template.process(data, writer);
+    template!!.process(data, writer);
     writer.flush();
     return writer.toString();
   }

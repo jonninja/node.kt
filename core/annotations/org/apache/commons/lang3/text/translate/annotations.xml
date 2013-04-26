@@ -1,0 +1,116 @@
+<root>
+    <item name='org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper outsideOf(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.EntityArrays java.lang.String[][] invert(java.lang.String[][])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.LookupTranslator int translate(java.lang.CharSequence, int, java.io.Writer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.UnicodeEscaper org.apache.commons.lang3.text.translate.UnicodeEscaper between(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.CharSequenceTranslator org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.CodePointTranslator int translate(java.lang.CharSequence, int, java.io.Writer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.AggregateTranslator int translate(java.lang.CharSequence, int, java.io.Writer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.AggregateTranslator int translate(java.lang.CharSequence, int, java.io.Writer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.OctalUnescaper int translate(java.lang.CharSequence, int, java.io.Writer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.UnicodeEscaper org.apache.commons.lang3.text.translate.UnicodeEscaper outsideOf(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.CharSequenceTranslator void translate(java.lang.CharSequence, java.io.Writer) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.CharSequenceTranslator org.apache.commons.lang3.text.translate.CharSequenceTranslator with(org.apache.commons.lang3.text.translate.CharSequenceTranslator...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.NumericEntityUnescaper int translate(java.lang.CharSequence, int, java.io.Writer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.OctalUnescaper int translate(java.lang.CharSequence, int, java.io.Writer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.UnicodeUnescaper int translate(java.lang.CharSequence, int, java.io.Writer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.EntityArrays java.lang.String[][] invert(java.lang.String[][]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.NumericEntityUnescaper NumericEntityUnescaper(org.apache.commons.lang3.text.translate.NumericEntityUnescaper.OPTION...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.NumericEntityUnescaper int translate(java.lang.CharSequence, int, java.io.Writer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.UnicodeEscaper org.apache.commons.lang3.text.translate.UnicodeEscaper above(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.UnicodeUnescaper int translate(java.lang.CharSequence, int, java.io.Writer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper below(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.CharSequenceTranslator int translate(java.lang.CharSequence, int, java.io.Writer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.CodePointTranslator int translate(java.lang.CharSequence, int, java.io.Writer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.CharSequenceTranslator int translate(java.lang.CharSequence, int, java.io.Writer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper above(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper between(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.UnicodeEscaper org.apache.commons.lang3.text.translate.UnicodeEscaper below(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.translate.LookupTranslator int translate(java.lang.CharSequence, int, java.io.Writer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

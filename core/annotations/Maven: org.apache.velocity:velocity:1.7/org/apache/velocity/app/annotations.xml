@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="org.apache.velocity.app.FieldMethodizer void addObject(java.lang.Object) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.apache.velocity.app.VelocityEngine VelocityEngine(java.util.Properties) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.apache.velocity.app.VelocityEngine boolean evaluate(org.apache.velocity.context.Context, java.io.Writer, java.lang.String, java.io.InputStream) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.apache.velocity.app.VelocityEngine boolean evaluate(org.apache.velocity.context.Context, java.io.Writer, java.lang.String, java.io.Reader) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.apache.velocity.app.VelocityEngine boolean evaluate(org.apache.velocity.context.Context, java.io.Writer, java.lang.String, java.lang.String) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.apache.velocity.app.VelocityEngine boolean invokeVelocimacro(java.lang.String, java.lang.String, java.lang.String[], org.apache.velocity.context.Context, java.io.Writer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.apache.velocity.app.VelocityEngine boolean invokeVelocimacro(java.lang.String, java.lang.String, java.lang.String[], org.apache.velocity.context.Context, java.io.Writer) 3">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.apache.velocity.app.VelocityEngine boolean invokeVelocimacro(java.lang.String, java.lang.String, java.lang.String[], org.apache.velocity.context.Context, java.io.Writer) 4">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+</root>
+

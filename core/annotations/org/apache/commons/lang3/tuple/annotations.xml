@@ -1,0 +1,17 @@
+<root>
+    <item name='org.apache.commons.lang3.tuple.Pair int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.tuple.ImmutablePair org.apache.commons.lang3.tuple.ImmutablePair&lt;L,R&gt; of(L, R)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.tuple.Pair int compareTo(org.apache.commons.lang3.tuple.Pair&lt;L,R&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.tuple.Pair org.apache.commons.lang3.tuple.Pair&lt;L,R&gt; of(L, R)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.tuple.MutablePair org.apache.commons.lang3.tuple.MutablePair&lt;L,R&gt; of(L, R)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

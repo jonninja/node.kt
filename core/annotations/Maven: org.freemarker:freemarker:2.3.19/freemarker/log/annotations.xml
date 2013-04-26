@@ -1,0 +1,11 @@
+<root>
+    <item name='freemarker.log.SLF4JLoggerFactory freemarker.log.Logger getLogger(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='freemarker.log.Logger void setCategoryPrefix(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='freemarker.log.CommonsLoggingLoggerFactory freemarker.log.Logger getLogger(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

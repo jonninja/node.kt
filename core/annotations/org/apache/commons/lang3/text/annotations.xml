@@ -1,0 +1,404 @@
+<root>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder replaceFirst(char, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendSeparator(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariablePrefixMatcher(org.apache.commons.lang3.text.StrMatcher) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.FormattableUtils java.util.Formatter append(java.lang.CharSequence, java.util.Formatter, int, int, int, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder setNewLineText(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder append(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendWithSeparators(java.util.Iterator&lt;?&gt;, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor StrSubstitutor(java.util.Map&lt;java.lang.String,V&gt;, java.lang.String, java.lang.String, char) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, char[], int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setDelimiterMatcher(org.apache.commons.lang3.text.StrMatcher)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder deleteAll(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.lang.String substring(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder setLength(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariableSuffix(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher singleQuoteMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher charMatcher(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher charSetMatcher(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.lang.Appendable append(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.lang.String rightString(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder replaceFirst(org.apache.commons.lang3.text.StrMatcher, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder char[] toCharArray()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariablePrefix(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer getTSVInstance(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.lang.CharSequence subSequence(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer getCSVInstance(char[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor StrSubstitutor(java.util.Map&lt;java.lang.String,V&gt;, java.lang.String, java.lang.String, char) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.FormattableUtils java.util.Formatter append(java.lang.CharSequence, java.util.Formatter, int, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendAll(java.lang.Object[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder replaceAll(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer java.util.List&lt;java.lang.String&gt; getTokenList()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder delete(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer getTSVInstance(char[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariablePrefix(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor StrSubstitutor(org.apache.commons.lang3.text.StrLookup&lt;?&gt;, org.apache.commons.lang3.text.StrMatcher, org.apache.commons.lang3.text.StrMatcher, char) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor StrSubstitutor(org.apache.commons.lang3.text.StrLookup&lt;?&gt;, java.lang.String, java.lang.String, char) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariableSuffix(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariableSuffixMatcher(org.apache.commons.lang3.text.StrMatcher)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer reset(char[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher tabMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendFixedWidthPadRight(java.lang.Object, int, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder char[] toCharArray(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder reverse()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor java.lang.String replace(java.lang.Object, java.util.Map&lt;java.lang.String,V&gt;, java.lang.String, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrLookup org.apache.commons.lang3.text.StrLookup&lt;java.lang.String&gt; systemPropertiesLookup()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder deleteCharAt(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrTokenizer asTokenizer()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder replaceFirst(java.lang.String, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setDelimiterString(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor StrSubstitutor(org.apache.commons.lang3.text.StrLookup&lt;?&gt;, java.lang.String, java.lang.String, char) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor StrSubstitutor(org.apache.commons.lang3.text.StrLookup&lt;?&gt;, org.apache.commons.lang3.text.StrMatcher, org.apache.commons.lang3.text.StrMatcher, char) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.FormattableUtils java.util.Formatter append(java.lang.CharSequence, java.util.Formatter, int, int, int, char, java.lang.CharSequence) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher int isMatch(char[], int, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder replaceAll(char, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor java.lang.String replace(java.lang.Object, java.util.Map&lt;java.lang.String,V&gt;, java.lang.String, java.lang.String) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setTrimmerMatcher(org.apache.commons.lang3.text.StrMatcher)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher doubleQuoteMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendWithSeparators(java.lang.Object[], java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder minimizeCapacity()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setQuoteChar(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setDelimiterChar(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.lang.String leftString(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendPadding(int, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendAll(java.util.Iterator&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder deleteAll(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendSeparator(char, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariableSuffixMatcher(org.apache.commons.lang3.text.StrMatcher) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher stringMatcher(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendWithSeparators(java.lang.Iterable&lt;?&gt;, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder setCharAt(int, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.FormattableUtils java.util.Formatter append(java.lang.CharSequence, java.util.Formatter, int, int, int, java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrLookup org.apache.commons.lang3.text.StrLookup&lt;?&gt; noneLookup()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder trim()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendFixedWidthPadLeft(int, int, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setQuoteMatcher(org.apache.commons.lang3.text.StrMatcher)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.FormattableUtils java.util.Formatter append(java.lang.CharSequence, java.util.Formatter, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher charSetMatcher(char...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendFixedWidthPadLeft(java.lang.Object, int, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.io.Writer asWriter()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder deleteFirst(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.io.Reader asReader()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher noneMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher commaMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder ensureCapacity(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher spaceMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher int isMatch(char[], int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder char[] getChars(char[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder deleteFirst(org.apache.commons.lang3.text.StrMatcher)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setIgnoredChar(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setIgnoreEmptyTokens(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder setNullText(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder deleteFirst(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendFixedWidthPadRight(int, int, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariablePrefixMatcher(org.apache.commons.lang3.text.StrMatcher)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendAll(java.lang.Iterable&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrLookup org.apache.commons.lang3.text.StrLookup&lt;V&gt; mapLookup(java.util.Map&lt;java.lang.String,V&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.lang.String substring(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder replace(org.apache.commons.lang3.text.StrMatcher, java.lang.String, int, int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor StrSubstitutor(java.util.Map&lt;java.lang.String,V&gt;, java.lang.String, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, float)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendSeparator(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariableSuffix(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder append(char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendSeparator(java.lang.String, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, char[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.FormattableUtils java.util.Formatter append(java.lang.CharSequence, java.util.Formatter, int, int, int, char) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer reset()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor org.apache.commons.lang3.text.StrSubstitutor setVariablePrefix(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher splitMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendSeparator(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder replace(int, int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.lang.String toString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher quoteMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder clear()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, long)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder deleteAll(org.apache.commons.lang3.text.StrMatcher)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setEmptyTokenAsNull(boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor StrSubstitutor(java.util.Map&lt;java.lang.String,V&gt;, java.lang.String, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer getCSVInstance(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer reset(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrMatcher org.apache.commons.lang3.text.StrMatcher trimMatcher()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder replaceAll(org.apache.commons.lang3.text.StrMatcher, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrSubstitutor boolean substitute(org.apache.commons.lang3.text.StrBuilder, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.FormattableUtils java.util.Formatter append(java.lang.CharSequence, java.util.Formatter, int, int, int, java.lang.CharSequence) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder appendSeparator(char, char)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.FormattableUtils java.util.Formatter append(java.lang.CharSequence, java.util.Formatter, int, int, int, char, java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrTokenizer org.apache.commons.lang3.text.StrTokenizer setIgnoredMatcher(org.apache.commons.lang3.text.StrMatcher)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder java.lang.String midString(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.text.StrBuilder org.apache.commons.lang3.text.StrBuilder insert(int, double)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

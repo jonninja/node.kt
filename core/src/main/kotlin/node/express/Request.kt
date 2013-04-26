@@ -28,7 +28,7 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
   var qsd = QueryStringDecoder(request.getUri()!!);
   val attributes: MutableMap<String, Any> = HashMap<String, Any>();
 
-  var method: String = request.getMethod()!!.getName().toLowerCase()
+  var method: String = request.getMethod()!!.getName()!!.toLowerCase()
 
   val path: String
     get() = qsd.getPath()!!
@@ -92,10 +92,10 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
    * Get the value of a header
    */
   fun header(key: String): String? {
-    val headers = request.getHeaders(key);
-    if (headers.size() == 0) return null;
-    val head = headers.head;
-    return head;
+    val headers = request.getHeaders(key)!!
+    if (headers.size() == 0) return null
+    val head = headers.head
+    return head
   }
 
   /**

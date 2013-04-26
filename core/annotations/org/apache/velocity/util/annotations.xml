@@ -1,0 +1,59 @@
+<root>
+    <item name='org.apache.velocity.util.ClassUtils java.io.InputStream getResourceAsStream(java.lang.Class, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String collapseSpaces(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String sub(java.lang.String, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.StringBuffer stringSubstitution(java.lang.String, java.util.Hashtable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String fileContentsToString(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.StringBuffer stringSubstitution(java.lang.String, java.util.Map) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String capitalizeFirstLetter(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.StringBuffer stringSubstitution(java.lang.String, java.util.Map)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String concat(java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String normalizePath(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String firstLetterCaps(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String getPackageAsPath(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.ClassUtils org.apache.velocity.util.introspection.VelMethod getMethod(java.lang.String, java.lang.Object[], java.lang.Class[], java.lang.Object, org.apache.velocity.context.InternalContextAdapter, org.apache.velocity.runtime.parser.node.SimpleNode, boolean) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.ArrayIterator ArrayIterator(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.StringBuffer stringSubstitution(java.lang.String, java.util.Hashtable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils boolean allEmpty(java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.StringUtils java.lang.String collapseNewlines(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.velocity.util.RuntimeServicesAware void setRuntimeServices(org.apache.velocity.runtime.RuntimeServices) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

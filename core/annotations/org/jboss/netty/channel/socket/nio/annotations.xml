@@ -1,0 +1,260 @@
+<root>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannel org.jboss.netty.channel.ChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture write(java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramWorkerPool org.jboss.netty.channel.socket.nio.NioDatagramWorker createWorker(java.util.concurrent.Executor)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory NioClientSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannelFactory NioDatagramChannelFactory(java.util.concurrent.Executor, int, org.jboss.netty.channel.socket.InternetProtocolFamily) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory org.jboss.netty.channel.ServerChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.AbstractNioWorkerPool E createWorker(java.util.concurrent.Executor)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory NioClientSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory NioServerSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioWorkerPool NioWorkerPool(java.util.concurrent.Executor, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.AbstractNioChannelSink org.jboss.netty.channel.ChannelFuture execute(org.jboss.netty.channel.ChannelPipeline, java.lang.Runnable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannelFactory NioDatagramChannelFactory(java.util.concurrent.Executor, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory org.jboss.netty.channel.socket.SocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetSocketAddress, java.net.NetworkInterface)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetSocketAddress, java.net.NetworkInterface)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory NioClientSocketChannelFactory(java.util.concurrent.Executor, int, org.jboss.netty.channel.socket.nio.WorkerPool&lt;org.jboss.netty.channel.socket.nio.NioWorker&gt;) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetSocketAddress, java.net.NetworkInterface) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramWorker void writeFromUserCode(org.jboss.netty.channel.socket.nio.AbstractNioChannel&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannelFactory org.jboss.netty.channel.socket.DatagramChannel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture block(java.net.InetAddress, java.net.InetAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannel org.jboss.netty.channel.socket.SocketChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture block(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory NioClientSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannelFactory org.jboss.netty.channel.socket.DatagramChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory org.jboss.netty.channel.socket.ServerSocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.AbstractNioChannelSink boolean isFireExceptionCaughtLater(org.jboss.netty.channel.ChannelEvent, java.lang.Throwable) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory NioClientSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannel org.jboss.netty.channel.socket.nio.NioChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory org.jboss.netty.channel.ServerChannel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetSocketAddress, java.net.NetworkInterface) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory org.jboss.netty.channel.socket.SocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannel NioSocketChannel(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFactory, org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelSink, java.nio.channels.SocketChannel, org.jboss.netty.channel.socket.nio.NioWorker) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannel org.jboss.netty.channel.ChannelFuture write(java.lang.Object, java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannelConfig void setReceiveBufferSizePredictor(org.jboss.netty.channel.ReceiveBufferSizePredictor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture block(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.AbstractNioChannelSink org.jboss.netty.channel.ChannelFuture execute(org.jboss.netty.channel.ChannelPipeline, java.lang.Runnable)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramWorker java.lang.Runnable createRegisterTask(org.jboss.netty.channel.socket.nio.AbstractNioChannel&lt;?&gt;, org.jboss.netty.channel.ChannelFuture)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.socket.DatagramChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramWorkerPool org.jboss.netty.channel.socket.nio.AbstractNioWorker createWorker(java.util.concurrent.Executor)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetSocketAddress, java.net.NetworkInterface) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory NioServerSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannelFactory NioDatagramChannelFactory(java.util.concurrent.Executor, org.jboss.netty.channel.socket.InternetProtocolFamily) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory NioServerSocketChannelFactory(java.util.concurrent.Executor, org.jboss.netty.channel.socket.nio.WorkerPool&lt;org.jboss.netty.channel.socket.nio.NioWorker&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory org.jboss.netty.channel.socket.ServerSocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory NioClientSocketChannelFactory(java.util.concurrent.Executor, int, org.jboss.netty.channel.socket.nio.WorkerPool&lt;org.jboss.netty.channel.socket.nio.NioWorker&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.socket.nio.NioChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannelFactory NioDatagramChannelFactory(java.util.concurrent.Executor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.socket.nio.NioDatagramChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioWorker boolean read(java.nio.channels.SelectionKey) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannelConfig void setReceiveBufferSizePredictorFactory(org.jboss.netty.channel.ReceiveBufferSizePredictorFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioWorkerPool org.jboss.netty.channel.socket.nio.AbstractNioWorker createWorker(java.util.concurrent.Executor)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory NioClientSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory NioClientSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor, int, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture block(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture block(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramWorker void write0(org.jboss.netty.channel.socket.nio.AbstractNioChannel&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramWorkerPool NioDatagramWorkerPool(java.util.concurrent.Executor, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannel NioSocketChannel(org.jboss.netty.channel.Channel, org.jboss.netty.channel.ChannelFactory, org.jboss.netty.channel.ChannelPipeline, org.jboss.netty.channel.ChannelSink, java.nio.channels.SocketChannel, org.jboss.netty.channel.socket.nio.NioWorker) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetSocketAddress, java.net.NetworkInterface) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioDatagramWorker boolean read(java.nio.channels.SelectionKey) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory NioServerSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory NioServerSocketChannelFactory(java.util.concurrent.Executor, java.util.concurrent.Executor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioWorker java.lang.Runnable createRegisterTask(org.jboss.netty.channel.socket.nio.AbstractNioChannel&lt;?&gt;, org.jboss.netty.channel.ChannelFuture)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioSocketChannel org.jboss.netty.channel.socket.nio.NioSocketChannelConfig getConfig()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory NioServerSocketChannelFactory(java.util.concurrent.Executor, org.jboss.netty.channel.socket.nio.WorkerPool&lt;org.jboss.netty.channel.socket.nio.NioWorker&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.nio.NioWorkerPool org.jboss.netty.channel.socket.nio.NioWorker createWorker(java.util.concurrent.Executor)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

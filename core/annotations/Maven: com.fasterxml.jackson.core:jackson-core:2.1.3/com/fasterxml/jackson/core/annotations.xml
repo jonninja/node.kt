@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="com.fasterxml.jackson.core.Base64Variant Base64Variant(com.fasterxml.jackson.core.Base64Variant, java.lang.String, boolean, char, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant Base64Variant(com.fasterxml.jackson.core.Base64Variant, java.lang.String, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant Base64Variant(java.lang.String, java.lang.String, boolean, char, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant int encodeBase64Chunk(int, byte[], int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant int encodeBase64Chunk(int, char[], int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant int encodeBase64Partial(int, int, byte[], int) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant int encodeBase64Partial(int, int, char[], int) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant java.lang.Object readResolve()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant java.lang.String encode(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant java.lang.String encode(byte[], boolean) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant void encodeBase64Chunk(java.lang.StringBuilder, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variant void encodeBase64Partial(java.lang.StringBuilder, int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variants com.fasterxml.jackson.core.Base64Variant getDefaultVariant()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Base64Variants com.fasterxml.jackson.core.Base64Variant valueOf(java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory boolean isEnabled(com.fasterxml.jackson.core.JsonFactory.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory boolean isEnabled(com.fasterxml.jackson.core.JsonGenerator.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory boolean isEnabled(com.fasterxml.jackson.core.JsonParser.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory configure(com.fasterxml.jackson.core.JsonFactory.Feature, boolean)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory configure(com.fasterxml.jackson.core.JsonFactory.Feature, boolean) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory configure(com.fasterxml.jackson.core.JsonGenerator.Feature, boolean)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory configure(com.fasterxml.jackson.core.JsonGenerator.Feature, boolean) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory configure(com.fasterxml.jackson.core.JsonParser.Feature, boolean)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory configure(com.fasterxml.jackson.core.JsonParser.Feature, boolean) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory copy()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory disable(com.fasterxml.jackson.core.JsonFactory.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory disable(com.fasterxml.jackson.core.JsonFactory.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory disable(com.fasterxml.jackson.core.JsonGenerator.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory disable(com.fasterxml.jackson.core.JsonGenerator.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory disable(com.fasterxml.jackson.core.JsonParser.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory disable(com.fasterxml.jackson.core.JsonParser.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory enable(com.fasterxml.jackson.core.JsonFactory.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory enable(com.fasterxml.jackson.core.JsonFactory.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory enable(com.fasterxml.jackson.core.JsonGenerator.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory enable(com.fasterxml.jackson.core.JsonGenerator.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory enable(com.fasterxml.jackson.core.JsonParser.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory enable(com.fasterxml.jackson.core.JsonParser.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory setCharacterEscapes(com.fasterxml.jackson.core.io.CharacterEscapes)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory setCodec(com.fasterxml.jackson.core.ObjectCodec)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory setInputDecorator(com.fasterxml.jackson.core.io.InputDecorator)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory setOutputDecorator(com.fasterxml.jackson.core.io.OutputDecorator)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonFactory setRootValueSeparator(java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator _createGenerator(java.io.Writer, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator _createGenerator(java.io.Writer, com.fasterxml.jackson.core.io.IOContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator _createJsonGenerator(java.io.Writer, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator _createJsonGenerator(java.io.Writer, com.fasterxml.jackson.core.io.IOContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator _createUTF8Generator(java.io.OutputStream, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator _createUTF8Generator(java.io.OutputStream, com.fasterxml.jackson.core.io.IOContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator _createUTF8JsonGenerator(java.io.OutputStream, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator _createUTF8JsonGenerator(java.io.OutputStream, com.fasterxml.jackson.core.io.IOContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator createGenerator(java.io.File, com.fasterxml.jackson.core.JsonEncoding)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator createGenerator(java.io.OutputStream)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator createGenerator(java.io.OutputStream, com.fasterxml.jackson.core.JsonEncoding)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator createGenerator(java.io.Writer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator createJsonGenerator(java.io.File, com.fasterxml.jackson.core.JsonEncoding)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator createJsonGenerator(java.io.OutputStream)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator createJsonGenerator(java.io.OutputStream, com.fasterxml.jackson.core.JsonEncoding)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonGenerator createJsonGenerator(java.io.Writer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createJsonParser(byte[], int, int, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createJsonParser(java.io.InputStream, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createJsonParser(java.io.InputStream, com.fasterxml.jackson.core.io.IOContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createJsonParser(java.io.Reader, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createJsonParser(java.io.Reader, com.fasterxml.jackson.core.io.IOContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createParser(byte[], int, int, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createParser(java.io.InputStream, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createParser(java.io.InputStream, com.fasterxml.jackson.core.io.IOContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createParser(java.io.Reader, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser _createParser(java.io.Reader, com.fasterxml.jackson.core.io.IOContext) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(byte[])">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(java.io.File)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(java.io.InputStream)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(java.io.Reader)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(java.net.URL)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createJsonParser(java.net.URL) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(byte[])">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(java.io.File)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(java.io.InputStream)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(java.io.Reader)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(java.net.URL)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.JsonParser createParser(java.net.URL) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.format.MatchStrength hasJSONFormat(com.fasterxml.jackson.core.format.InputAccessor) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.io.IOContext _createContext(java.lang.Object, boolean)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory com.fasterxml.jackson.core.util.BufferRecycler _getBufferRecycler()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory java.io.InputStream _optimizedStreamFromURL(java.net.URL) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory java.io.Writer _createWriter(java.io.OutputStream, com.fasterxml.jackson.core.JsonEncoding, com.fasterxml.jackson.core.io.IOContext)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonFactory java.lang.Object readResolve()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator boolean isEnabled(com.fasterxml.jackson.core.JsonGenerator.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator configure(com.fasterxml.jackson.core.JsonGenerator.Feature, boolean)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator disable(com.fasterxml.jackson.core.JsonGenerator.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator disable(com.fasterxml.jackson.core.JsonGenerator.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator enable(com.fasterxml.jackson.core.JsonGenerator.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator enable(com.fasterxml.jackson.core.JsonGenerator.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator setCharacterEscapes(com.fasterxml.jackson.core.io.CharacterEscapes)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator setCodec(com.fasterxml.jackson.core.ObjectCodec)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator setHighestNonEscapedChar(int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator setPrettyPrinter(com.fasterxml.jackson.core.PrettyPrinter)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator setRootValueSeparator(com.fasterxml.jackson.core.SerializableString)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.JsonGenerator useDefaultPrettyPrinter()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator com.fasterxml.jackson.core.Version version()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator int writeBinary(com.fasterxml.jackson.core.Base64Variant, java.io.InputStream, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void copyCurrentEvent(com.fasterxml.jackson.core.JsonParser) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void copyCurrentStructure(com.fasterxml.jackson.core.JsonParser) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeBinary(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeBinary(com.fasterxml.jackson.core.Base64Variant, byte[], int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeBinaryField(java.lang.String, byte[]) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeFieldName(com.fasterxml.jackson.core.SerializableString) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeFieldName(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeNumber(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeRaw(com.fasterxml.jackson.core.SerializableString) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeRaw(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeRaw(java.lang.String, int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonGenerator void writeString(com.fasterxml.jackson.core.SerializableString) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser boolean isEnabled(com.fasterxml.jackson.core.JsonParser.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonLocation getCurrentLocation()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonLocation getTokenLocation()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParseException _constructError(java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParser configure(com.fasterxml.jackson.core.JsonParser.Feature, boolean)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParser configure(com.fasterxml.jackson.core.JsonParser.Feature, boolean) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParser disable(com.fasterxml.jackson.core.JsonParser.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParser disable(com.fasterxml.jackson.core.JsonParser.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParser enable(com.fasterxml.jackson.core.JsonParser.Feature)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParser enable(com.fasterxml.jackson.core.JsonParser.Feature) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParser skipChildren()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.JsonParser.NumberType getNumberType()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonParser com.fasterxml.jackson.core.Version version()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.JsonStreamContext java.lang.String getTypeDesc()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.PrettyPrinter void writeArrayValueSeparator(com.fasterxml.jackson.core.JsonGenerator) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.PrettyPrinter void writeEndArray(com.fasterxml.jackson.core.JsonGenerator, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.PrettyPrinter void writeEndObject(com.fasterxml.jackson.core.JsonGenerator, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.PrettyPrinter void writeObjectEntrySeparator(com.fasterxml.jackson.core.JsonGenerator) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.PrettyPrinter void writeObjectFieldValueSeparator(com.fasterxml.jackson.core.JsonGenerator) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.PrettyPrinter void writeStartArray(com.fasterxml.jackson.core.JsonGenerator) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.PrettyPrinter void writeStartObject(com.fasterxml.jackson.core.JsonGenerator) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString byte[] asQuotedUTF8()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString byte[] asUnquotedUTF8()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString int appendQuoted(char[], int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString int appendQuotedUTF8(byte[], int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString int appendUnquoted(char[], int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString int appendUnquotedUTF8(byte[], int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString int putQuotedUTF8(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString int putUnquotedUTF8(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString int writeQuotedUTF8(java.io.OutputStream) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString int writeUnquotedUTF8(java.io.OutputStream) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.SerializableString java.lang.String getValue()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="com.fasterxml.jackson.core.Version com.fasterxml.jackson.core.Version unknownVersion()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Version java.lang.String getArtifactId()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Version java.lang.String getGroupId()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="com.fasterxml.jackson.core.Versioned com.fasterxml.jackson.core.Version version()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+</root>
+

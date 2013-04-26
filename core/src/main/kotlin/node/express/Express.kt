@@ -313,10 +313,11 @@ class Express() {
    * Our Netty callback
    */
   private inner class RequestHandler(): SimpleChannelUpstreamHandler() {
-    override fun messageReceived(ctx: ChannelHandlerContext, e: MessageEvent) {
-      when (e.getMessage()) {
+
+    public override fun messageReceived(ctx: ChannelHandlerContext?, e: MessageEvent?) {
+      when (e!!.getMessage()) {
         is HttpRequest -> {
-          val req = Request(this@Express, e, ctx.getChannel()!!)
+          val req = Request(this@Express, e, ctx!!.getChannel()!!)
           val res = Response(req, e)
           try {
             handleRequest(req, res, 0)
@@ -325,7 +326,7 @@ class Express() {
           }
         }
         is WebSocketFrame -> {
-          handleWebSocketRequest(ctx.getChannel()!!, e.getMessage() as WebSocketFrame)
+          handleWebSocketRequest(ctx!!.getChannel()!!, e.getMessage() as WebSocketFrame)
         }
         else -> {
 
@@ -336,7 +337,7 @@ class Express() {
 
   private inner class PipelineFactory(): ChannelPipelineFactory {
     public override fun getPipeline(): ChannelPipeline {
-      var pipeline = Channels.pipeline();
+      val pipeline = Channels.pipeline()!!
       pipeline.addLast("decoder", HttpRequestDecoder())
       pipeline.addLast("aggregator", HttpChunkAggregator(1048576))
       pipeline.addLast("encoder", HttpResponseEncoder())
@@ -384,10 +385,10 @@ class Express() {
       route.handshake(req.channel, req.request)
       val wsh = handler(WebSocketChannel(req.channel))
       webSocketHandlers.put(req.channel.getId()!!, wsh)
-      req.channel.getCloseFuture().addListener(object: ChannelFutureListener {
-        public override fun operationComplete(future: ChannelFuture) {
+      req.channel.getCloseFuture()!!.addListener(object: ChannelFutureListener {
+        public override fun operationComplete(future: ChannelFuture?) {
           wsh.closed()
-          webSocketHandlers.remove(future.getChannel()!!.getId())
+          webSocketHandlers.remove(future!!.getChannel()!!.getId())
         }
       })
     })

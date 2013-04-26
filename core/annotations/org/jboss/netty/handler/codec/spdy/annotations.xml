@@ -1,0 +1,365 @@
+<root>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setMethod(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpMethod) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeMethod(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock void removeHeader(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void setUrl(org.jboss.netty.handler.codec.http.HttpMessage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock java.util.List&lt;java.lang.String&gt; getHeaders(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setMethod(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpMethod) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyStreamStatus java.lang.String getStatusPhrase()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpEncoder void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders int getAssociatedToStreamId(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setVersion(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpVersion) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyFrameCodec void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeHost(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionStatus int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock java.lang.String getHeader(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock boolean containsHeader(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionHandler void messageReceived(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyStreamStatus java.lang.String toString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setUrl(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders java.lang.String getUrl(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void addHeader(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void setAssociatedToStreamID(org.jboss.netty.handler.codec.http.HttpMessage, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setMethod(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpMethod) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setUrl(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setScheme(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionStatus int compareTo(org.jboss.netty.handler.codec.spdy.SpdySessionStatus) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock java.util.List&lt;java.util.Map.Entry&lt;java.lang.String,java.lang.String&gt;&gt; getHeaders()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setVersion(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpVersion) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders java.lang.String getScheme(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders int getStreamId(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyStreamStatus SpdyStreamStatus(int, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setStatus(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpResponseStatus) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionHandler void messageReceived(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.MessageEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void removePriority(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setHeader(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionStatus java.lang.String getStatusPhrase()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeScheme(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void setStreamID(org.jboss.netty.handler.codec.http.HttpMessage, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setHost(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyStreamStatus int compareTo(org.jboss.netty.handler.codec.spdy.SpdyStreamStatus) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeUrl(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setStatus(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpResponseStatus) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setStatus(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpResponseStatus) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock void addHeader(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpCodec void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeUrl(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void removeAssociatedToStreamID(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock java.util.Set&lt;java.lang.String&gt; getHeaderNames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyFrameEncoder void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeVersion(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setHeader(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String, java.lang.Iterable&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setStatus(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpResponseStatus) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock void setHeader(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders java.lang.String getUrl(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void removeUrl(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders java.lang.String getHost(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders java.lang.String getScheme(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionHandler void exceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ExceptionEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyStreamStatus int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeStatus(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeMethod(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock java.util.List&lt;java.lang.String&gt; getHeaders(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock java.util.Set&lt;java.lang.String&gt; getHeaderNames()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void removeStreamId(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionStatus SpdySessionStatus(int, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionHandler void exceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ExceptionEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeVersion(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void removeAssociatedToStreamId(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock void setHeader(java.lang.String, java.lang.Iterable&lt;?&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionHandler void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders java.lang.String getUrl(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyFrameCodec void handleUpstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock void setHeader(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders byte getPriority(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock void setHeader(java.lang.String, java.lang.Iterable&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void setAssociatedToStreamId(org.jboss.netty.handler.codec.http.HttpMessage, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock java.lang.String getHeader(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock java.util.List&lt;java.lang.String&gt; getHeaders(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setVersion(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpVersion) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void removeScheme(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void setPriority(org.jboss.netty.handler.codec.http.HttpMessage, byte) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock java.util.List&lt;java.lang.String&gt; getHeaders(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void setScheme(org.jboss.netty.handler.codec.http.HttpMessage, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock void setHeader(java.lang.String, java.lang.Iterable&lt;?&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpCodec void handleUpstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void removeStreamID(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyStreamStatus org.jboss.netty.handler.codec.spdy.SpdyStreamStatus valueOf(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock void removeHeader(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock void addHeader(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock boolean containsHeader(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setVersion(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpVersion) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders int getStreamID(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders java.lang.String getHeader(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setScheme(int, org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders java.lang.String getScheme(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyFrameDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders java.lang.String getHeader(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, java.lang.String, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock java.util.List&lt;java.util.Map.Entry&lt;java.lang.String,java.lang.String&gt;&gt; getHeaders()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeScheme(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionStatus java.lang.String toString()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void setMethod(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock, org.jboss.netty.handler.codec.http.HttpMethod) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders int getAssociatedToStreamID(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHttpHeaders void setStreamId(org.jboss.netty.handler.codec.http.HttpMessage, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdySessionStatus org.jboss.netty.handler.codec.spdy.SpdySessionStatus valueOf(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.DefaultSpdyHeaderBlock void setHeader(java.lang.String, java.lang.Iterable&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.spdy.SpdyHeaders void removeStatus(org.jboss.netty.handler.codec.spdy.SpdyHeaderBlock) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

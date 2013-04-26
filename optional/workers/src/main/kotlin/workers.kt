@@ -1,6 +1,5 @@
 package node.workers
 
-import java.util.HashMap
 import java.util.concurrent.Future
 import node.util.json.toJsonString
 import java.util.concurrent.Executors
@@ -9,7 +8,8 @@ import node.util._logger
 import kotlin.concurrent.submit
 import node.util.methods
 import java.lang.reflect.Method
-import node.inject.Factory
+import node.inject.Registry
+import node.inject.CacheScope
 
 /**
  * A trait for instances that are capable of processing jobs
@@ -35,6 +35,11 @@ trait Queue {
    * queue has done what it's going to do with it (which may or may not be successful)
    */
   fun post(data: String): Future<Boolean>
+
+  /**
+   * Start running the queue
+   */
+  fun run()
 }
 
 private class WorkerSpec(val worker: Worker<*>) {
@@ -53,7 +58,7 @@ private class WorkerSpec(val worker: Worker<*>) {
  * Manages jobs and workers. Clients can post job events and data as well as
  * register event handlers.
  */
-class JobManager(val queue: Queue, val factory: Factory) {
+class JobManager(val queue: Queue, val registry: Registry) {
   val executor = Executors.newFixedThreadPool(10);
 
   {
@@ -75,7 +80,7 @@ class JobManager(val queue: Queue, val factory: Factory) {
    * necessarily mean that the job has been completed... just that, at the
    * very least, the queue has posted the job.
    */
-  fun <T> postEvent(evt: Event, data: T): Future<Boolean> {
+  fun <T> postEvent(evt: Event<T>, data: T): Future<Boolean> {
     return queue.post(hashMapOf(
         "evt" to evt.id,
         "data" to data.toJsonString(),
@@ -83,18 +88,24 @@ class JobManager(val queue: Queue, val factory: Factory) {
         ).toJsonString())
   }
 
-  fun <T> processEvent(event: Event, data: T): Boolean {
+  fun <T> processEvent(event: Event<T>, data: T): Boolean {
+    val factory = registry.factory(CacheScope.OPERATION)
     val worker = factory.instanceOf(javaClass<Worker<*>>(), event.id)
     val spec = WorkerSpec(worker)
     spec.method.invoke(worker, data)
     return true
   }
 
+  fun run() {
+    queue.run()
+  }
+
   private fun processData(data: String): Boolean {
     val eventData = data.json(javaClass<Map<String,*>>())
-    val event = Event(eventData.get("evt") as String)
+    val event = eventData.get("evt") as String
 
-    val worker = factory.instanceOf(javaClass<Worker<*>>(), event.id)
+    val factory = registry.factory(CacheScope.OPERATION)
+    val worker = factory.instanceOf(javaClass<Worker<*>>(), event)
     val spec = WorkerSpec(worker)
 
     val dataObj = (eventData.get("data") as? String?)?.json(spec.dataType as Class<Any>)
@@ -103,8 +114,7 @@ class JobManager(val queue: Queue, val factory: Factory) {
   }
 }
 
-data class Event(val id: String)
-val Events = Event("events")
+data class Event<T>(val id: String)
 
 /**
  * Queue implementation that passes execution immediately to the job handler.
@@ -116,5 +126,9 @@ class PassThroughQueue(): Queue {
 
   override fun post(data: String): Future<Boolean> {
     return jobHandler(data)
+  }
+
+  override fun run() {
+    throw UnsupportedOperationException()
   }
 }

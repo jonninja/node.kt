@@ -1,0 +1,158 @@
+<root>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.buffer.ChannelBufferFactory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64Encoder Base64Encoder(boolean, org.jboss.netty.handler.codec.base64.Base64Dialect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, boolean, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, boolean, org.jboss.netty.buffer.ChannelBufferFactory) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.buffer.ChannelBufferFactory) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64Decoder Base64Decoder(org.jboss.netty.handler.codec.base64.Base64Dialect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.buffer.ChannelBufferFactory) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, boolean, org.jboss.netty.buffer.ChannelBufferFactory) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.buffer.ChannelBufferFactory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64Encoder java.lang.Object encode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 5'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, boolean, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 4'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, int, int, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, int, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer decode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.base64.Base64 org.jboss.netty.buffer.ChannelBuffer encode(org.jboss.netty.buffer.ChannelBuffer, boolean, org.jboss.netty.handler.codec.base64.Base64Dialect, org.jboss.netty.buffer.ChannelBufferFactory) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

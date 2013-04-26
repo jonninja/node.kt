@@ -1,0 +1,104 @@
+<root>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool, boolean, java.util.concurrent.Executor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool, java.util.concurrent.Executor) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler void handleDownstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, java.util.concurrent.Executor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler void channelDisconnected(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler void exceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ExceptionEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler javax.net.ssl.SSLEngine getEngine()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler org.jboss.netty.channel.ChannelFuture getSSLEngineInboundCloseFuture()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool, java.util.concurrent.Executor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler void channelClosed(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, boolean, java.util.concurrent.Executor) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, boolean, java.util.concurrent.Executor) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler void channelConnected(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, java.util.concurrent.Executor) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool, boolean, java.util.concurrent.Executor) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool, boolean, java.util.concurrent.Executor) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool, java.util.concurrent.Executor) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler void beforeAdd(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler void channelDisconnected(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelStateEvent) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler SslHandler(javax.net.ssl.SSLEngine, org.jboss.netty.handler.ssl.SslBufferPool) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler void exceptionCaught(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ExceptionEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ssl.SslHandler org.jboss.netty.channel.ChannelFuture close()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

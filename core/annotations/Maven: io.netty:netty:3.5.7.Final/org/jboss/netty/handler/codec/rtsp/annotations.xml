@@ -1,0 +1,59 @@
+<root>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspResponseStatuses org.jboss.netty.handler.codec.http.HttpResponseStatus valueOf(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspRequestEncoder void encodeInitialLine(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.http.HttpMessage) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspRequestEncoder void encodeInitialLine(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspMessageDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer, java.lang.Enum) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspMessageDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer, java.lang.Enum) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspMessageDecoder boolean isContentAlwaysEmpty(org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspRequestDecoder org.jboss.netty.handler.codec.http.HttpMessage createMessage(java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspResponseDecoder org.jboss.netty.handler.codec.http.HttpMessage createMessage(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspResponseDecoder org.jboss.netty.handler.codec.http.HttpMessage createMessage(java.lang.String[])'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspResponseEncoder void encodeInitialLine(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.http.HttpMessage) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspMethods org.jboss.netty.handler.codec.http.HttpMethod valueOf(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspResponseEncoder void encodeInitialLine(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.http.HttpMessage) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspVersions org.jboss.netty.handler.codec.http.HttpVersion valueOf(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspMessageDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.http.HttpMessageDecoder.State) 3'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspMessageEncoder java.lang.Object encode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.codec.rtsp.RtspRequestDecoder org.jboss.netty.handler.codec.http.HttpMessage createMessage(java.lang.String[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

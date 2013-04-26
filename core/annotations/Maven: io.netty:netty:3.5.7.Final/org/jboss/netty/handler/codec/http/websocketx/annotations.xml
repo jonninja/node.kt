@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.TextWebSocketFrame void setText(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocket00FrameDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer, java.lang.Enum) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocket00FrameDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer, java.lang.Enum) 3">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocket00FrameDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.handler.codec.replay.VoidEnum) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocket00FrameEncoder java.lang.Object encode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, java.lang.Object) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocket08FrameDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer, java.lang.Enum) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocket08FrameDecoder java.lang.Object decode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, org.jboss.netty.buffer.ChannelBuffer, java.lang.Enum) 3">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder java.lang.Object encode(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.Channel, java.lang.Object) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker void finishHandshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpResponse) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker void finishHandshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpResponse) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker00 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker00 void finishHandshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpResponse) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker00 void finishHandshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpResponse) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker08 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker08 void finishHandshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpResponse) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker08 void finishHandshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpResponse) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13 void finishHandshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpResponse) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker13 void finishHandshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpResponse) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshakerFactory org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker newHandshaker(java.net.URI, org.jboss.netty.handler.codec.http.websocketx.WebSocketVersion, java.lang.String, boolean, java.util.Map&lt;java.lang.String,java.lang.String&gt;)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshakerFactory org.jboss.netty.handler.codec.http.websocketx.WebSocketClientHandshaker newHandshaker(java.net.URI, org.jboss.netty.handler.codec.http.websocketx.WebSocketVersion, java.lang.String, boolean, java.util.Map&lt;java.lang.String,java.lang.String&gt;, long)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker java.util.Set&lt;java.lang.String&gt; getSubprotocols()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.websocketx.CloseWebSocketFrame)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.websocketx.CloseWebSocketFrame) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpRequest) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpRequest) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker00 org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.websocketx.CloseWebSocketFrame) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker00 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpRequest) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker00 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpRequest) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker08 org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.websocketx.CloseWebSocketFrame)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker08 org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.websocketx.CloseWebSocketFrame) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker08 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpRequest) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker08 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpRequest) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker13 org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.websocketx.CloseWebSocketFrame)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker13 org.jboss.netty.channel.ChannelFuture close(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.websocketx.CloseWebSocketFrame) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker13 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpRequest) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker13 org.jboss.netty.channel.ChannelFuture handshake(org.jboss.netty.channel.Channel, org.jboss.netty.handler.codec.http.HttpRequest) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshaker newHandshaker(org.jboss.netty.handler.codec.http.HttpRequest) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory void sendUnsupportedWebSocketVersionResponse(org.jboss.netty.channel.Channel) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.handler.codec.http.websocketx.WebSocketVersion java.lang.String toHttpHeaderValue()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+</root>
+

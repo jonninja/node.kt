@@ -34,7 +34,7 @@ class SQSQueue(val sqs: AmazonSQSClient, queueName: String): Queue {
     }
   }
 
-  fun run() {
+  override fun run() {
     running = true
     thread(name = "aws worker thread", daemon = true, block = {
       this._logger.info("Starting worker for $queueUrl")

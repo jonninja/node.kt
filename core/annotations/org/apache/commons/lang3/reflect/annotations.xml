@@ -1,0 +1,212 @@
+<root>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readStaticField(java.lang.Class&lt;?&gt;, java.lang.String, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeField(java.lang.Object, java.lang.String, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeField(java.lang.reflect.Field, java.lang.Object, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getField(java.lang.Class&lt;?&gt;, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getDeclaredField(java.lang.Class&lt;?&gt;, java.lang.String, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeStaticField(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeDeclaredStaticField(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.lang.reflect.Type[] getImplicitBounds(java.lang.reflect.TypeVariable&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readField(java.lang.reflect.Field, java.lang.Object, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readField(java.lang.reflect.Field, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeField(java.lang.Object, java.lang.String, java.lang.Object, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeStaticField(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getField(java.lang.Class&lt;?&gt;, java.lang.String, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readStaticField(java.lang.reflect.Field) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils boolean typesSatisfyVariables(java.util.Map&lt;java.lang.reflect.TypeVariable&lt;?&gt;,java.lang.reflect.Type&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readDeclaredStaticField(java.lang.Class&lt;?&gt;, java.lang.String, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.lang.reflect.Type[] getImplicitUpperBounds(java.lang.reflect.WildcardType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readStaticField(java.lang.Class&lt;?&gt;, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getDeclaredField(java.lang.Class&lt;?&gt;, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.MethodUtils java.lang.Object invokeExactMethod(java.lang.Object, java.lang.String, java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getField(java.lang.Class&lt;?&gt;, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeDeclaredField(java.lang.Object, java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.lang.Class&lt;?&gt; getRawType(java.lang.reflect.Type, java.lang.reflect.Type) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.MethodUtils java.lang.reflect.Method getMatchingAccessibleMethod(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Class&lt;?&gt;...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readStaticField(java.lang.Class&lt;?&gt;, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.lang.reflect.Type[] getImplicitLowerBounds(java.lang.reflect.WildcardType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeDeclaredStaticField(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeDeclaredStaticField(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.util.Map&lt;java.lang.reflect.TypeVariable&lt;?&gt;,java.lang.reflect.Type&gt; getTypeArguments(java.lang.reflect.Type, java.lang.Class&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readField(java.lang.Object, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeField(java.lang.reflect.Field, java.lang.Object, java.lang.Object, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readField(java.lang.Object, java.lang.String, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeStaticField(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readDeclaredStaticField(java.lang.Class&lt;?&gt;, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.ConstructorUtils java.lang.reflect.Constructor&lt;T&gt; getMatchingAccessibleConstructor(java.lang.Class&lt;T&gt;, java.lang.Class&lt;?&gt;...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.MethodUtils java.lang.Object invokeStaticMethod(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object[], java.lang.Class&lt;?&gt;[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getDeclaredField(java.lang.Class&lt;?&gt;, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readDeclaredStaticField(java.lang.Class&lt;?&gt;, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readDeclaredStaticField(java.lang.Class&lt;?&gt;, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeDeclaredField(java.lang.Object, java.lang.String, java.lang.Object) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeDeclaredField(java.lang.Object, java.lang.String, java.lang.Object, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readStaticField(java.lang.Class&lt;?&gt;, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getField(java.lang.Class&lt;?&gt;, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeDeclaredStaticField(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.MethodUtils java.lang.Object invokeMethod(java.lang.Object, java.lang.String, java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.util.Map&lt;java.lang.reflect.TypeVariable&lt;?&gt;,java.lang.reflect.Type&gt; determineTypeArguments(java.lang.Class&lt;?&gt;, java.lang.reflect.ParameterizedType) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readField(java.lang.Object, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readField(java.lang.Object, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readDeclaredField(java.lang.Object, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.lang.reflect.Type[] getImplicitLowerBounds(java.lang.reflect.WildcardType)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readDeclaredField(java.lang.Object, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.MethodUtils java.lang.Object invokeStaticMethod(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getDeclaredField(java.lang.Class&lt;?&gt;, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readStaticField(java.lang.reflect.Field, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeDeclaredField(java.lang.Object, java.lang.String, java.lang.Object, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getField(java.lang.Class&lt;?&gt;, java.lang.String, boolean)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeStaticField(java.lang.reflect.Field, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeField(java.lang.Object, java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.reflect.Field getField(java.lang.Class&lt;?&gt;, java.lang.String, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeStaticField(java.lang.reflect.Field, java.lang.Object, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.MethodUtils java.lang.Object invokeExactMethod(java.lang.Object, java.lang.String, java.lang.Object[], java.lang.Class&lt;?&gt;[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.lang.reflect.Type[] normalizeUpperBounds(java.lang.reflect.Type[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.MethodUtils java.lang.Object invokeMethod(java.lang.Object, java.lang.String, java.lang.Object[], java.lang.Class&lt;?&gt;[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeStaticField(java.lang.Class&lt;?&gt;, java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.ConstructorUtils T invokeConstructor(java.lang.Class&lt;T&gt;, java.lang.Object[], java.lang.Class&lt;?&gt;[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.TypeUtils java.util.Map&lt;java.lang.reflect.TypeVariable&lt;?&gt;,java.lang.reflect.Type&gt; getTypeArguments(java.lang.reflect.ParameterizedType) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils void writeField(java.lang.Object, java.lang.String, java.lang.Object, boolean) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readDeclaredField(java.lang.Object, java.lang.String, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.FieldUtils java.lang.Object readDeclaredField(java.lang.Object, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.reflect.ConstructorUtils T invokeConstructor(java.lang.Class&lt;T&gt;, java.lang.Object...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

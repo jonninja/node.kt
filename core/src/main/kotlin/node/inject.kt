@@ -30,10 +30,15 @@ class Factory(val registry: Registry, val scope: CacheScope, val parent: Factory
     if (clazz == javaClass<Factory>()) {
       return this as T;
     }
-    val binding = registry.getBinding(clazz, name)
+    if (clazz == javaClass<Registry>()) {
+      return registry as T;
+    }
 
+    val binding = registry.getBinding(clazz, name)
     if (binding != null) {
-      if (binding.scope == this.scope) {
+      if (binding.scope == null) {
+        return binding.binding.instance(this, name)
+      } else if (binding.scope == this.scope) {
         if (cache.containsKey(bindingKey(clazz, name))) {
           return cache.get(bindingKey(clazz, name)) as T
         } else {
@@ -43,11 +48,9 @@ class Factory(val registry: Registry, val scope: CacheScope, val parent: Factory
         }
       } else if (parent != null) {
         return parent.instanceOf(clazz, name)
-      } else if (binding.scope != null) {
+      } else {
         // if the type is bound to a scope, but it is not this one, we have a problem
         throw IllegalStateException("Unable to create ${clazz.getCanonicalName()} in the scope that it was bound to. Make sure you are using a factory with the correct cache scope.")
-      } else {
-        return binding.binding.instance(this, name)
       }
     }
     throw NotFoundException("No binding found for ${bindingKey(clazz, name)}")

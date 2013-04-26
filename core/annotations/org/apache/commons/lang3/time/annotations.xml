@@ -1,0 +1,296 @@
+<root>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date addHours(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Iterator&lt;java.util.Calendar&gt; iterator(java.util.Date, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(java.util.Date, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date parseDateStrictly(java.lang.String, java.lang.String...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean truncatedEquals(java.util.Date, java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Calendar round(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(java.util.Date, java.lang.String, java.util.TimeZone) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String formatUTC(java.util.Date, java.lang.String, java.util.Locale) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date addMonths(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat org.apache.commons.lang3.time.FastDateFormat getInstance(java.lang.String, java.util.TimeZone, java.util.Locale) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Iterator&lt;java.util.Calendar&gt; iterator(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(long, java.lang.String, java.util.TimeZone) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat java.util.List&lt;org.apache.commons.lang3.time.FastDateFormat.Rule&gt; parsePattern()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils int truncatedCompareTo(java.util.Date, java.util.Date, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameInstant(java.util.Date, java.util.Date) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Iterator&lt;?&gt; iterator(java.lang.Object, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Calendar round(java.util.Calendar, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameDay(java.util.Date, java.util.Date) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat org.apache.commons.lang3.time.FastDateFormat getInstance(java.lang.String, java.util.Locale) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date addMilliseconds(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInMilliseconds(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat java.lang.Object parseObject(java.lang.String, java.text.ParsePosition) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(java.util.Date, java.lang.String, java.util.TimeZone, java.util.Locale) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameLocalTime(java.util.Calendar, java.util.Calendar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameInstant(java.util.Date, java.util.Date) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat org.apache.commons.lang3.time.FastDateFormat getInstance(java.lang.String, java.util.TimeZone) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date setHours(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInMilliseconds(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date ceiling(java.lang.Object, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date setYears(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(java.util.Calendar, java.lang.String, java.util.TimeZone, java.util.Locale) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date parseDate(java.lang.String, java.lang.String...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat java.lang.String parseToken(java.lang.String, int[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(java.util.Calendar, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DurationFormatUtils java.lang.String formatPeriod(long, long, java.lang.String, boolean, java.util.TimeZone) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date parseDateStrictly(java.lang.String, java.lang.String...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date parseDateStrictly(java.lang.String, java.lang.String...) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInMinutes(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameLocalTime(java.util.Calendar, java.util.Calendar) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date setMonths(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(long, java.lang.String, java.util.TimeZone, java.util.Locale) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInSeconds(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date addWeeks(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInHours(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date parseDate(java.lang.String, java.lang.String...)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean truncatedEquals(java.util.Date, java.util.Date, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat java.lang.String parseToken(java.lang.String, int[]) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String formatUTC(java.util.Date, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean truncatedEquals(java.util.Calendar, java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat java.lang.StringBuffer format(java.lang.Object, java.lang.StringBuffer, java.text.FieldPosition) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Iterator&lt;java.util.Calendar&gt; iterator(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Iterator&lt;?&gt; iterator(java.lang.Object, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInSeconds(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Calendar toCalendar(java.util.Date)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInMinutes(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils int truncatedCompareTo(java.util.Calendar, java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameInstant(java.util.Calendar, java.util.Calendar) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date addSeconds(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat org.apache.commons.lang3.time.FastDateFormat getInstance(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date addYears(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Calendar ceiling(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Calendar ceiling(java.util.Calendar, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date setMinutes(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String formatUTC(long, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date addMinutes(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(java.util.Calendar, java.lang.String, java.util.Locale) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date round(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Calendar truncate(java.util.Calendar, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(long, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInDays(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean truncatedEquals(java.util.Calendar, java.util.Calendar, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date ceiling(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils int truncatedCompareTo(java.util.Calendar, java.util.Calendar, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date round(java.lang.Object, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DurationFormatUtils java.lang.String formatPeriod(long, long, java.lang.String) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameInstant(java.util.Calendar, java.util.Calendar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date setMilliseconds(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(java.util.Date, java.lang.String, java.util.Locale) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Iterator&lt;java.util.Calendar&gt; iterator(java.util.Calendar, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date parseDate(java.lang.String, java.lang.String...) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date addDays(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date setSeconds(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DurationFormatUtils java.lang.String formatDuration(long, java.lang.String, boolean) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameDay(java.util.Date, java.util.Date) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date truncate(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String formatUTC(long, java.lang.String, java.util.Locale) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DurationFormatUtils java.lang.String formatDuration(long, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils int truncatedCompareTo(java.util.Date, java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date truncate(java.lang.Object, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.FastDateFormat org.apache.commons.lang3.time.FastDateFormat.NumberRule selectNumberRule(int, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameDay(java.util.Calendar, java.util.Calendar) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInHours(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(long, java.lang.String, java.util.Locale) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateFormatUtils java.lang.String format(java.util.Calendar, java.lang.String, java.util.TimeZone) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils long getFragmentInDays(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils boolean isSameDay(java.util.Calendar, java.util.Calendar) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Date setDays(java.util.Date, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.lang3.time.DateUtils java.util.Calendar truncate(java.util.Calendar, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

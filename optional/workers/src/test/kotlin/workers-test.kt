@@ -13,8 +13,8 @@ class SimpleWorker: Worker<String> {
 class WorkersTest {
   Test fun testPassThrough() {
     val registry = Registry()
-    val jobManager = JobManager(PassThroughQueue(), registry.factory())
-    val event = Event("test-event")
+    val jobManager = JobManager(PassThroughQueue(), registry)
+    val event = Event<String>("test-event")
 
     var latest: String? = null
     val worker = object: Worker<String> {

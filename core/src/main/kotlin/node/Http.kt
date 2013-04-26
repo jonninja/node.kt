@@ -75,14 +75,15 @@ class Request(request: HttpRequestBase) {
 
   {
     client.addResponseInterceptor(object: HttpResponseInterceptor {
-      public override fun process(response: HttpResponse, context: HttpContext) {
-        val entity = response.getEntity()
+
+      public override fun process(response: HttpResponse?, context: HttpContext?) {
+        val entity = response!!.getEntity()
         if (entity != null) {
           val ceheader = entity.getContentEncoding()
           if (ceheader != null) {
             val codecs = ceheader.getElements()!!
             for (codec in codecs) {
-              if (codec.getName().equalsIgnoreCase("gzip")) {
+              if (codec.getName()!!.equalsIgnoreCase("gzip")) {
                 response.setEntity(org.apache.http.client.entity.GzipDecompressingEntity(response.getEntity()))
                 return
               }
@@ -225,7 +226,7 @@ class Request(request: HttpRequestBase) {
     val values = URLEncodedUtils.parse(str, Charset.forName("UTF-8"))!!
     val result = HashMap<String, String>()
     for (value in values) {
-      result.put(value.getName(), value.getValue()!!)
+      result.put(value.getName()!!, value.getValue()!!)
     }
     return result
   }
@@ -235,7 +236,7 @@ class Request(request: HttpRequestBase) {
    */
   fun body(): InputStream {
     connect()
-    return response!!.getEntity()!!.getContent()
+    return response!!.getEntity()!!.getContent()!!
   }
 
   /**

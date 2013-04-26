@@ -1,0 +1,59 @@
+<root>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingClientSocketChannelFactory org.jboss.netty.channel.socket.SocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingServlet java.net.SocketAddress parseEndpoint(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingServlet org.jboss.netty.channel.ChannelFactory createChannelFactory(java.net.SocketAddress)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingSocketChannelConfig void setOptions(java.util.Map&lt;java.lang.String,java.lang.Object&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingSocketChannelConfig void setBufferFactory(org.jboss.netty.buffer.ChannelBufferFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingSocketChannelConfig void setPipelineFactory(org.jboss.netty.channel.ChannelPipelineFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingServlet void service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingClientSocketChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingServlet void destroyChannelFactory(org.jboss.netty.channel.ChannelFactory) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingClientSocketChannelFactory org.jboss.netty.channel.Channel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingSocketChannelConfig void setServerPath(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingSocketChannelConfig boolean setOption(java.lang.String, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingServlet void service(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingServlet org.jboss.netty.channel.ChannelFactory createChannelFactory(java.net.SocketAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingClientSocketChannelFactory org.jboss.netty.channel.socket.SocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.channel.socket.http.HttpTunnelingServlet java.net.SocketAddress parseEndpoint(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer int compareTo(java.lang.Object) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer int compareTo(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer java.nio.ByteBuffer[] toByteBuffers()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer java.nio.ByteBuffer[] toByteBuffers(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer org.jboss.netty.buffer.ChannelBuffer readBytes(int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer org.jboss.netty.buffer.ChannelBuffer readBytes(org.jboss.netty.buffer.ChannelBufferIndexFinder)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void getBytes(int, byte[]) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void readBytes(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void readBytes(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void readBytes(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void readBytes(org.jboss.netty.buffer.ChannelBuffer, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void setBytes(int, byte[]) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void writeBytes(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void writeBytes(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void writeBytes(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBuffer void writeBytes(org.jboss.netty.buffer.ChannelBuffer, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBufferFactory AbstractChannelBufferFactory(java.nio.ByteOrder) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.AbstractChannelBufferFactory java.nio.ByteOrder getDefaultOrder()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.BigEndianHeapChannelBuffer BigEndianHeapChannelBuffer(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.BigEndianHeapChannelBuffer org.jboss.netty.buffer.ChannelBuffer copy(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.BigEndianHeapChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.BigEndianHeapChannelBuffer org.jboss.netty.buffer.ChannelBufferFactory factory()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer ByteBufferBackedChannelBuffer(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer org.jboss.netty.buffer.ChannelBuffer copy(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer org.jboss.netty.buffer.ChannelBuffer slice(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer org.jboss.netty.buffer.ChannelBufferFactory factory()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ByteBufferBackedChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer byte[] array()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer int compareTo(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer java.nio.ByteBuffer[] toByteBuffers()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer java.nio.ByteBuffer[] toByteBuffers(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer java.nio.ByteOrder order()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer org.jboss.netty.buffer.ChannelBuffer copy(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer org.jboss.netty.buffer.ChannelBuffer readBytes(int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer org.jboss.netty.buffer.ChannelBuffer readBytes(org.jboss.netty.buffer.ChannelBufferIndexFinder)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer org.jboss.netty.buffer.ChannelBuffer slice(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer org.jboss.netty.buffer.ChannelBufferFactory factory()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void getBytes(int, byte[]) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void readBytes(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void readBytes(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void readBytes(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void readBytes(org.jboss.netty.buffer.ChannelBuffer, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void setBytes(int, byte[]) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void writeBytes(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void writeBytes(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void writeBytes(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffer void writeBytes(org.jboss.netty.buffer.ChannelBuffer, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferFactory java.nio.ByteOrder getDefaultOrder()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteBuffer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferIndexFinder boolean find(org.jboss.netty.buffer.ChannelBuffer, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferInputStream ChannelBufferInputStream(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferInputStream ChannelBufferInputStream(org.jboss.netty.buffer.ChannelBuffer, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferInputStream void readFully(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferOutputStream ChannelBufferOutputStream(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferOutputStream org.jboss.netty.buffer.ChannelBuffer buffer()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferOutputStream void writeBytes(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBufferOutputStream void writeChars(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers boolean equals(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers boolean equals(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.buffer.ChannelBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers int compare(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers int compare(org.jboss.netty.buffer.ChannelBuffer, org.jboss.netty.buffer.ChannelBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers int hashCode(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers java.lang.String hexDump(org.jboss.netty.buffer.ChannelBuffer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers java.lang.String hexDump(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers java.lang.String hexDump(org.jboss.netty.buffer.ChannelBuffer, int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer buffer(int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer buffer(java.nio.ByteOrder, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(byte[])">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(byte[]...)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(byte[]...) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(char[], int, int, java.nio.charset.Charset)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(char[], int, int, java.nio.charset.Charset) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(char[], java.nio.charset.Charset)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(char[], java.nio.charset.Charset) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.lang.CharSequence, int, int, java.nio.charset.Charset)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.lang.CharSequence, int, int, java.nio.charset.Charset) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.lang.CharSequence, java.nio.charset.Charset)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.lang.CharSequence, java.nio.charset.Charset) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.lang.CharSequence, java.nio.charset.Charset) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.lang.String, java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.lang.String, java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteBuffer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteBuffer...) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, byte[])">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, byte[]) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, byte[], int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, byte[]...)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, byte[]...) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, char[], int, int, java.nio.charset.Charset)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, char[], int, int, java.nio.charset.Charset) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, char[], java.nio.charset.Charset)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, char[], java.nio.charset.Charset) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, java.lang.CharSequence, int, int, java.nio.charset.Charset)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, java.lang.CharSequence, int, int, java.nio.charset.Charset) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, java.lang.CharSequence, java.nio.charset.Charset)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, java.lang.CharSequence, java.nio.charset.Charset) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, java.lang.CharSequence, java.nio.charset.Charset) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, java.lang.String, java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(java.nio.ByteOrder, java.lang.String, java.lang.String) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer copiedBuffer(org.jboss.netty.buffer.ChannelBuffer...) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer directBuffer(int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer directBuffer(java.nio.ByteOrder, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer directBuffer(java.nio.ByteOrder, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(int, org.jboss.netty.buffer.ChannelBufferFactory)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(int, org.jboss.netty.buffer.ChannelBufferFactory) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(java.nio.ByteOrder, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(java.nio.ByteOrder, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(java.nio.ByteOrder, int, org.jboss.netty.buffer.ChannelBufferFactory)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(java.nio.ByteOrder, int, org.jboss.netty.buffer.ChannelBufferFactory) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(java.nio.ByteOrder, int, org.jboss.netty.buffer.ChannelBufferFactory) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(org.jboss.netty.buffer.ChannelBufferFactory)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer dynamicBuffer(org.jboss.netty.buffer.ChannelBufferFactory) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer hexDump(java.lang.String)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer hexDump(java.lang.String) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer unmodifiableBuffer(org.jboss.netty.buffer.ChannelBuffer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer unmodifiableBuffer(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(boolean, java.nio.ByteBuffer...) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(boolean, org.jboss.netty.buffer.ChannelBuffer...) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(byte[])">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(byte[]...) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(java.nio.ByteBuffer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(java.nio.ByteBuffer...) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(java.nio.ByteOrder, byte[])">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(java.nio.ByteOrder, byte[]) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(java.nio.ByteOrder, byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(java.nio.ByteOrder, byte[], int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(java.nio.ByteOrder, byte[]...) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ChannelBuffers org.jboss.netty.buffer.ChannelBuffer wrappedBuffer(org.jboss.netty.buffer.ChannelBuffer...) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer CompositeChannelBuffer(java.nio.ByteOrder, java.util.List&lt;org.jboss.netty.buffer.ChannelBuffer&gt;, boolean) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer org.jboss.netty.buffer.ChannelBuffer copy(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer org.jboss.netty.buffer.ChannelBufferFactory factory()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.CompositeChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory DirectChannelBufferFactory(java.nio.ByteOrder) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory DirectChannelBufferFactory(java.nio.ByteOrder, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteBuffer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBufferFactory getInstance()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DirectChannelBufferFactory org.jboss.netty.buffer.ChannelBufferFactory getInstance(java.nio.ByteOrder)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer DuplicatedChannelBuffer(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DuplicatedChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer DynamicChannelBuffer(java.nio.ByteOrder, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer DynamicChannelBuffer(java.nio.ByteOrder, int, org.jboss.netty.buffer.ChannelBufferFactory) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer DynamicChannelBuffer(java.nio.ByteOrder, int, org.jboss.netty.buffer.ChannelBufferFactory) 2">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer java.nio.ByteOrder order()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer org.jboss.netty.buffer.ChannelBuffer copy(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer org.jboss.netty.buffer.ChannelBuffer slice(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer org.jboss.netty.buffer.ChannelBufferFactory factory()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.DynamicChannelBuffer void writeBytes(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer HeapChannelBuffer(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer HeapChannelBuffer(byte[], int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer byte[] array()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer org.jboss.netty.buffer.ChannelBuffer slice(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory HeapChannelBufferFactory(java.nio.ByteOrder) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteBuffer)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBuffer getBuffer(java.nio.ByteOrder, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBufferFactory getInstance()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.HeapChannelBufferFactory org.jboss.netty.buffer.ChannelBufferFactory getInstance(java.nio.ByteOrder)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.LittleEndianHeapChannelBuffer LittleEndianHeapChannelBuffer(byte[]) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.LittleEndianHeapChannelBuffer org.jboss.netty.buffer.ChannelBuffer copy(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.LittleEndianHeapChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.LittleEndianHeapChannelBuffer org.jboss.netty.buffer.ChannelBufferFactory factory()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer ReadOnlyChannelBuffer(org.jboss.netty.buffer.ChannelBuffer) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer java.nio.ByteBuffer[] toByteBuffers(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer org.jboss.netty.buffer.ChannelBuffer slice(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.ReadOnlyChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer SlicedChannelBuffer(org.jboss.netty.buffer.ChannelBuffer, int, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer org.jboss.netty.buffer.ChannelBuffer slice(int, int)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer org.jboss.netty.buffer.ChannelBuffer unwrap()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.SlicedChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer TruncatedChannelBuffer(org.jboss.netty.buffer.ChannelBuffer, int) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer int getBytes(int, java.nio.channels.GatheringByteChannel, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer int setBytes(int, java.io.InputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer org.jboss.netty.buffer.ChannelBuffer duplicate()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer org.jboss.netty.buffer.ChannelBuffer unwrap()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer void getBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer void getBytes(int, java.io.OutputStream, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer void getBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer void getBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer void setBytes(int, byte[], int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer void setBytes(int, java.nio.ByteBuffer) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.buffer.TruncatedChannelBuffer void setBytes(int, org.jboss.netty.buffer.ChannelBuffer, int, int) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.buffer.WrappedChannelBuffer org.jboss.netty.buffer.ChannelBuffer unwrap()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+</root>
+

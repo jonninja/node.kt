@@ -1,0 +1,5 @@
+<root>
+    <item name='org.apache.velocity.io.VelocityWriter void write(char[]) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="org.jboss.netty.channel.socket.ClientSocketChannelFactory org.jboss.netty.channel.socket.SocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.ClientSocketChannelFactory org.jboss.netty.channel.socket.SocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetAddress)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetSocketAddress, java.net.NetworkInterface)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetSocketAddress, java.net.NetworkInterface) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.ChannelFuture joinGroup(java.net.InetSocketAddress, java.net.NetworkInterface) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetAddress)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetSocketAddress, java.net.NetworkInterface)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetSocketAddress, java.net.NetworkInterface) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.ChannelFuture leaveGroup(java.net.InetSocketAddress, java.net.NetworkInterface) 1">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannel org.jboss.netty.channel.socket.DatagramChannelConfig getConfig()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannelConfig void setReceiveBufferSizePredictor(org.jboss.netty.channel.ReceiveBufferSizePredictor) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannelConfig void setReceiveBufferSizePredictorFactory(org.jboss.netty.channel.ReceiveBufferSizePredictorFactory) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannelFactory org.jboss.netty.channel.socket.DatagramChannel newChannel(org.jboss.netty.channel.ChannelPipeline)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DatagramChannelFactory org.jboss.netty.channel.socket.DatagramChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.DefaultDatagramChannelConfig DefaultDatagramChannelConfig(java.net.DatagramSocket) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.channel.socket.DefaultDatagramChannelConfig boolean setOption(java.lang.String, java.lang.Object) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.channel.socket.DefaultDatagramChannelConfig void setReceiveBufferSizePredictor(org.jboss.netty.channel.ReceiveBufferSizePredictor) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.channel.socket.DefaultDatagramChannelConfig void setReceiveBufferSizePredictorFactory(org.jboss.netty.channel.ReceiveBufferSizePredictorFactory) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.channel.socket.DefaultServerSocketChannelConfig DefaultServerSocketChannelConfig(java.net.ServerSocket) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.channel.socket.DefaultServerSocketChannelConfig boolean setOption(java.lang.String, java.lang.Object) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.channel.socket.DefaultSocketChannelConfig DefaultSocketChannelConfig(java.net.Socket) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.channel.socket.DefaultSocketChannelConfig boolean setOption(java.lang.String, java.lang.Object) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+  </item>
+  <item name="org.jboss.netty.channel.socket.ServerSocketChannel org.jboss.netty.channel.socket.ServerSocketChannelConfig getConfig()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.ServerSocketChannelFactory org.jboss.netty.channel.socket.ServerSocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline)">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.ServerSocketChannelFactory org.jboss.netty.channel.socket.ServerSocketChannel newChannel(org.jboss.netty.channel.ChannelPipeline) 0">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+  <item name="org.jboss.netty.channel.socket.SocketChannel org.jboss.netty.channel.socket.SocketChannelConfig getConfig()">
+    <annotation name="org.jetbrains.annotations.NotNull" />
+    <annotation name="org.jetbrains.kannotator.runtime.annotations.Propagated">
+      <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}" />
+    </annotation>
+  </item>
+</root>
+

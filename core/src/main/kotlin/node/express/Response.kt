@@ -34,7 +34,7 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
   val locals = HashMap<String, Any>()
 
   val end = object : ChannelFutureListener {
-    public override fun operationComplete(future: ChannelFuture) {
+    public override fun operationComplete(future: ChannelFuture?) {
       ChannelFutureListener.CLOSE.operationComplete(future);
       emit("end", this@Response);
     }
@@ -86,7 +86,7 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
     setIfEmpty(HttpHeaders.Names.CONTENT_LENGTH, b.size.toString());
     writeResponse();
 
-    e.getChannel().write(ChunkedStream(ByteArrayInputStream(b))).addListener(end);
+    e.getChannel()!!.write(ChunkedStream(ByteArrayInputStream(b)))!!.addListener(end);
   }
 
   fun send(str: String) {
@@ -160,7 +160,7 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
   }
 
   private fun setResponseText(text: String) {
-    var content = ChannelBuffers.copiedBuffer(text, CharsetUtil.UTF_8);
+    var content = ChannelBuffers.copiedBuffer(text, CharsetUtil.UTF_8)!!
     response.setHeader(HttpHeaders.Names.CONTENT_LENGTH, content.writerIndex());
     response.setContent(content);
   }
@@ -171,9 +171,9 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
   }
 
   private fun writeResponse(): ChannelFuture {
-    emit("header", this);
-    var channel = e.getChannel();
-    return channel.write(response);
+    emit("header", this)
+    var channel = e.getChannel()!!
+    return channel.write(response)!!
   }
 
   private fun setIfEmpty(key: String, value: Any) {
@@ -206,7 +206,7 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
 
     writeResponse();
 
-    e.getChannel().write(ChunkedFile(file)).addListener(end);
+    e.getChannel()!!.write(ChunkedFile(file))!!.addListener(end);
   }
 
   fun render(view: String, data: Map<String, Any?>? = null) {

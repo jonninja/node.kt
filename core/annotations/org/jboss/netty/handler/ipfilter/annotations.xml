@@ -1,0 +1,191 @@
+<root>
+    <item name='org.jboss.netty.handler.ipfilter.IpV4Subnet int compareTo(org.jboss.netty.handler.ipfilter.IpV4Subnet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnet int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnet boolean contains(java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpV4Subnet IpV4Subnet(java.net.InetAddress, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.PatternRule boolean contains(java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR org.jboss.netty.handler.ipfilter.CIDR newCIDR(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR6 boolean contains(java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnet IpSubnet(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler void add(org.jboss.netty.handler.ipfilter.IpFilterRule) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR4 boolean contains(java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnetFilterRule IpSubnetFilterRule(boolean, java.net.InetAddress, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler boolean contains(org.jboss.netty.handler.ipfilter.IpFilterRule) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR byte[] getIpV6FromIpV4(java.net.Inet4Address) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleList IpFilterRuleList(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnetFilterRule IpSubnetFilterRule(boolean, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler void addAll(int, java.util.Collection&lt;org.jboss.netty.handler.ipfilter.IpFilterRule&gt;) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR4 int compareTo(org.jboss.netty.handler.ipfilter.CIDR) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpV4Subnet int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilteringHandlerImpl boolean isBlocked(org.jboss.netty.channel.ChannelHandlerContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnet int compareTo(org.jboss.netty.handler.ipfilter.IpSubnet) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.OneIpFilterHandler void handleUpstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler boolean accept(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent, java.net.InetSocketAddress) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler org.jboss.netty.handler.ipfilter.IpFilterRule set(int, org.jboss.netty.handler.ipfilter.IpFilterRule) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpV4SubnetFilterRule IpV4SubnetFilterRule(boolean, java.net.InetAddress, int) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR org.jboss.netty.handler.ipfilter.CIDR newCIDR(java.net.InetAddress, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilteringHandlerImpl void handleUpstream(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR byte[] getIpV6FromIpV4(java.net.Inet4Address)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler void remove(org.jboss.netty.handler.ipfilter.IpFilterRule) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler boolean containsAll(java.util.Collection&lt;org.jboss.netty.handler.ipfilter.IpFilterRule&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnet IpSubnet(java.net.InetAddress, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR boolean contains(java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler boolean addIfAbsent(org.jboss.netty.handler.ipfilter.IpFilterRule) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler void add(int, org.jboss.netty.handler.ipfilter.IpFilterRule) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR6 CIDR6(java.net.Inet6Address, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilteringHandlerImpl boolean accept(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent, java.net.InetSocketAddress) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpV4Subnet boolean contains(java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR4 int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR org.jboss.netty.handler.ipfilter.CIDR newCIDR(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.OneIpFilterHandler boolean accept(org.jboss.netty.channel.ChannelHandlerContext, org.jboss.netty.channel.ChannelEvent, java.net.InetSocketAddress) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler void addAll(java.util.Collection&lt;org.jboss.netty.handler.ipfilter.IpFilterRule&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR6 int compareTo(org.jboss.netty.handler.ipfilter.CIDR) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnetFilterRule IpSubnetFilterRule(boolean, java.net.InetAddress, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSet boolean contains(java.net.InetAddress) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler int addAllAbsent(java.util.Collection&lt;org.jboss.netty.handler.ipfilter.IpFilterRule&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR org.jboss.netty.handler.ipfilter.CIDR newCIDR(java.net.InetAddress, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR org.jboss.netty.handler.ipfilter.CIDR newCIDR(java.net.InetAddress, int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR4 CIDR4(java.net.Inet4Address, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpV4Subnet IpV4Subnet(java.net.InetAddress, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR byte[] getIpV4FromIpV6(java.net.Inet6Address)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpV4SubnetFilterRule IpV4SubnetFilterRule(boolean, java.net.InetAddress, java.lang.String) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR6 int compareTo(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpSubnet IpSubnet(java.net.InetAddress, java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler void removeAll(java.util.Collection&lt;org.jboss.netty.handler.ipfilter.IpFilterRule&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR byte[] getIpV4FromIpV6(java.net.Inet6Address) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.IpFilterRuleHandler void retainAll(java.util.Collection&lt;org.jboss.netty.handler.ipfilter.IpFilterRule&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.jboss.netty.handler.ipfilter.CIDR org.jboss.netty.handler.ipfilter.CIDR newCIDR(java.net.InetAddress, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

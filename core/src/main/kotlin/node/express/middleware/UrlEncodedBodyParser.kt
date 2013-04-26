@@ -15,8 +15,8 @@ import java.util.HashSet
 val UrlEncodedBodyParser = {(req: Request, res: Response, next: () -> Unit) ->
   if (req.body == null) {
     try {
-      val decoder = HttpPostRequestDecoder(DefaultHttpDataFactory(false), req.request);
-      val data = decoder.getBodyHttpDatas();
+      val decoder = HttpPostRequestDecoder(DefaultHttpDataFactory(false), req.request)
+      val data = decoder.getBodyHttpDatas()!!
       if (data.size() > 0) {
         req.attributes.put("body", UrlEncodedBody(decoder));
       }
@@ -52,13 +52,13 @@ private class UrlEncodedBody(decoder: HttpPostRequestDecoder): Body {
     return decoder;
   }
   public override fun size(): Int {
-    return decoder.getBodyHttpDatas().size
+    return decoder.getBodyHttpDatas()!!.size
   }
   public override fun isEmpty(): Boolean {
     return size() == 0
   }
   public override fun containsKey(key: Any?): Boolean {
-    return decoder.getBodyHttpDatas().find { it.getName() == key } != null
+    return decoder.getBodyHttpDatas()!!.find { it.getName() == key } != null
   }
   public override fun containsValue(value: Any?): Boolean {
     throw UnsupportedOperationException()
@@ -67,13 +67,13 @@ private class UrlEncodedBody(decoder: HttpPostRequestDecoder): Body {
     return this.get(key as String)
   }
   public override fun keySet(): Set<String> {
-    return HashSet(decoder.getBodyHttpDatas().map { it.getName() })
+    return HashSet(decoder.getBodyHttpDatas()!!.map { it.getName()!! })
   }
   public override fun values(): Collection<Any?> {
-    return decoder.getBodyHttpDatas().map { (it as Attribute).getValue() }
+    return decoder.getBodyHttpDatas()!!.map { (it as Attribute).getValue() }
   }
   public override fun entrySet(): Set<Map.Entry<String, Any?>> {
-    return HashSet(decoder.getBodyHttpDatas().map { BodyEntry(it as Attribute) })
+    return HashSet(decoder.getBodyHttpDatas()!!.map { BodyEntry(it as Attribute) })
   }
   private data class BodyEntry(val att: Attribute): Map.Entry<String, Any?> {
     public override fun hashCode(): Int {
@@ -83,7 +83,7 @@ private class UrlEncodedBody(decoder: HttpPostRequestDecoder): Body {
       return att.equals(other)
     }
     public override fun getKey(): String {
-      return att.getName()
+      return att.getName()!!
     }
     public override fun getValue(): Any? {
       return att.getValue()

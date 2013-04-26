@@ -1,0 +1,86 @@
+<root>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.UUIDGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator&lt;java.util.UUID&gt; newForSerialization(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.PropertyGenerator boolean canUseFor(com.fasterxml.jackson.annotation.ObjectIdGenerator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.IntSequenceGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator&lt;java.lang.Integer&gt; forScope(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.UUIDGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator&lt;java.util.UUID&gt; forScope(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.JsonFormat.Value com.fasterxml.jackson.annotation.JsonFormat.Value withLocale(java.util.Locale)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator&lt;T&gt; forScope(java.lang.Class&lt;?&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerator boolean canUseFor(com.fasterxml.jackson.annotation.ObjectIdGenerator&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.JsonFormat.Value com.fasterxml.jackson.annotation.JsonFormat.Value withTimeZone(java.util.TimeZone)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerator.IdKey IdKey(java.lang.Class&lt;?&gt;, java.lang.Class&lt;?&gt;, java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.UUIDGenerator boolean canUseFor(com.fasterxml.jackson.annotation.ObjectIdGenerator&lt;?&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator.IdKey key(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.UUIDGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator.IdKey key(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.IntSequenceGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator.IdKey key(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.UUIDGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator.IdKey key(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.IntSequenceGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator.IdKey key(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.IntSequenceGenerator boolean canUseFor(com.fasterxml.jackson.annotation.ObjectIdGenerator) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.JsonFormat.Value Value(com.fasterxml.jackson.annotation.JsonFormat) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.JsonFormat.Value com.fasterxml.jackson.annotation.JsonFormat.Value withPattern(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.JsonFormat.Value com.fasterxml.jackson.annotation.JsonFormat.Value withShape(com.fasterxml.jackson.annotation.JsonFormat.Shape)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerator.IdKey IdKey(java.lang.Class&lt;?&gt;, java.lang.Class&lt;?&gt;, java.lang.Object) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator.IdKey key(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerators.IntSequenceGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator&lt;java.lang.Integer&gt; newForSerialization(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='com.fasterxml.jackson.annotation.ObjectIdGenerator com.fasterxml.jackson.annotation.ObjectIdGenerator&lt;T&gt; newForSerialization(java.lang.Object)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+</root>

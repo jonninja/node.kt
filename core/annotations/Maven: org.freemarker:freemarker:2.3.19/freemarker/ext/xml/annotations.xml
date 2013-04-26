@@ -1,0 +1,29 @@
+<root>
+    <item name='freemarker.ext.xml.NodeListModel freemarker.template.TemplateSequenceModel getChildNodes()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='freemarker.ext.xml.NodeListModel freemarker.template.TemplateNodeModel getParentNode()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='freemarker.ext.xml.NodeListModel NodeListModel(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='freemarker.ext.xml.NodeListModel freemarker.template.TemplateModel get(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='freemarker.ext.xml.NodeListModel java.lang.Object exec(java.util.List)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='freemarker.ext.xml.NodeListModel java.lang.Object exec(java.util.List) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='freemarker.ext.xml.NodeListModel freemarker.template.TemplateModel get(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='freemarker.ext.xml.NodeListModel freemarker.template.TemplateModel get(int)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

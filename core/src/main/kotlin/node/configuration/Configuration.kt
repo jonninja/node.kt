@@ -15,12 +15,18 @@ public object Configuration {
   val root: HashMap<String, Any?>  // should be private, but blocked by KT-3281
     get() {
       if (_root == null) {
-        val configFile = System.getProperty("configuration.file") ?: "configuration.json"
-        try {
-          load(configFile)
-        } catch (fnf: FileNotFoundException) {
-          this.log("Configuration file could not be loaded", FINE)
-        }
+        synchronized (this, {
+          if (_root == null) {
+            val configFile = System.getProperty("configuration.file") ?: "configuration.json"
+            try {
+              val newRoot = HashMap<String, Any?>()
+              mergeFile(newRoot, configFile)
+              _root = newRoot
+            } catch (fnf: FileNotFoundException) {
+              this.log("Configuration file could not be loaded", FINE)
+            }
+          }
+        })
       }
       return _root!!
     }
@@ -76,18 +82,14 @@ public object Configuration {
    * Load one or more configuration files that will be merged into this configuration
    */
   fun load(vararg path: String) {
-    if (_root == null) {
-      _root = hashMapOf()
-    }
-    path.forEach { mergeFile(_root!!, it) }
-
-    this.log(_root!!.toJsonString())
+    path.forEach { mergeFile(root, it) }
   }
 
-  private fun mergeFile(target: MutableMap<String, Any?>, filePath: String) {
+  private fun mergeFile(target: MutableMap<String, Any?>, filePath: String): MutableMap<String, Any?> {
     this.log("Loading configuration file $filePath")
     var data = File(filePath).json(javaClass<Map<String, Any?>>())
     merge(target, data);
+    return target
   }
 
   private fun merge(m1: MutableMap<String, Any?>, m2: Map<String, Any?>) {

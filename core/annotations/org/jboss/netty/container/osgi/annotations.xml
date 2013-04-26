@@ -1,0 +1,5 @@
+<root>
+    <item name='org.jboss.netty.container.osgi.NettyBundleActivator void start(org.osgi.framework.BundleContext) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

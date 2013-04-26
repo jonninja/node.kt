@@ -1,0 +1,74 @@
+<root>
+    <item name='org.apache.commons.codec.language.bm.Rule org.apache.commons.codec.language.bm.Rule.RPattern getRContext()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule.Phoneme org.apache.commons.codec.language.bm.Rule.Phoneme append(java.lang.CharSequence)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule boolean patternAndContextMatches(java.lang.CharSequence, int) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.BeiderMorseEncoder java.lang.Object encode(java.lang.Object) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Lang org.apache.commons.codec.language.bm.Languages.LanguageSet guessLanguages(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule java.util.List&lt;org.apache.commons.codec.language.bm.Rule&gt; getInstance(org.apache.commons.codec.language.bm.NameType, org.apache.commons.codec.language.bm.RuleType, org.apache.commons.codec.language.bm.Languages.LanguageSet) 2'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule java.util.List&lt;org.apache.commons.codec.language.bm.Rule&gt; getInstance(org.apache.commons.codec.language.bm.NameType, org.apache.commons.codec.language.bm.RuleType, java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Lang org.apache.commons.codec.language.bm.Lang loadFromResource(java.lang.String, org.apache.commons.codec.language.bm.Languages)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Lang org.apache.commons.codec.language.bm.Languages.LanguageSet guessLanguages(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule.Phoneme org.apache.commons.codec.language.bm.Rule.Phoneme append(java.lang.CharSequence) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Languages.LanguageSet org.apache.commons.codec.language.bm.Languages.LanguageSet from(java.util.Set&lt;java.lang.String&gt;) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Languages.LanguageSet org.apache.commons.codec.language.bm.Languages.LanguageSet restrictTo(org.apache.commons.codec.language.bm.Languages.LanguageSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule org.apache.commons.codec.language.bm.Rule.RPattern getLContext()'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.PhoneticEngine java.lang.String encode(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule.Phoneme org.apache.commons.codec.language.bm.Rule.Phoneme join(org.apache.commons.codec.language.bm.Rule.Phoneme) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule.RPattern boolean isMatch(java.lang.CharSequence) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+        <annotation name='org.jetbrains.kannotator.runtime.annotations.Propagated'>
+            <val name="value" val="{org.jetbrains.kannotator.controlFlow.builder.analysis.NullabilityKey.class}"/>
+        </annotation>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule.Phoneme org.apache.commons.codec.language.bm.Rule.Phoneme join(org.apache.commons.codec.language.bm.Rule.Phoneme)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Rule java.util.List&lt;org.apache.commons.codec.language.bm.Rule&gt; getInstance(org.apache.commons.codec.language.bm.NameType, org.apache.commons.codec.language.bm.RuleType, org.apache.commons.codec.language.bm.Languages.LanguageSet)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Lang java.lang.String guessLanguage(java.lang.String) 0'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.PhoneticEngine java.lang.String encode(java.lang.String, org.apache.commons.codec.language.bm.Languages.LanguageSet) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Languages.LanguageSet org.apache.commons.codec.language.bm.Languages.LanguageSet from(java.util.Set&lt;java.lang.String&gt;)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+    <item name='org.apache.commons.codec.language.bm.Languages org.apache.commons.codec.language.bm.Languages getInstance(java.lang.String)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>

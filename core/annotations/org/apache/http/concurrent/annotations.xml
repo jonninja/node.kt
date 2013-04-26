@@ -1,0 +1,5 @@
+<root>
+    <item name='org.apache.http.concurrent.BasicFuture T get(long, java.util.concurrent.TimeUnit) 1'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
