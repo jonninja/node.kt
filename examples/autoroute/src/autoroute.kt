@@ -1,4 +1,4 @@
-package node.kt.examples.pagerenderer
+package node.kt.examples.autoroute
 
 import node.express.Express
 import node.express.middleware.Static
@@ -14,8 +14,8 @@ fun main(args: Array<String>) {
   var app = Express()
 
   app["view engine"] = "ftl" // the rendering engine
-  app["views"] = "views"
-  app.use(node.express.middleware.AutoRoute("pages"))
+  app["views"] = "pages"
+  app.use(node.express.middleware.AutoRoute(app, "pages"))
   app.use(node.express.middleware.Renderer())
   app.use(app.static(app["views"] as String))
 

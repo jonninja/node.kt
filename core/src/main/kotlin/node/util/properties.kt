@@ -10,7 +10,7 @@ import java.util.HashMap
  *    ...
  *    x().toUpper()
  */
-fun <T> lazy(init: ()->T): ()->T {
+fun <T:Any> lazy(init: ()->T): ()->T {
   var _value: Any? = null
   var set = false
   return {
@@ -21,6 +21,19 @@ fun <T> lazy(init: ()->T): ()->T {
     _value as T
   }
 }
+
+fun <T:Any> lazyNull(init: ()->T?): ()->T? {
+  var _value: T? = null
+  var set = false
+  return {
+    if (!set) {
+      _value = init()
+      set = true
+    }
+    _value
+  }
+}
+
 
 private val lazyVals = HashMap<Any, ()->Any?>()
 

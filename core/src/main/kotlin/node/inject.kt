@@ -1,7 +1,6 @@
 package node.inject
 
 import node.util.konstructor
-import node.NotFoundException
 import node.util.with
 import node.*
 import java.lang.annotation.Retention
@@ -42,9 +41,11 @@ class Factory(val registry: Registry, val scope: CacheScope, val parent: Factory
         if (cache.containsKey(bindingKey(clazz, name))) {
           return cache.get(bindingKey(clazz, name)) as T
         } else {
-          val instance = binding.binding.instance(this, name)
-          cache.put(bindingKey(clazz, name), instance)
-          return instance
+          return synchronized(binding) {
+            with (binding.binding.instance(this, name)) {
+              cache.put(bindingKey(clazz, name), it)
+            }
+          }
         }
       } else if (parent != null) {
         return parent.instanceOf(clazz, name)

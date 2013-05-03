@@ -36,6 +36,7 @@ import org.apache.http.protocol.HttpContext
 import node.util.log
 import node.util.json.json
 import node.util.logDebug
+import org.apache.http.impl.conn.PoolingClientConnectionManager
 
 /**
  * A simplified API for making HTTP requests of all kinds. The goal of the library is to support 98% of use
@@ -43,7 +44,10 @@ import node.util.logDebug
  * use a full-featured library like HttpClient.
  */
 
-private val client = DefaultHttpClient();
+private val client = run {
+  DefaultHttpClient(PoolingClientConnectionManager())
+}
+
 private val json = ObjectMapper();
 
 enum class HttpMethod {
@@ -332,13 +336,13 @@ class Request(request: HttpRequestBase) {
 
 object HttpClient {
   val defaultErrorHandler: (Request)->Unit = { request->
-  request.consume()
-  if (request.status() == 404) {
-    throw NotFoundException(request.url)
-  } else {
-    throw IOException(request.statusLine())
+    request.consume()
+    if (request.status() == 404) {
+      throw NotFoundException(request.url)
+    } else {
+      throw IOException(request.statusLine())
+    }
   }
-}
 
   /**
    * Initiate a GET request

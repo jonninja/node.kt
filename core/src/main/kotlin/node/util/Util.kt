@@ -104,15 +104,3 @@ fun _ifn<T:Any,R:Any>(test: T?, cb: ()->R?): R? {
     return null
   }
 }
-
-fun <T> List<T>.sort(comparator: (T, T)->Int) {
-  this.sort(object: Comparator<T> {
-
-    public override fun compare(o1: T, o2: T): Int {
-      return comparator(o1, o2)
-    }
-    public override fun equals(obj: Any?): Boolean {
-      return this.equals(obj)
-    }
-  })
-}

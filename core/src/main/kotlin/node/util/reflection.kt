@@ -46,6 +46,17 @@ fun Any.field(name: String): Any? {
   }
 }
 
+class Property<T>(val obj: Any, name: String) {
+  private val field = obj.javaClass.getField(name)
+  var value:T
+    get() { return field.get(obj) as T }
+    set(t: T) { field.set(obj, t) }
+}
+
+fun Any.property<T>(name: String): Property<T> {
+  return Property<T>(this, name)
+}
+
 data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
   class object {
     private var dataConstructors: MutableMap<Class<*>, KotlinConstructor<*>>? = null

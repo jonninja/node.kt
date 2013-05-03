@@ -116,7 +116,7 @@ fun String.after(seq: String): String {
 fun String.until(seq: String): String {
   val index = this.indexOf(seq)
   if (index < 0) {
-    return seq
+    return this
   }
   return this.substring(0, index)
 }
