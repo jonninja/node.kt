@@ -11,7 +11,6 @@ import java.util.Date
 import com.fasterxml.jackson.databind.JsonNode
 import org.jboss.netty.buffer.ChannelBuffers
 import org.jboss.netty.util.CharsetUtil
-import com.fasterxml.jackson.databind.ObjectMapper
 import node.EventEmitter
 import java.io.File
 import java.text.ParseException
@@ -23,6 +22,7 @@ import java.io.ByteArrayInputStream
 import node.http.asHttpFormatString
 import node.http.asHttpDate
 import java.util.HashMap
+import node.util.with
 
 /**
  * A response object
@@ -210,10 +210,9 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
   }
 
   fun render(view: String, data: Map<String, Any?>? = null) {
-    var mergedContext = if (this.locals.empty) data else {
-      val map = HashMap<String, Any?>(locals)
-      if (data != null) map.putAll(data)
-      map
+    this.locals.put("request", req)
+    var mergedContext = with (HashMap<String, Any?>(locals)) {
+      if (data != null) it.putAll(data)
     }
     send(req.app.render(view, mergedContext))
   }

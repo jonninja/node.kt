@@ -77,7 +77,7 @@ fun <T> with(value: T, caller: (T)->Unit): T {
   return value
 }
 
-fun <R:Any> R?._else(cb: ()->R): R {
+fun <R:Any?> R?._else(cb: ()->R): R {
   if (this == null) {
     return cb()
   } else {
