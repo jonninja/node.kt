@@ -27,6 +27,8 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
   var startTime = System.currentTimeMillis();
   var qsd = QueryStringDecoder(request.getUri()!!);
   val attributes: MutableMap<String, Any> = HashMap<String, Any>();
+  val uri: String
+    get() = request.getUri()!!
 
   var method: String = request.getMethod()!!.getName()!!.toLowerCase()
 
