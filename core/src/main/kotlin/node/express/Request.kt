@@ -12,7 +12,7 @@ import jet.runtime.typeinfo.JetValueParameter
 import java.lang.reflect.Constructor
 import java.util.ArrayList
 import node.inject.*
-import node.util.with
+import node.util._with
 
 /**
  * The Http server request object
@@ -42,7 +42,7 @@ class Request(app: Express, e: MessageEvent, val channel: Channel) {
    */
   val factory: Factory = {
     val registry = (app.get("injection registry") as? Registry) ?: Registry()
-    with (registry.factory(CacheScope.OPERATION)) {
+    _with (registry.factory(CacheScope.OPERATION)) {
       it.install(this, javaClass<Request>())
     }
   }()

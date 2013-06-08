@@ -6,7 +6,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <kotlin.version>0.5.429</kotlin.version>
+        <kotlin.version>0.5.748</kotlin.version>
         <main.basedir>${project.basedir}</main.basedir>
     </properties>
 

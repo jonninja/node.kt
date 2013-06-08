@@ -94,7 +94,10 @@ class Route(val method: String, val path: String, val handler: Handler) {
             // now check with the app for any parameter mapping functions
             val mapper = req.app.params[key];
             if (mapper != null) {
-              result.put(key, mapper(req, res, decodedValue))
+              val mapValue = mapper(req, res, decodedValue);
+              if (mapValue != null) {
+                result.put(key, mapValue);
+              }
             } else {
               result.put(key, decodedValue)
             }

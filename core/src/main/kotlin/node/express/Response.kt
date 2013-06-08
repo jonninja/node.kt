@@ -22,7 +22,8 @@ import java.io.ByteArrayInputStream
 import node.http.asHttpFormatString
 import node.http.asHttpDate
 import java.util.HashMap
-import node.util.with
+import node.util._with
+import java.io.FileNotFoundException
 
 /**
  * A response object
@@ -211,7 +212,7 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
 
   fun render(view: String, data: Map<String, Any?>? = null) {
     this.locals.put("request", req)
-    var mergedContext = with (HashMap<String, Any?>(locals)) {
+    var mergedContext = _with (HashMap<String, Any?>(locals)) {
       if (data != null) it.putAll(data)
     }
     send(req.app.render(view, mergedContext))
@@ -221,24 +222,40 @@ class Response(req: Request, e: MessageEvent): EventEmitter() {
     send(200)
   }
   fun internalServerError() {
-    send(500)
+    sendErrorResponse(500)
   }
   fun notImplemented() {
-    send(501)
+    sendErrorResponse(501)
   }
   fun badRequest() {
-    send(400)
+    sendErrorResponse(400)
   }
   fun forbidden() {
-    send(403)
+    sendErrorResponse(403)
   }
   fun notFound() {
-    send(404)
+    sendErrorResponse(404)
   }
   fun unacceptable() {
-    send(406)
+    sendErrorResponse(406)
   }
   fun conflict() {
-    send(409)
+    sendErrorResponse(409)
+  }
+
+  /**
+   * Special handler for sending code responses when HTML is accepted. Looks for a template with the same name
+   * as the code, then looks for a static page, then finally just detauls to an empty page
+   */
+  fun sendErrorResponse(code: Int) {
+    if (req.accepts("html")) {
+      try {
+        render("errors/${code.toString()}")
+      } catch(e: FileNotFoundException) {
+        send(code);
+      }
+    } else {
+      send(code);
+    }
   }
 }

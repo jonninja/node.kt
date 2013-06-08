@@ -1,7 +1,7 @@
 package node.inject
 
 import node.util.konstructor
-import node.util.with
+import node.util._with
 import node.*
 import java.lang.annotation.Retention
 import java.lang.annotation.RetentionPolicy
@@ -42,7 +42,7 @@ class Factory(val registry: Registry, val scope: CacheScope, val parent: Factory
           return cache.get(bindingKey(clazz, name)) as T
         } else {
           return synchronized(binding) {
-            with (binding.binding.instance(this, name)) {
+            _with (binding.binding.instance(this, name)) {
               cache.put(bindingKey(clazz, name), it)
             }
           }
@@ -82,7 +82,7 @@ open class Registry(val parentRegistry: Registry? = null) {
    * of the BindingReciever is called: ie. bind(String.class).to("foo")
    */
   fun <T> bind(src: Class<T>, name: String? = null): BindingReceiver<T> {
-    return with(BindingReceiver<T>(src, name)) {
+    return _with(BindingReceiver<T>(src, name)) {
       bindings.put("${src.getCanonicalName()}${if (name != null) name else ""}", it)
     }
   }

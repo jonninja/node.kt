@@ -83,7 +83,7 @@ class Express() {
   private val handlerStack: ArrayList<Route> = ArrayList<Route>()
   private val engines = HashMap<String, Engine>()
 
-  val params = HashMap<String, (Request, Response, Any) -> Any>()
+  val params = HashMap<String, (Request, Response, Any) -> Any?>()
 
   var errorHandler: ((Throwable, Request, Response) -> Unit) = defaultErrorHandler
 
@@ -165,7 +165,7 @@ class Express() {
    * calls the builder function to assign the value. So, for example, the :user
    * parameter can be mapped to a function that creates a user object.
    */
-  fun param(name: String, builder: (Request, Response, Any) -> Any) {
+  fun param(name: String, builder: (Request, Response, Any) -> Any?) {
     params.put(name, builder)
   }
 
@@ -230,6 +230,7 @@ class Express() {
     install("post", path, handler);
     install("delete", path, handler);
     install("head", path, handler);
+    install("patch", path, handler);
   }
   /**
    * Install a middleware callback to be used for all requests.
@@ -274,6 +275,13 @@ class Express() {
   }
 
   /**
+   * Install a PATCH handler callback for a path
+   */
+  fun patch(path: String, vararg middleware: (Request, Response, () -> Unit) -> Unit) {
+    install("patch", path, *middleware);
+  }
+
+  /**
    * Install a PUT handler callback for a path
    */
   fun put(path: String, vararg middleware: (Request, Response, () -> Unit) -> Unit) {
@@ -296,7 +304,7 @@ class Express() {
 
   fun handleRequest(req: Request, res: Response, stackIndex: Int = 0) {
     if (stackIndex >= handlerStack.size) {
-      res.send(404) // send a 404
+      res.sendErrorResponse(404) // send a 404
     } else {
       var route = handlerStack[stackIndex]
       if (req.checkRoute(route, res)) {

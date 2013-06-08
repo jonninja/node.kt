@@ -8,13 +8,13 @@ import javax.mail.internet.MimeMessage
 import javax.mail.internet.InternetAddress
 import javax.mail.Message.RecipientType.TO
 import javax.mail.Transport
-import node.util.with
+import node.util._with
 
 private val session = lazy {
   val properties = Properties()
 
   // load generic properties
-  with (Configuration.get("mail.properties")) {
+  _with (Configuration.get("mail.properties")) {
     if (it is Map<*,*>) {
       it.entrySet().forEach {
         if (it.key is String && it.value is String) {
