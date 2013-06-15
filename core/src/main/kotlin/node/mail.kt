@@ -1,16 +1,16 @@
 package node.mail
 
-import javax.mail.Session
-import java.util.Properties
-import node.Configuration
-import node.util.lazy
+import kotlin.properties.Delegates
 import javax.mail.internet.MimeMessage
 import javax.mail.internet.InternetAddress
 import javax.mail.Message.RecipientType.TO
 import javax.mail.Transport
+import java.util.Properties
 import node.util._with
+import node.Configuration
+import javax.mail.Session
 
-private val session = lazy {
+private val session by Delegates.lazy {
   val properties = Properties()
 
   // load generic properties
@@ -38,7 +38,7 @@ private val session = lazy {
  * The simplest API for sending a message
  */
 fun sendMail(to: String, from: String, subject: String, content: String) {
-  val message = MimeMessage(session())
+  val message = MimeMessage(session)
   message.setFrom(InternetAddress(from))
   message.addRecipient(TO, InternetAddress(to))
   message.setSubject(subject)
@@ -50,7 +50,7 @@ fun sendMail(to: String, from: String, subject: String, content: String) {
  * Send an HTML message
  */
 fun sendHTMLMail(to: String, from: String, subject: String, html: String, text: String? = null) {
-  val message = MimeMessage(session())
+  val message = MimeMessage(session)
   message.setFrom(InternetAddress(from))
   message.addRecipient(TO, InternetAddress(to))
   message.setSubject(subject)

@@ -7,10 +7,10 @@ import com.amazonaws.services.sqs.model.ReceiveMessageRequest
 import com.amazonaws.services.sqs.model.DeleteMessageRequest
 import com.amazonaws.services.sqs.model.SendMessageRequest
 import com.amazonaws.services.sqs.model.CreateQueueRequest
-import kotlin.concurrent.thread
 import java.util.concurrent.Executors
 import kotlin.concurrent.*
 import node.util._logger
+import kotlin.properties.Delegates
 
 /**
  * A queue to be used with the worker system that uses Amazon's SQS
@@ -18,9 +18,9 @@ import node.util._logger
 
 class SQSQueue(val sqs: AmazonSQSClient, queueName: String): Queue {
   val sender = Executors.newCachedThreadPool()
-  val queueUrl = {
+  val queueUrl by Delegates.lazy {
     sqs.createQueue(CreateQueueRequest(queueName))!!.getQueueUrl()!!
-  }()
+  }
   var running = false
 
   override var jobHandler: (String) -> Future<Boolean> = {

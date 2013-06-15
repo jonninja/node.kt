@@ -7,11 +7,23 @@ import java.lang.annotation.Retention
 import java.lang.annotation.RetentionPolicy
 import node.inject.Registry.BindingReceiver
 import java.util.HashMap
+import kotlin.properties.ReadOnlyProperty
+import kotlin.properties.ReadWriteProperty
 
 enum class CacheScope {
   GLOBAL
   OPERATION
   SESSION
+}
+
+private val currentFactory = ThreadLocal<Factory>()
+
+fun <T,R> ThreadLocal<T>.change(newVal: T, cb: ()->R): R {
+    val oldValue = this.get()
+    this.set(newVal)
+    val result = cb()
+    this.set(oldValue)
+    return result
 }
 
 /**
@@ -34,27 +46,29 @@ class Factory(val registry: Registry, val scope: CacheScope, val parent: Factory
     }
 
     val binding = registry.getBinding(clazz, name)
-    if (binding != null) {
-      if (binding.scope == null) {
-        return binding.binding.instance(this, name)
-      } else if (binding.scope == this.scope) {
-        if (cache.containsKey(bindingKey(clazz, name))) {
-          return cache.get(bindingKey(clazz, name)) as T
-        } else {
-          return synchronized(binding) {
-            _with (binding.binding.instance(this, name)) {
-              cache.put(bindingKey(clazz, name), it)
+
+    return currentFactory.change(this) {
+      if (binding != null) {
+        if (binding.scope == null) {
+          binding.binding.instance(this, name)
+        } else if (binding.scope == this.scope) {
+          if (cache.containsKey(bindingKey(clazz, name))) {
+            cache.get(bindingKey(clazz, name)) as T
+          } else {
+            synchronized(binding) {
+              _with (binding.binding.instance(this, name)) {
+                cache.put(bindingKey(clazz, name), it)
+              }
             }
           }
+        } else if (parent != null) {
+          parent.instanceOf(clazz, name)
+        } else {
+          // if the type is bound to a scope, but it is not this one, we have a problem
+          throw IllegalStateException("Unable to create ${clazz.getCanonicalName()} in the scope that it was bound to. Make sure you are using a factory with the correct cache scope.")
         }
-      } else if (parent != null) {
-        return parent.instanceOf(clazz, name)
-      } else {
-        // if the type is bound to a scope, but it is not this one, we have a problem
-        throw IllegalStateException("Unable to create ${clazz.getCanonicalName()} in the scope that it was bound to. Make sure you are using a factory with the correct cache scope.")
-      }
+      } else throw NotFoundException("No binding found for ${bindingKey(clazz, name)}")
     }
-    throw NotFoundException("No binding found for ${bindingKey(clazz, name)}")
   }
 
   /**
@@ -63,6 +77,25 @@ class Factory(val registry: Registry, val scope: CacheScope, val parent: Factory
    */
   fun install<T>(instance: T, clazz: Class<T>, name: String? = null) {
     cache.put(bindingKey(clazz, name), instance)
+  }
+
+  public fun injection<T:Any>(name: String? = null): ReadWriteProperty<Any?, T> {
+    return Injectionator<T>(currentFactory.get()!!, name);
+  }
+}
+
+private class Injectionator<T: Any?>(factory: Factory, val name: String?) : ReadWriteProperty<Any?, T> {
+  private var value: Any? = null
+
+  public override fun get(thisRef: Any?, desc: PropertyMetadata): T {
+    return value as T ?: {
+      val useName = name ?: desc.name
+      throw IllegalStateException("Property ${desc.name} should be initialized before get")
+    }()
+  }
+
+  public override fun set(thisRef: Any?, desc: PropertyMetadata, value: T) {
+    this.value = value
   }
 }
 
