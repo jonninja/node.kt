@@ -1,0 +1,49 @@
+buildscript {
+    ext.kotlin_version = '0.9.66'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: "maven"
+
+group = "node.kt"
+sourceCompatibility = 1.8
+version = '1.0.0-SNAPSHOT'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom {
+                artifactId = 'node.kt'
+                group = 'node.kt'
+            }
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'org.apache.httpcomponents:httpclient:4.3.6'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.3'
+    compile 'io.netty:netty-all:4.0.24.Final'
+    compile 'javax.mail:javax.mail-api:1.5.2'
+    compile 'commons-logging:commons-logging:1.1.3'
+    compile 'org.slf4j:slf4j-api:1.7.7'
+    compile 'org.freemarker:freemarker:2.3.20'
+    compile 'org.apache.velocity:velocity:1.7'
+    compile 'org.lesscss:lesscss:1.7.0.1.1'
+}
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+}
