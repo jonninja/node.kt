@@ -15,12 +15,15 @@ uploadArchives {
     repositories {
         mavenDeployer {
             pom {
-                artifactId = 'node.kt'
-                group = 'node.kt'
+                artifactId = 'nodekt'
+                group = 'nodekt'
             }
         }
     }
 }
+
+group = "nodekt"
+version = '1.0.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
