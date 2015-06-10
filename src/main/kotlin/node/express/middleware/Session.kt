@@ -17,7 +17,7 @@ import node.util.logSevere
 import node.util.date.inSeconds
 
 // Interface for a session
-trait Session {
+interface Session {
   fun get(key: String): Any?
   fun set(key: String, value: Any)
 
@@ -51,8 +51,7 @@ class MemorySession: Session {
  * Base class for Session support. Default implementation just stores session data
  * in memory, which is not scalable across multiple servers.
  */
-open
-class SessionSupport(): Handler {
+open class SessionSupport(): Handler {
   override fun exec(req: Request, res: Response, next: () -> Unit) {
     val session = newSession(req, res)
     req.attributes["session"] = session
@@ -107,12 +106,12 @@ class CookieStoreSession(expirationTime: Long, val sessionKey: String = "_node_k
     var jsonNode: ObjectNode? = null
     var hasChanged: Boolean = false
 
-    {
+    init {
       var cookieContent = req.cookie(cookieName)
       if (cookieContent != null) {
         try {
           var cookieObject = json.readTree(cookieContent) as? ObjectNode
-          if (cookieObject != null) jsonNode = cookieObject!!
+          if (cookieObject != null) jsonNode = cookieObject
         } catch (t: Throwable) {
           log(Level.FINE, "Error parsing cookie: " + cookieContent, t)
         }

@@ -19,7 +19,7 @@ class KtTemplate(w: Writer) {
   val writer = PrintWriter(w)
   val stack = Stack<State>()
 
-  trait State {
+  interface State {
     fun process(c: Char): Boolean
     fun end() {
 
@@ -27,7 +27,7 @@ class KtTemplate(w: Writer) {
   }
 
   inner class Header(val writer: Appendable): State {
-    {
+    init {
       writer.append("import java.io.StringWriter\n");
     }
 
@@ -91,7 +91,7 @@ class KtTemplate(w: Writer) {
   }
 
   inner class Output(val writer: Appendable): State {
-    {
+    init {
       writer.append("out.write($escapedQuote")
     }
 
@@ -165,7 +165,7 @@ class KtTemplate(w: Writer) {
   }
 
   inner class BlockCode(val writer: Appendable): State {
-    {
+    init {
       writer.append("out.write({")
     }
 

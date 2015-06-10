@@ -55,7 +55,7 @@ private class UrlEncodedBody(decoder: HttpPostRequestDecoder): Body {
     return decoder
   }
   public override fun size(): Int {
-    return decoder.getBodyHttpDatas()!!.size
+    return decoder.getBodyHttpDatas()!!.size()
   }
   public override fun isEmpty(): Boolean {
     return size() == 0

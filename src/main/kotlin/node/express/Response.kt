@@ -88,7 +88,7 @@ class Response(val req: Request, val e: FullHttpRequest, val channel: ChannelHan
   }
 
   fun send(b: ByteArray) {
-    setIfEmpty(HttpHeaders.Names.CONTENT_LENGTH, b.size.toString())
+    setIfEmpty(HttpHeaders.Names.CONTENT_LENGTH, b.size().toString())
     writeResponse()
 
     channel.write(ChunkedStream(ByteArrayInputStream(b)))!!.addListener(end)

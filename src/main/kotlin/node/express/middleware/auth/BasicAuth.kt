@@ -1,4 +1,4 @@
-package node.express.middleware
+package node.express.middleware.auth
 
 import node.express.Handler
 import node.express.Request
@@ -18,7 +18,7 @@ public fun basicAuth(realm: String, validator: (String?, String?)->Boolean): Rou
     try {
       var authHeaderValue = req.header("authorization")
       if (authHeaderValue != null) {
-        var auth = authHeaderValue!!.splitToMap(" ", "type", "data")
+        var auth = authHeaderValue.splitToMap(" ", "type", "data")
         val authString = auth["data"]!!.decode("base64")
 
         auth = authString.splitToMap(":", "username", "password")
@@ -30,7 +30,7 @@ public fun basicAuth(realm: String, validator: (String?, String?)->Boolean): Rou
 
     if (validator(username, password)) {
       if (username != null) {
-        req.attributes["user"] = username!!
+        req.attributes["user"] = username
       }
       next()
     } else {
@@ -49,9 +49,9 @@ public fun tokenAuth(realm: String, validator: (String?,Request)->Boolean): Rout
     var token: String? = null
     var authHeaderValue = req.header("authorization")
     if (authHeaderValue != null) {
-      val auth = authHeaderValue!!.splitToMap("=", "type", "token")
+      val auth = authHeaderValue.splitToMap("=", "type", "token")
       if (auth["type"] == "token") {
-        token = auth["token"]!!.replaceAll("^\"|\"$", "")
+        token = auth["token"]!!.replace("^\"|\"$".toRegex(), "")
       }
     }
     if (validator(token, req)) {

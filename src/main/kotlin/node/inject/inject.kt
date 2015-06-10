@@ -7,18 +7,17 @@ import java.lang.annotation.RetentionPolicy
 import javax.naming.OperationNotSupportedException
 import node.NotFoundException
 import node.util._with
-import node.Configuration
+import node.configuration.Configuration
 import node.inject.Registry.BindingReceiver
 import node.util.konstructor
 
-
 enum class CacheScope {
-  GLOBAL
-  OPERATION
+  GLOBAL,
+  OPERATION,
   SESSION
 }
 
-trait IFactory {
+interface IFactory {
   fun instanceOf<T:Any?>(clazz: Class<T>, name: String? = null): T
   fun install<T>(instance: T, clazz: Class<T>, name: String? = null)
 }
@@ -28,7 +27,7 @@ trait IFactory {
  * is bound to the instance. For example, if a class is bound with an OPERATION scope, a Factory with that
  * scope will cache the instance.
  */
-[suppress("UNCHECKED_CAST")]
+@suppress("UNCHECKED_CAST")
 open class Factory(val registry: Registry, val scope: CacheScope, val parent: Factory? = null) {
   val cache = HashMap<String, Any?>()
 
@@ -103,7 +102,7 @@ open class Factory(val registry: Registry, val scope: CacheScope, val parent: Fa
    */
   fun getString(name: String): String? {
     val result = instanceOf(javaClass<String>(), name)
-    if (result != null && result.length == 0) {
+    if (result != null && result.length() == 0) {
       return null
     } else {
       return result
@@ -118,7 +117,7 @@ fun bindingKey<T>(src: Class<T>, name: String? = null): String {
 /**
  * A registry of class bindings to be used by the factory.
  */
-[suppress("UNCHECKED_CAST")]
+@suppress("UNCHECKED_CAST")
 open class Registry(val parentRegistry: Registry? = null) {
   val bindings = hashMapOf<String, BindingReceiver<*>>()
   val globalFactory = Factory(this, CacheScope.GLOBAL, null)
@@ -144,7 +143,7 @@ open class Registry(val parentRegistry: Registry? = null) {
     return bindings[key]?.binding
   }
 
-  [suppress("BASE_WITH_NULLABLE_UPPER_BOUND")]
+  @suppress("BASE_WITH_NULLABLE_UPPER_BOUND")
   public class BindingReceiver<T>(val src: Class<T>, val name: String? = null) {
     var binding: Binding<T> = ConstructorBinding(src)
     var scope: CacheScope? = null
@@ -167,7 +166,7 @@ open class Registry(val parentRegistry: Registry? = null) {
       return this
     }
 
-    [suppress("UNUSED_PARAMETER")]
+    @suppress("UNUSED_PARAMETER")
     fun to(ignored: Any?) {
       throw IllegalArgumentException("This is probably not what you want! Use toInstance to map to an instance")
     }
@@ -210,7 +209,7 @@ open class Registry(val parentRegistry: Registry? = null) {
 /**
  * A registry that reads instances from Configuration
  */
-[suppress("UNCHECKED_CAST")]
+@suppress("UNCHECKED_CAST")
 class ConfigurationRegistry(parentRegistry: Registry? = null): Registry(parentRegistry) {
   override fun <T> getBinding(clazz: Class<T>, name: String?): Registry.BindingReceiver<T>? {
     if (name != null) {
@@ -223,7 +222,7 @@ class ConfigurationRegistry(parentRegistry: Registry? = null): Registry(parentRe
   }
 }
 
-private trait Binding<T> {
+private interface Binding<T> {
   fun instance(factory: Factory, name: String?): T
 }
 
@@ -231,7 +230,7 @@ private class ConstructorBinding<T,I:T>(val clazz: Class<I>): Binding<T> {
   override fun instance(factory: Factory, name: String?): T {
     return clazz.konstructor().newInstance({ p ->
       val pname = p.getAnnotation(javaClass<named>())?.key ?: p.name
-      [suppress("UNCHECKED_CAST")]
+      @suppress("UNCHECKED_CAST")
       factory.instanceOf(p.jType as Class<T>, pname)
     })
   }

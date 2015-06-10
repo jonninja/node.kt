@@ -51,12 +51,12 @@ private val client = run {
 private val json = ObjectMapper();
 
 enum class HttpMethod {
-  GET
-  POST
-  PUT
-  DELETE
-  OPTIONS
-  HEAD
+  GET,
+  POS,
+  PUT,
+  DELETE,
+  OPTIONS,
+  HEAD,
   TRACE
 }
 
@@ -83,8 +83,8 @@ class Request(request: HttpRequestBase) {
   fun header(key: String): String? {
     connect();
     var headers = response?.getHeaders(key);
-    return if (headers != null && headers!!.size > 0) {
-      headers?.get(0)?.getValue();
+    return if (headers != null && headers.size() > 0) {
+      headers.get(0)?.getValue();
     } else {
       null;
     }
@@ -131,8 +131,8 @@ class Request(request: HttpRequestBase) {
    */
   fun contentType(): String? {
     return _if(header("Content-Type")) {
-      val components = it.split(";")
-      if (components.size > 0) components[0] else null
+      val components = it.split(";".toRegex()).toTypedArray()
+      if (components.size() > 0) components[0] else null
     }
   }
 
@@ -261,7 +261,7 @@ class Request(request: HttpRequestBase) {
         if (entity != null) {
           throw HttpException("Multiple entities are not allowed. Perhaps you have set a body and form parameters?");
         }
-        (request: HttpEntityEnclosingRequestBase).setEntity(UrlEncodedFormEntity(formParameters!!));
+        request.setEntity(UrlEncodedFormEntity(formParameters!!));
       }
       this.logDebug("Connecting to ${this.url}")
       response = client.execute(request);

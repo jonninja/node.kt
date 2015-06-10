@@ -33,7 +33,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter
 public class ExpressNetty(): Express() {
     private val bootstrap: ServerBootstrap
 
-    {
+    init {
         val bossGroup = NioEventLoopGroup()
         val workerGroup = NioEventLoopGroup()
 
@@ -95,10 +95,7 @@ public class ExpressNetty(): Express() {
         if (aPort == null) {
             aPort = get("port") as Int
         }
-        if (aPort == null) {
-            throw IllegalStateException("Port must be passed to listen or port property must be set")
-        }
-        bootstrap.bind(InetSocketAddress(aPort!!))
+        bootstrap.bind(InetSocketAddress(aPort))
         this.log("Express listening on port " + port)
     }
 }

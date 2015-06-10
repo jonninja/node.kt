@@ -14,7 +14,7 @@ public fun favIcon(path: String, maxAge: Long = 86400000): RouteHandler.()->Unit
   return {
     if (req.path == "/favicon.ico") {
       res.contentType("image/x-icon")
-      res.header("Content-Length", icon.size.toString())
+      res.header("Content-Length", icon.size().toString())
       res.header("Cache-Control", "public, max-age=" + (maxAge / 1000))
       res.send(icon)
     } else {

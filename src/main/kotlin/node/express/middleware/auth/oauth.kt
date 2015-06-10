@@ -1,4 +1,4 @@
-package node.oauth
+package node.express.middleware.auth
 
 import java.util.HashMap
 import node.express.Express
@@ -8,7 +8,7 @@ import node.util.RandomStringGenerator
 import node.http.HttpClient
 import node.express.Response
 import node.express.Request
-import node.Configuration
+import node.configuration.Configuration
 import java.io.IOException
 
 val stateGenerator = RandomStringGenerator(15)
@@ -21,13 +21,10 @@ class OAuth(val express: Express,
             val localPath: String = "/oauth/login/:provider") {
   val providers = HashMap<String, OAuthProvider>();
 
-  {
+  init {
     express.get(localPath, {
       val providerId = req.param("provider") as String
-      val provider = providers.get(providerId)
-      if (provider == null) {
-        throw NotFoundException()
-      }
+      val provider = providers.get(providerId) ?: throw NotFoundException()
 
       val scope = req.param("scope") as String?
       val redirect = "http://${req.header("Host")}/oauth/callback/$providerId"

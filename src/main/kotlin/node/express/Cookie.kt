@@ -55,7 +55,7 @@ class Cookie(val key: String, val value: String) {
     return pairs.join("; ");
   }
 
-  class object {
+  companion object {
     /**
      * Parse a cookie string into a Cookie
      */
@@ -68,7 +68,7 @@ class Cookie(val key: String, val value: String) {
       var value = str.substring(++eq_idx).trim().decodeUriComponent()
 
       if (value.charAt(0) == '\"') {
-        value = value.substring(1, value.length - 1)
+        value = value.substring(1, value.length() - 1)
       }
       return Cookie(key, value)
     }

@@ -33,9 +33,9 @@ fun JsonNode.asNative(key: String? = null): Any? {
 fun JsonNode.putNative(key: String, value: Any) {
   if (this is ObjectNode) {
     when (value) {
-      is String -> this.put(key, value: String)
-      is Int -> this.put(key, value: Int)
-      is Boolean -> this.put(key, value: Boolean)
+      is String -> this.put(key, value)
+      is Int -> this.put(key, value)
+      is Boolean -> this.put(key, value)
       else -> {
       }
     }

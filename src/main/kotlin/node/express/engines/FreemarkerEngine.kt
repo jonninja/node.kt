@@ -12,7 +12,7 @@ import java.io.File
 class FreemarkerEngine(): Engine {
   val fm = Configuration();
 
-  {
+  init {
     fm.setObjectWrapper(DefaultObjectWrapper())
     fm.setDirectoryForTemplateLoading(File("/"))
   }

@@ -23,19 +23,19 @@ fun String.extension(): String? {
  */
 fun String.encodeUriComponent(): String {
   return URLEncoder.encode(this, "UTF-8")
-      .replaceAll("\\+", "%20")
-      .replaceAll("\\%21", "!")
-      .replaceAll("\\%27", "'")
-      .replaceAll("\\%28", "(")
-      .replaceAll("\\%29", ")")
-      .replaceAll("\\%7E", "~");
+          .replace("\\+".toRegex(), "%20")
+          .replace("\\%21".toRegex(), "!")
+          .replace("\\%27".toRegex(), "'")
+          .replace("\\%28".toRegex(), "(")
+          .replace("\\%29".toRegex(), ")")
+          .replace("\\%7E".toRegex(), "~");
 }
 
 /**
  * Get a version of the string suitable for use in an HTML attribute
  */
 fun String.toHTMLAttribute(): String {
-  return this.replaceAll("\"", "&quot;").replaceAll("'", "&#39;")
+  return this.replace("\"".toRegex(), "&quot;").replace("'".toRegex(), "&#39;")
 }
 
 fun String.decodeUriComponent() = URLDecoder.decode(this, "UTF-8")
@@ -44,7 +44,7 @@ fun Array<String>.toMap(vararg keys: String): Map<String, String> {
   val result = HashMap<String, String>()
   var i = 0
   for (key in keys) {
-    if (this.size > i) {
+    if (this.size() > i) {
       result[key] = this[i]
     } else {
       throw ParseException("No enough values in string to match keys", 0)
@@ -59,7 +59,7 @@ fun Array<String>.toMap(vararg keys: String): Map<String, String> {
  * added to a map with the provided key of the same index.
  */
 fun String.splitToMap(delimiter: String, vararg keys: String): Map<String, String> {
-  return this.split(delimiter).toMap(*keys)
+  return this.split(delimiter.toRegex()).toTypedArray().toMap(*keys)
 }
 
 // stores symbols used by the random string generator
@@ -78,7 +78,7 @@ public class RandomStringGenerator(val length: Int) {
 
   fun next(): String {
     val buf = CharArray(length)
-    for (idx in 0..length-1) buf[idx] = randomSymbols[random.nextInt(randomSymbols.size)]
+    for (idx in 0..length-1) buf[idx] = randomSymbols[random.nextInt(randomSymbols.size())]
     return String(buf)
   }
 }
@@ -92,7 +92,7 @@ fun String.after(seq: String): String {
   if (index < 0) {
     return ""
   }
-  return this.substring(index + seq.size)
+  return this.substring(index + seq.length())
 }
 
 /**

@@ -91,7 +91,7 @@ abstract class Express() {
 
   var errorHandler: ((Throwable, Request, Response) -> Unit) = defaultErrorHandler
 
-  {
+  init {
     settings.put("views", "views/")
     settings.put("jsonp callback name", "callback")
 
@@ -279,7 +279,7 @@ abstract class Express() {
   fun handleRequest(req: Request, res: Response, stackIndex: Int = 0) {
     var index = stackIndex
     while (true) {
-      if (index >= routes.size) {
+      if (index >= routes.size()) {
         res.sendErrorResponse(404) // send a 404
         break;
       } else {

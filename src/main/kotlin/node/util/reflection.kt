@@ -47,7 +47,7 @@ fun Any.field(name: String): Any? {
   }
 }
 
-[suppress("UNCHECKED_CAST")]
+@suppress("UNCHECKED_CAST")
 class Property<T>(val obj: Any, name: String) {
   private val field = obj.javaClass.getField(name)
   var value:T
@@ -59,9 +59,9 @@ fun Any.property<T>(name: String): Property<T> {
   return Property(this, name)
 }
 
-[suppress("UNCHECKED_CAST")]
+@suppress("UNCHECKED_CAST")
 data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
-  class object {
+  companion object {
     private var dataConstructors: MutableMap<Class<*>, KotlinConstructor<*>>? = null
 
     fun <T> get(ty: Class<T>): KotlinConstructor<T> {
@@ -71,7 +71,7 @@ data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constructor<T>
 
       // find the constructor with the JetValueParameter annotations
       var constructor = ty.getConstructors().firstOrNull {
-        if (it.getParameterTypes()!!.size > 0) {
+        if (it.getParameterTypes()!!.size() > 0) {
           it.getParameterAnnotations()[0]!!.firstOrNull {
             it is JetValueParameter
           } != null
@@ -85,8 +85,8 @@ data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constructor<T>
 
       // next, find the constructor that matches in case there are default types
       val types = constructor!!.getParameterTypes()!!
-      val extended = Array<Class<out Any?>>(types.size + 1, { index->
-        if (index < (types.size)) types[index] else javaClass<Int>()
+      val extended = Array<Class<out Any?>>(types.size() + 1, { index->
+        if (index < (types.size())) types[index] else javaClass<Int>()
       })
       val defCon = {
         try {
@@ -119,24 +119,24 @@ data class KotlinConstructor<T>(val jet: Constructor<T>, val def: Constructor<T>
     var annotations = jet.getParameterAnnotations()
     val types = jet.getParameterTypes()!!
     val missing = ArrayList<String>()
-    val parameters = (0..annotations.size - 1).mapTo(java.util.ArrayList<Any?>()) { index ->
+    val parameters = (0..annotations.size() - 1).mapTo(java.util.ArrayList<Any?>()) { index ->
       val jetParam = annotations[index]!!.firstOrNull { it is JetValueParameter }!! as JetValueParameter
-      val value = p(Parameter(jetParam.name(), jetParam.`type`(), types[index], annotations[index]!!.toList()))
+      val value = p(Parameter(jetParam.name, jetParam.`type`, types[index], annotations[index]!!.toList()))
       if (value == null) {
         if (false/*jetParam.hasDefaultValue()*/) {
           bitmask += Math.pow(2.0, index.toDouble()).toInt()
           value
-        } else if (jetParam.`type`().startsWith('?')) {
+        } else if (jetParam.`type`.startsWith('?')) {
           value
         } else {
-          missing.add(jetParam.name())
+          missing.add(jetParam.name)
           ""
         }
       } else {
         value
       }
     }
-    if (missing.size > 0) {
+    if (missing.size() > 0) {
       throw MissingParameterException(missing)
     }
     return if (def != null) {

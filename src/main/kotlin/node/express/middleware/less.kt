@@ -37,9 +37,9 @@ public fun lessCompiler(basePath: String): RouteHandler.()->Unit {
                 res.send(404)
             } else {
                 cssFile = cache.get(path)
-                if (cssFile != null && cssFile!!.exists()) {
+                if (cssFile != null && cssFile.exists()) {
                     // check to see if the srcFile has been changed, and force recompile
-                    if (cssFile!!.lastModified() < srcFile.lastModified()) {
+                    if (cssFile.lastModified() < srcFile.lastModified()) {
                         cssFile = null
                     }
                 }
@@ -53,7 +53,7 @@ public fun lessCompiler(basePath: String): RouteHandler.()->Unit {
         }
         if (cssFile != null) {
             res.contentType("text/css")
-            res.sendFile(cssFile!!)
+            res.sendFile(cssFile)
         } else {
             next()
         }

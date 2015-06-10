@@ -15,7 +15,7 @@ class Route(val method: String, val path: String, val handler: RouteHandler.() -
   var pattern = Pattern.compile("")
   var keys = ArrayList<Key>();
 
-  {
+  init {
     buildPathRegEx(path, true);
   }
 
@@ -63,8 +63,8 @@ class Route(val method: String, val path: String, val handler: RouteHandler.() -
     }
     matcher.appendTail(sb);
     var regex = sb.toString();
-    regex = regex.replaceAll("([/.])", "\\/");
-    regex = regex.replaceAll("\\*", "(.*)");
+    regex = regex.replace("([/.])".toRegex(), "\\/");
+    regex = regex.replace("\\*".toRegex(), "(.*)");
     regex = "^" + regex + "$";
     this.pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
     this.keys = keys;

@@ -14,7 +14,7 @@ public fun cookieParser(): RouteHandler.()->Unit {
     var cookiesString = req.header("cookie")
     var cookieMap = hashMapOf<String, Cookie>()
     if (cookiesString != null) {
-      var pairs = cookiesString!!.split("[;,]")
+      var pairs = cookiesString!!.split("[;,]".toRegex()).toTypedArray()
       pairs.forEach {
         val cookie = Cookie.parse(it)
         if (!cookieMap.containsKey(cookie.key)) {

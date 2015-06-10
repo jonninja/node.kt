@@ -127,7 +127,7 @@ class Request(app: Express, val request: FullHttpRequest, val channel: Channel) 
         mime = t.mimeType();
       }
       if (mime == null) return false;
-      var parts = mime!!.split("/");
+      var parts = mime!!.split("/".toRegex()).toTypedArray();
       return (parts[0] == mainType || mainType == "*") &&
       (parts[1] == subType || subType == "*");
     }
@@ -137,14 +137,14 @@ class Request(app: Express, val request: FullHttpRequest, val channel: Channel) 
     var accept = header(HttpHeaders.Names.ACCEPT);
     if (accept == null) return arrayListOf<Accept>();
 
-    var acceptArray = accept!!.split(",");
+    var acceptArray = accept!!.split(",".toRegex()).toTypedArray();
     return acceptArray.map<String, Accept> { it ->
       var result: Accept = Accept("", "", 1.0);
       var parts = it.split('/');
-      if (parts.size == 2) {
-        var quality = parts[1].split(";");
-        if (quality.size == 2) {
-          var qVal = quality[1].split("=")[1];
+      if (parts.size() == 2) {
+        var quality = parts[1].split(";".toRegex()).toTypedArray();
+        if (quality.size() == 2) {
+          var qVal = quality[1].split("=".toRegex()).toTypedArray()[1];
           result = Accept(parts[0], quality[0], qVal.toDouble());
         } else {
           result = Accept(parts[0], quality[0], 1.0);
@@ -234,7 +234,7 @@ class Request(app: Express, val request: FullHttpRequest, val channel: Channel) 
     var annotations = constructors.jet.getParameterAnnotations()
     val types = constructors.jet.getParameterTypes()!!
     val missing = ArrayList<String>()
-    val parameters = (0..annotations.size - 1).mapTo(java.util.ArrayList<Any?>()) { index ->
+    val parameters = (0..annotations.size() - 1).mapTo(java.util.ArrayList<Any?>()) { index ->
       val jetParam = annotations[index]!!.firstOrNull { it is JetValueParameter }!! as JetValueParameter
       val paramType = types[index]
       val value = this.param(jetParam.name())
@@ -252,7 +252,7 @@ class Request(app: Express, val request: FullHttpRequest, val channel: Channel) 
         if (value is String) {
           when (paramType) {
             javaClass<Int>() -> value.toInt()
-            javaClass<List<String>>() -> value.split(",")
+            javaClass<List<String>>() -> value.split(",".toRegex()).toTypedArray()
             else -> value
           }
         } else {
@@ -260,7 +260,7 @@ class Request(app: Express, val request: FullHttpRequest, val channel: Channel) 
         }
       }
     }
-    if (missing.size > 0) {
+    if (missing.size() > 0) {
       throw MissingParameterException(missing)
     }
     if (constructors.def != null) {
@@ -293,7 +293,7 @@ class Request(app: Express, val request: FullHttpRequest, val channel: Channel) 
 }
 
 data class Constructors<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
-  class object {
+  companion object {
     private var dataConstructors: MutableMap<Class<*>,Constructors<*>>? = null
 
     fun <T> get(ty: Class<T>): Constructors<T> {
@@ -303,7 +303,7 @@ data class Constructors<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
 
       // find the constructor with the JetValueParameter annotations
       val constructor = (ty.getConstructors().firstOrNull {
-        if (it.getParameterTypes()!!.size > 0) {
+        if (it.getParameterTypes()!!.size() > 0) {
           it.getParameterAnnotations()[0]!!.firstOrNull { it is JetValueParameter } != null
         } else {
           false
@@ -312,8 +312,8 @@ data class Constructors<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
 
       // next, find the constructor that matches in case there are default types
       val types = constructor.getParameterTypes()!!
-      val extended = Array(types.size + 1, { index->
-        if (index < (types.size)) types[index] else javaClass<Int>()
+      val extended = Array(types.size() + 1, { index->
+        if (index < (types.size())) types[index] else javaClass<Int>()
       })
       val defCon = {
         try {
@@ -329,5 +329,5 @@ data class Constructors<T>(val jet: Constructor<T>, val def: Constructor<T>?) {
 
 class MissingParameterException(vararg parameters: String) : IllegalArgumentException(parameters.joinToString())
 fun MissingParameterException(parameters: List<String>): MissingParameterException {
-  return MissingParameterException(*(parameters.copyToArray()))
+  return MissingParameterException(*(parameters.toTypedArray()))
 }

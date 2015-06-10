@@ -12,15 +12,15 @@ open class EventEmitter() {
   /**
    * Install an event listener
    * @param event the event name
-   * @param a function to be called when the event is fired
+   * @param listener a function to be called when the event is fired
    */
   fun on(event: String, listener: (Any?) -> Unit) {
     var l = listeners[event];
     if (l == null) {
       l = ArrayList<(Any?) -> Unit>();
-      listeners.put(event, l!!);
+      listeners.put(event, l);
     }
-    l!!.add(listener)
+    l.add(listener)
   }
 
   /**
@@ -31,7 +31,7 @@ open class EventEmitter() {
   fun emit(event: String, data: Any?) {
     var l = listeners[event];
     if (l != null) {
-      for (listener in l!!.iterator()) {
+      for (listener in l.iterator()) {
         listener(data);
       }
     }

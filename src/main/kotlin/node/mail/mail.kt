@@ -7,7 +7,7 @@ import javax.mail.Message.RecipientType.TO
 import javax.mail.Transport
 import java.util.Properties
 import node.util._with
-import node.Configuration
+import node.configuration.Configuration
 import javax.mail.Session
 
 private val session by Delegates.lazy {

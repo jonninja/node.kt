@@ -1,5 +1,6 @@
-package node
+package node.configuration
 
+import node.FormatException
 import java.io.File
 import java.util.HashMap
 import java.io.FileNotFoundException
@@ -37,11 +38,11 @@ public object Configuration {
    * @returns the setting value. Null if not found.
    */
   fun get(path: String): Any? {
-    var components = path.split("\\.")
+    var components = path.split("\\.".toRegex()).toTypedArray()
     var value: Any? = this.root
     for (component in components) {
       if (value != null && value is Map<*, *>) {
-        value = (value as Map<*, *>).get(component)
+        value = value.get(component)
       } else {
         return null;
       }

@@ -104,7 +104,7 @@ private fun TextNode.textValue(): String? {
  * Convert a text node to a given type. Automatically converts to string or
  * Int. If another type is given, looks for a constructor with only a string.
  */
-[suppress("UNCHECKED_CAST")]
+@suppress("UNCHECKED_CAST")
 private fun <T:Any> convertTextNode(tn: TextNode, aType: Class<T>): T? {
   val result:Any? = when (aType) {
     stringClass -> tn.textValue()
@@ -120,7 +120,7 @@ private fun <T:Any> convertTextNode(tn: TextNode, aType: Class<T>): T? {
 /**
  * Convert an IntNode to a target type.
  */
-[suppress("UNCHECKED_CAST")]
+@suppress("UNCHECKED_CAST")
 private fun <T:Any> convertIntNode(node: IntNode, target: Class<T>): T? {
   val result: Any? = when (target) {
     stringClass -> node.intValue().toString()
@@ -134,7 +134,7 @@ private fun <T:Any> convertIntNode(node: IntNode, target: Class<T>): T? {
 /**
  * Convert an IntNode to a target type.
  */
-[suppress("UNCHECKED_CAST")]
+@suppress("UNCHECKED_CAST")
 private fun <T:Any> convertLongNode(node: LongNode, target: Class<T>): T? {
   val result: Any? = when (target) {
     stringClass -> node.longValue().toString()
@@ -145,7 +145,7 @@ private fun <T:Any> convertLongNode(node: LongNode, target: Class<T>): T? {
   return result as T?
 }
 
-[suppress("UNCHECKED_CAST", "BASE_WITH_NULLABLE_UPPER_BOUND")]
+@suppress("UNCHECKED_CAST", "BASE_WITH_NULLABLE_UPPER_BOUND")
 fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T? {
   val result: Any? = when {
     this is TextNode -> convertTextNode(this, ty)
@@ -157,7 +157,7 @@ fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T? {
     this.isArray() -> {
       when {
         ty == javaClass<Any>() || javaClass<List<*>>().isAssignableFrom(ty) -> {
-          [suppress("CAST_NEVER_SUCCEEDS")]
+          @suppress("CAST_NEVER_SUCCEEDS")
           var subType: Class<Any>? = sub as Class<Any>?
           val l: MutableList<Any?> = (if (sub != null) {
             ArrayList<K>() as MutableList<Any?>
@@ -170,7 +170,7 @@ fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T? {
           })
 
           for (el in this) {
-            [suppress("CAST_NEVER_SUCCEEDS")]
+            @suppress("CAST_NEVER_SUCCEEDS")
             val subValue = el.convert<K, Nothing>(subType as Class<K>)
             l.add(subValue!!)
           }
@@ -203,11 +203,11 @@ fun <T, K> JsonNode.convert(ty: Class<T>, sub: Class<K>? = null): T? {
           {
             if (it.jType == javaClass<List<*>>()) {
               // for lists, use some special casing and get the content type from the JetValueParameter
-              val componentTypeName = it.kType.replaceAll("/", ".").after("<").until(";").substring(1)
+              val componentTypeName = it.kType.replace("/".toRegex(), ".").after("<").until(";").substring(1)
               val componentType = Class.forName(componentTypeName)
               nodeValue.convert(it.jType as Class<Any>, componentType as Class<Any>)
             } else if (it.jType == javaClass<Map<*,*>>()) {
-              val components = it.kType.replaceAll("/", ".").after("<").until(">").split(";").map { it.substring(1) }
+              val components = it.kType.replace("/".toRegex(), ".").after("<").until(">").split(";".toRegex()).toTypedArray().map { it.substring(1) }
               val componentType = Class.forName(components[1])
               nodeValue.convert(it.jType as Class<Any>, componentType as Class<Any>)
             } else {

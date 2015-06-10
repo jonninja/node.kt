@@ -3,7 +3,7 @@ package node.express
 /**
  * An Express rendering engine
  */
-trait Engine {
+interface Engine {
   /**
    * Render a page
    * @param path a path to the template

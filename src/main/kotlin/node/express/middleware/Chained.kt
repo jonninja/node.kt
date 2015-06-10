@@ -12,7 +12,7 @@ fun chained(vararg handlers: RouteHandler.()->Unit): RouteHandler.()->Unit {
         fun handleRequest(stackIndex: Int = 0) {
             val handlerExtension: RouteHandler.() -> Unit = handlers[stackIndex]
             val routeHandler = RouteHandler(req, res, { nextReq, nextRes ->
-                if (stackIndex + 1 >= handlers.size) {
+                if (stackIndex + 1 >= handlers.size()) {
                     next()
                 } else {
                     handleRequest(stackIndex + 1)

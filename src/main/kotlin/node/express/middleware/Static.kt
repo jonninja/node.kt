@@ -23,7 +23,7 @@ public fun static(basePath: String): RouteHandler.()->Unit {
           path = "/" + path
         }
         if (path.endsWith("/")) {
-          path = path + "index.html"
+          path += "index.html"
         }
         var f = File(basePath + path)
         if (f.exists()) {
@@ -35,7 +35,7 @@ public fun static(basePath: String): RouteHandler.()->Unit {
       }()
 
       if (srcFile != null) {
-        res.sendFile(srcFile!!)
+        res.sendFile(srcFile)
       } else {
         next()
       }
