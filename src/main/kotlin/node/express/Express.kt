@@ -169,17 +169,11 @@ abstract class Express() {
     var ext = name.extension();
     var viewFileName = name;
     if (ext == null) {
-      ext = settings.get("view engine") as String;
-      if (ext == null) {
-        throw IllegalArgumentException("No default view set for view without extension")
-      }
+      ext = settings.get("view engine") as? String ?: throw IllegalArgumentException("No default view set for view without extension")
       viewFileName = name + "." + ext;
     }
 
-    val renderer = engines.get(ext);
-    if (renderer == null) {
-      throw IllegalArgumentException("No renderer for ext: " + ext);
-    }
+    val renderer = engines.get(ext) ?: throw IllegalArgumentException("No renderer for ext: " + ext);
 
     var mergedContext = HashMap<String, Any?>();
     mergedContext.putAll(locals);
@@ -364,6 +358,9 @@ abstract class Express() {
 /**
  * Exception thrown by Express
  */
-class ExpressException(val code: Int, msg: String? = null, cause: Throwable? = null): Exception(msg, cause)
+open class ExpressException(val code: Int, msg: String? = null, cause: Throwable? = null): Exception(msg, cause)
 
-
+/**
+ * Exception to throw whenever the request is invalid
+ */
+open class BadRequest(msg: String? = null, cause: Throwable? = null): ExpressException(400, msg, cause)

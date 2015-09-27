@@ -12,6 +12,8 @@ private fun getLogger(a: Any?): Logger {
   }
 }
 
+public inline fun <reified T:Any> loggerFor(): Logger = LoggerFactory.getLogger(javaClass<T>())
+
 /**
  * Attaches a log function to any object, and uses that object's class as the
  * logging context.

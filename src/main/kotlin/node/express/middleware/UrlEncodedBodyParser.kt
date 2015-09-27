@@ -45,6 +45,9 @@ private class UrlEncodedBody(decoder: HttpPostRequestDecoder): Body {
   override fun asString(key: String): String? {
     return getAttribute(key)?.getString()
   }
+  override fun asDouble(key: String): Double? {
+    return getAttribute(key)?.getString()?.toDouble()
+  }
   override fun asInt(index: Int): Int? {
     throw UnsupportedOperationException()
   }

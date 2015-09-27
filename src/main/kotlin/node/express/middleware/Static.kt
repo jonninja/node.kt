@@ -5,6 +5,8 @@ import node.express.Response
 import java.io.File
 import java.util.HashMap
 import node.express.RouteHandler
+import node.mimeType
+import node.util._withNotNull
 
 /**
  * Middleware for serving a tree of static files
@@ -41,4 +43,30 @@ public fun static(basePath: String): RouteHandler.()->Unit {
       }
     }
   }
+}
+
+/**
+ * Middleware that servers static resources from the code pacakage
+ */
+public fun staticResources(classBasePath: String): RouteHandler.()->Unit {
+    return {
+        if (req.method != "get" && req.method != "head")
+            next()
+        else {
+            var requestPath = req.param("*") as? String ?: ""
+            if (requestPath.length() > 0 && requestPath.charAt(0) == '/') {
+                requestPath = requestPath.substring(1)
+            }
+
+            var resource = Thread.currentThread().getContextClassLoader().getResource(classBasePath + requestPath)
+            if (resource != null) {
+                _withNotNull(requestPath.mimeType()) { res.contentType(it) }
+                resource.openStream().use {
+                    res.send(it)
+                }
+            } else {
+                next()
+            }
+        }
+    }
 }

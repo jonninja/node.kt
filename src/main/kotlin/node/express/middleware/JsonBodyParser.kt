@@ -45,9 +45,9 @@ private class JsonBody(n: JsonNode): Body {
     var value = (node as? ObjectNode)?.get(key);
     return when  {
       value == null -> null
-      value!!.isIntegralNumber() -> value!!.asInt()
-      value!!.isTextual() -> value!!.asText()
-      value!!.isBoolean() -> value!!.asBoolean()
+      value.isIntegralNumber() -> value.asInt()
+      value.isTextual() -> value.asText()
+      value.isBoolean() -> value.asBoolean()
       else -> value
     }
   }
@@ -66,8 +66,9 @@ private class JsonBody(n: JsonNode): Body {
   override fun asNative(): Any {
     return node;
   }
-
-
+  override fun asDouble(key: String): Double? {
+    return (node as? ObjectNode)?.get(key)?.asDouble();
+  }
   public override fun size(): Int {
     return objectNode.size()
   }
@@ -84,13 +85,13 @@ private class JsonBody(n: JsonNode): Body {
     return objectNode.get(key as String?)?.textValue()
   }
   public override fun keySet(): Set<String> {
-    return objectNode.fieldNames()!!.mapTo(HashSet<String>(), {it})
+    return objectNode.fieldNames().asSequence().mapTo(HashSet<String>(), {it})
   }
   public override fun values(): Collection<Any?> {
-    return objectNode.fields()!!.mapTo(ArrayList<Any?>(), {it})
+    return objectNode.fields()!!.asSequence().mapTo(ArrayList<Any?>(), {it})
   }
   public override fun entrySet(): Set<Map.Entry<String, Any?>> {
-    return objectNode.fields()!!.mapTo(HashSet<Map.Entry<String, Any?>>(), {
+    return objectNode.fields()!!.asSequence().mapTo(HashSet<Map.Entry<String, Any?>>(), {
       object : Map.Entry<String, Any?> {
         public override fun getKey(): String {
           return it.getKey()
